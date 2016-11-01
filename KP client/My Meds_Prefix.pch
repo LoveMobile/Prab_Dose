@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'Pill Popper' target in the 'Pill Popper' project
+//
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+int int_SwitchBtn;
+//int tempSwitchBtnYES;
+int int_fromLaunch;
+//int int_InvalidUser;
+BOOL isTutorialNeeded;
+BOOL shouldClearData;
+NSString *ssoSessionIdStr;

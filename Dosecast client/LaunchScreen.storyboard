@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Any-TK-zpc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Dosecast-->
+        <scene sceneID="zMM-fS-rD9">
+            <objects>
+                <tableViewController title="Dosecast" id="SSi-2q-GTk" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="NLP-8l-CvH">
+                        <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.87450980392156863" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.86274509803921573" green="0.87450980392156863" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="SSi-2q-GTk" id="DZ2-yC-kYf"/>
+                            <outlet property="delegate" destination="SSi-2q-GTk" id="dhw-EY-vIt"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="VQp-l4-R8r"/>
+                        <barButtonItem image="Help.png" id="3lL-0h-m9W">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="TWo-rI-hXA"/>
+                        <barButtonItem image="Log.png" id="HFF-Ct-thQ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="A9h-4J-AuX"/>
+                        <barButtonItem image="Mail.png" id="WBq-3R-tpN">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="CMi-KJ-mu8"/>
+                        <barButtonItem image="Gear.png" id="1Fi-ZJ-oyA">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="vZV-3t-qEM"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Dosecast" id="v05-Hg-hbv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="t9f-0I-Z14">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bd-dd-iD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="269"/>
+        </scene>
+        <!--Dosecast-->
+        <scene sceneID="vFs-XU-5LU">
+            <objects>
+                <navigationController title="Dosecast" toolbarHidden="NO" id="Any-TK-zpc" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="qQ4-zs-b3I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.27058823529411763" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <toolbar key="toolbar" contentMode="scaleToFill" translucent="NO" id="Xrz-hG-4oT">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.27058823529411763" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.27058823529999998" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="SSi-2q-GTk" kind="relationship" relationship="rootViewController" id="65X-xg-gbv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cH-ZN-baT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-341" y="269"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gear.png" width="30" height="30"/>
+        <image name="Help.png" width="30" height="30"/>
+        <image name="Log.png" width="30" height="30"/>
+        <image name="Mail.png" width="30" height="30"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.27058823529411763" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+</document>

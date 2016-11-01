@@ -1,0 +1,1789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2910D7D4160A205000418824 /* DrugPermutationsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2910D7D2160A205000418824 /* DrugPermutationsViewController.h */; };
+		2910D7D5160A205000418824 /* DrugPermutationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2910D7D3160A205000418824 /* DrugPermutationsViewController.m */; };
+		29367817161AA22E008E2D52 /* DrugImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 29367815161AA22E008E2D52 /* DrugImageManager.h */; };
+		29367818161AA22E008E2D52 /* DrugImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29367816161AA22E008E2D52 /* DrugImageManager.m */; };
+		2936781B161AA26F008E2D52 /* DrugImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 29367819161AA26F008E2D52 /* DrugImage.h */; };
+		2936781C161AA26F008E2D52 /* DrugImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2936781A161AA26F008E2D52 /* DrugImage.m */; };
+		294985D2160063880008430D /* MedicationConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 294985D01600631E0008430D /* MedicationConstants.h */; };
+		299A573115EEF93900E8600F /* EventLogEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 299A572D15EEF93900E8600F /* EventLogEntry.h */; };
+		299A573215EEF93900E8600F /* EventLogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 299A572E15EEF93900E8600F /* EventLogEntry.m */; };
+		299A573315EEF93900E8600F /* LogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 299A572F15EEF93900E8600F /* LogManager.h */; };
+		299A573415EEF93900E8600F /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 299A573015EEF93900E8600F /* LogManager.m */; };
+		29E0614815F8FCF200FF92F8 /* MedicationSearchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E0614615F8FCF200FF92F8 /* MedicationSearchManager.h */; };
+		29E0614915F8FCF200FF92F8 /* MedicationSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0614715F8FCF200FF92F8 /* MedicationSearchManager.m */; };
+		29F0D15B16113906006BD07D /* PermutationSearchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 29F0D15916113906006BD07D /* PermutationSearchResult.h */; };
+		29F0D15C16113906006BD07D /* PermutationSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F0D15A16113906006BD07D /* PermutationSearchResult.m */; };
+		AA747D9F0F9514B9006C5449 /* Dosecast_API_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Dosecast_API_Prefix.pch */; };
+		AB011B981400108700AC6F9D /* DoseLimitViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB011B951400108700AC6F9D /* DoseLimitViewController.h */; };
+		AB011B991400108700AC6F9D /* DoseLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB011B961400108700AC6F9D /* DoseLimitViewController.m */; };
+		AB011B9A1400108700AC6F9D /* DoseLimitViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB011B971400108700AC6F9D /* DoseLimitViewControllerDelegate.h */; };
+		AB10B56015EB1A6300280917 /* DrugDatabaseSearchController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB10B55D15EB1A6300280917 /* DrugDatabaseSearchController.h */; };
+		AB10B56115EB1A6300280917 /* DrugDatabaseSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB10B55E15EB1A6300280917 /* DrugDatabaseSearchController.m */; };
+		AB10B56215EB1A6300280917 /* DrugDatabaseSearchControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB10B55F15EB1A6300280917 /* DrugDatabaseSearchControllerDelegate.h */; };
+		AB1DF973127E4EAD0055C1D8 /* GlobalSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1DF971127E4EAD0055C1D8 /* GlobalSettings.h */; };
+		AB1DF974127E4EAD0055C1D8 /* GlobalSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1DF972127E4EAD0055C1D8 /* GlobalSettings.m */; };
+		AB1DF9C1127E6C3C0055C1D8 /* ProgressViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1DF9BF127E6C3C0055C1D8 /* ProgressViewController.h */; };
+		AB1DF9C2127E6C3C0055C1D8 /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1DF9C0127E6C3C0055C1D8 /* ProgressViewController.m */; };
+		AB259A2C1597B5BA00ED9B0D /* DosecastUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = AB259A2B1597B5BA00ED9B0D /* DosecastUtil.m */; };
+		AB259A2F1597B5D600ED9B0D /* DosecastUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AB259A2E1597B5D600ED9B0D /* DosecastUtil.h */; };
+		AB2EED1615C0F4B00003451F /* DrugDosageUnitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2EED1415C0F4B00003451F /* DrugDosageUnitManager.m */; };
+		AB2EED1915C0F7CD0003451F /* DrugDosageUnitManagerEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2EED1715C0F7CC0003451F /* DrugDosageUnitManagerEntry.h */; };
+		AB2EED1A15C0F7CD0003451F /* DrugDosageUnitManagerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2EED1815C0F7CC0003451F /* DrugDosageUnitManagerEntry.m */; };
+		AB30EA3615FD5523001F425E /* DatabaseDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB30EA3415FD5523001F425E /* DatabaseDrugDosage.h */; };
+		AB30EA3715FD5523001F425E /* DatabaseDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB30EA3515FD5523001F425E /* DatabaseDrugDosage.m */; };
+		AB3C655019818D9F00479C28 /* VersionNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3C654E19818D9F00479C28 /* VersionNumber.h */; };
+		AB3C655119818D9F00479C28 /* VersionNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3C654F19818D9F00479C28 /* VersionNumber.m */; };
+		AB4035A913D84C8100615F96 /* StringList.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4035A713D84C8100615F96 /* StringList.h */; };
+		AB4035AA13D84C8100615F96 /* StringList.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4035A813D84C8100615F96 /* StringList.m */; };
+		AB45CF30168B734C0046D28A /* DrugImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB45CF2E168B734C0046D28A /* DrugImagePickerController.h */; };
+		AB45CF31168B734C0046D28A /* DrugImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB45CF2F168B734C0046D28A /* DrugImagePickerController.m */; };
+		AB45CF34168BE5490046D28A /* UIDeviceHardware.h in Headers */ = {isa = PBXBuildFile; fileRef = AB45CF32168BE5490046D28A /* UIDeviceHardware.h */; };
+		AB45CF35168BE5490046D28A /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = AB45CF33168BE5490046D28A /* UIDeviceHardware.m */; };
+		AB470D0217AD540D00D7A83E /* ManagedDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB470D0017AD540D00D7A83E /* ManagedDrugDosage.h */; };
+		AB470D0317AD540D00D7A83E /* ManagedDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB470D0117AD540D00D7A83E /* ManagedDrugDosage.m */; };
+		AB47176D19D1CA8E00597B46 /* StringListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = AB47176B19D1CA8E00597B46 /* StringListItem.h */; };
+		AB47176E19D1CA8E00597B46 /* StringListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AB47176C19D1CA8E00597B46 /* StringListItem.m */; };
+		AB495E0813EA329C0016E008 /* ScheduleRepeatPeriodViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB495E0513EA329C0016E008 /* ScheduleRepeatPeriodViewController.h */; };
+		AB495E0913EA329C0016E008 /* ScheduleRepeatPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB495E0613EA329C0016E008 /* ScheduleRepeatPeriodViewController.m */; };
+		AB495E0A13EA329C0016E008 /* ScheduleRepeatPeriodViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB495E0713EA329C0016E008 /* ScheduleRepeatPeriodViewControllerDelegate.h */; };
+		AB498C961A16D1D400C96363 /* ContactsHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = AB498C941A16D1D400C96363 /* ContactsHelper.h */; };
+		AB498C971A16D1D400C96363 /* ContactsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB498C951A16D1D400C96363 /* ContactsHelper.m */; };
+		AB499F731A5375480060AA0E /* TimesSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = AB499F661A5375480060AA0E /* TimesSquare.h */; };
+		AB499F741A5375480060AA0E /* TSQCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AB499F671A5375480060AA0E /* TSQCalendarCell.h */; };
+		AB499F751A5375480060AA0E /* TSQCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB499F681A5375480060AA0E /* TSQCalendarCell.m */; };
+		AB499F761A5375480060AA0E /* TSQCalendarMonthHeaderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AB499F691A5375480060AA0E /* TSQCalendarMonthHeaderCell.h */; };
+		AB499F771A5375480060AA0E /* TSQCalendarMonthHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB499F6A1A5375480060AA0E /* TSQCalendarMonthHeaderCell.m */; };
+		AB499F781A5375480060AA0E /* TSQCalendarRowCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AB499F6B1A5375480060AA0E /* TSQCalendarRowCell.h */; };
+		AB499F791A5375480060AA0E /* TSQCalendarRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB499F6C1A5375480060AA0E /* TSQCalendarRowCell.m */; };
+		AB499F7A1A5375480060AA0E /* TSQCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB499F6D1A5375480060AA0E /* TSQCalendarView.h */; };
+		AB499F7B1A5375480060AA0E /* TSQCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB499F6E1A5375480060AA0E /* TSQCalendarView.m */; };
+		AB499F871A5395F90060AA0E /* TSQMonthPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB499F821A5395F90060AA0E /* TSQMonthPickerViewController.h */; };
+		AB499F881A5395F90060AA0E /* TSQMonthPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB499F831A5395F90060AA0E /* TSQMonthPickerViewController.m */; };
+		AB499F891A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.h in Headers */ = {isa = PBXBuildFile; fileRef = AB499F841A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.h */; };
+		AB499F8A1A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB499F851A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.m */; };
+		AB499F8B1A5395F90060AA0E /* TSQMonthPickerViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB499F861A5395F90060AA0E /* TSQMonthPickerViewControllerDelegate.h */; };
+		AB4C432A1595F92F00DADEE0 /* FlagDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4C43281595F92F00DADEE0 /* FlagDictionary.h */; };
+		AB4C432B1595F92F00DADEE0 /* FlagDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4C43291595F92F00DADEE0 /* FlagDictionary.m */; };
+		AB4C432D1595FD7E00DADEE0 /* DosecastAPIFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4C432C1595FD7E00DADEE0 /* DosecastAPIFlags.h */; };
+		AB4DC33F15DF014E00B22BB7 /* DosecastMainViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4DC33D15DF014E00B22BB7 /* DosecastMainViewController.h */; };
+		AB4DC34015DF014E00B22BB7 /* DosecastMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4DC33E15DF014E00B22BB7 /* DosecastMainViewController.m */; };
+		AB500B611A1466F90088202C /* SyncViewDevicesViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB500B601A1466F90088202C /* SyncViewDevicesViewControllerDelegate.h */; };
+		AB5578AF15C1BC0E003B37D1 /* DrugDosageUnitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5578AE15C1BC0E003B37D1 /* DrugDosageUnitManager.h */; };
+		AB60018B19C0F14E00FB9EB4 /* DosecastAPIImp.h in Headers */ = {isa = PBXBuildFile; fileRef = AB60018A19C0F14E00FB9EB4 /* DosecastAPIImp.h */; };
+		AB60D41419F84EBA00B3B305 /* GlobalSettingsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB60D41319F84EBA00B3B305 /* GlobalSettingsDelegate.h */; };
+		AB66961112CCD0A3009CC83D /* DebugLogEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = AB66960F12CCD0A3009CC83D /* DebugLogEvent.h */; };
+		AB66961212CCD0A3009CC83D /* DebugLogEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AB66961012CCD0A3009CC83D /* DebugLogEvent.m */; };
+		AB6B03AF164FD9CC0085861A /* DosecastKeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AB6B03AD164FD9CC0085861A /* DosecastKeychainItemWrapper.h */; };
+		AB6B03B0164FD9CC0085861A /* DosecastKeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6B03AE164FD9CC0085861A /* DosecastKeychainItemWrapper.m */; };
+		AB73A858125047DC00026004 /* AccountViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7B4125047DC00026004 /* AccountViewController.h */; };
+		AB73A859125047DC00026004 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7B5125047DC00026004 /* AccountViewController.m */; };
+		AB73A85A125047DC00026004 /* AccountViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7B6125047DC00026004 /* AccountViewControllerDelegate.h */; };
+		AB73A85B125047DC00026004 /* AsNeededDrugReminder.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7B7125047DC00026004 /* AsNeededDrugReminder.h */; };
+		AB73A85C125047DC00026004 /* AsNeededDrugReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7B8125047DC00026004 /* AsNeededDrugReminder.m */; };
+		AB73A85D125047DC00026004 /* BedtimePeriodViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7B9125047DC00026004 /* BedtimePeriodViewController.h */; };
+		AB73A85E125047DC00026004 /* BedtimePeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7BA125047DC00026004 /* BedtimePeriodViewController.m */; };
+		AB73A85F125047DC00026004 /* BedtimePeriodViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7BB125047DC00026004 /* BedtimePeriodViewControllerDelegate.h */; };
+		AB73A860125047DC00026004 /* BedtimeSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7BC125047DC00026004 /* BedtimeSettingsViewController.h */; };
+		AB73A861125047DC00026004 /* BedtimeSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7BD125047DC00026004 /* BedtimeSettingsViewController.m */; };
+		AB73A862125047DC00026004 /* BedtimeSettingsViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7BE125047DC00026004 /* BedtimeSettingsViewControllerDelegate.h */; };
+		AB73A866125047DC00026004 /* DataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7C2125047DC00026004 /* DataModel.h */; };
+		AB73A867125047DC00026004 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7C3125047DC00026004 /* DataModel.m */; };
+		AB73A868125047DC00026004 /* DataModelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7C4125047DC00026004 /* DataModelDelegate.h */; };
+		AB73A869125047DC00026004 /* DateTimePickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7C5125047DC00026004 /* DateTimePickerViewController.h */; };
+		AB73A86A125047DC00026004 /* DateTimePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7C6125047DC00026004 /* DateTimePickerViewController.m */; };
+		AB73A86B125047DC00026004 /* DateTimePickerViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7C7125047DC00026004 /* DateTimePickerViewControllerDelegate.h */; };
+		AB73A86C125047DC00026004 /* DosecastAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7C8125047DC00026004 /* DosecastAPI.h */; };
+		AB73A86D125047DC00026004 /* DosecastAPIImp.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7C9125047DC00026004 /* DosecastAPIImp.m */; };
+		AB73A86E125047DC00026004 /* DosecastAPIDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7CA125047DC00026004 /* DosecastAPIDelegate.h */; };
+		AB73A86F125047DC00026004 /* DropDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7CB125047DC00026004 /* DropDrugDosage.h */; };
+		AB73A870125047DC00026004 /* DropDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7CC125047DC00026004 /* DropDrugDosage.m */; };
+		AB73A871125047DC00026004 /* Drug.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7CD125047DC00026004 /* Drug.h */; };
+		AB73A872125047DC00026004 /* Drug.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7CE125047DC00026004 /* Drug.m */; };
+		AB73A875125047DC00026004 /* DrugAddEditViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7D1125047DC00026004 /* DrugAddEditViewControllerDelegate.h */; };
+		AB73A876125047DC00026004 /* DrugDosageQuantity.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7D2125047DC00026004 /* DrugDosageQuantity.h */; };
+		AB73A877125047DC00026004 /* DrugDosageQuantity.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7D3125047DC00026004 /* DrugDosageQuantity.m */; };
+		AB73A878125047DC00026004 /* DrugHistoryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7D4125047DC00026004 /* DrugHistoryViewController.h */; };
+		AB73A879125047DC00026004 /* DrugHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7D5125047DC00026004 /* DrugHistoryViewController.m */; };
+		AB73A87A125047DC00026004 /* DrugReminder.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7D6125047DC00026004 /* DrugReminder.h */; };
+		AB73A87B125047DC00026004 /* DrugReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7D7125047DC00026004 /* DrugReminder.m */; };
+		AB73A87C125047DC00026004 /* DrugViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7D8125047DC00026004 /* DrugViewController.h */; };
+		AB73A87D125047DC00026004 /* DrugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7D9125047DC00026004 /* DrugViewController.m */; };
+		AB73A87E125047DC00026004 /* HistoryDateEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7DA125047DC00026004 /* HistoryDateEvents.h */; };
+		AB73A87F125047DC00026004 /* HistoryDateEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7DB125047DC00026004 /* HistoryDateEvents.m */; };
+		AB73A880125047DC00026004 /* HistoryEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7DC125047DC00026004 /* HistoryEvent.h */; };
+		AB73A881125047DC00026004 /* HistoryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7DD125047DC00026004 /* HistoryEvent.m */; };
+		AB73A882125047DC00026004 /* HistoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7DE125047DC00026004 /* HistoryManager.h */; };
+		AB73A883125047DC00026004 /* HistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7DF125047DC00026004 /* HistoryManager.m */; };
+		AB73A884125047DC00026004 /* HTTPWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7E1125047DC00026004 /* HTTPWrapper.h */; };
+		AB73A885125047DC00026004 /* HTTPWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7E2125047DC00026004 /* HTTPWrapper.m */; };
+		AB73A886125047DC00026004 /* HTTPWrapperDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7E3125047DC00026004 /* HTTPWrapperDelegate.h */; };
+		AB73A887125047DC00026004 /* InhalerDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7E4125047DC00026004 /* InhalerDrugDosage.h */; };
+		AB73A888125047DC00026004 /* InhalerDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7E5125047DC00026004 /* InhalerDrugDosage.m */; };
+		AB73A889125047DC00026004 /* InjectionDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7E6125047DC00026004 /* InjectionDrugDosage.h */; };
+		AB73A88A125047DC00026004 /* InjectionDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7E7125047DC00026004 /* InjectionDrugDosage.m */; };
+		AB73A88B125047DC00026004 /* IntervalDrugReminder.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7E8125047DC00026004 /* IntervalDrugReminder.h */; };
+		AB73A88C125047DC00026004 /* IntervalDrugReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7E9125047DC00026004 /* IntervalDrugReminder.m */; };
+		AB73A88D125047DC00026004 /* IntervalPeriodViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7EA125047DC00026004 /* IntervalPeriodViewController.h */; };
+		AB73A88E125047DC00026004 /* IntervalPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7EB125047DC00026004 /* IntervalPeriodViewController.m */; };
+		AB73A88F125047DC00026004 /* IntervalPeriodViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7EC125047DC00026004 /* IntervalPeriodViewControllerDelegate.h */; };
+		AB73A890125047DC00026004 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7EE125047DC00026004 /* JSON.h */; };
+		AB73A891125047DC00026004 /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7EF125047DC00026004 /* NSObject+SBJSON.h */; };
+		AB73A892125047DC00026004 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7F0125047DC00026004 /* NSObject+SBJSON.m */; };
+		AB73A893125047DC00026004 /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7F1125047DC00026004 /* NSString+SBJSON.h */; };
+		AB73A894125047DC00026004 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7F2125047DC00026004 /* NSString+SBJSON.m */; };
+		AB73A897125047DC00026004 /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7F5125047DC00026004 /* SBJsonBase.h */; };
+		AB73A898125047DC00026004 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7F6125047DC00026004 /* SBJsonBase.m */; };
+		AB73A899125047DC00026004 /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7F7125047DC00026004 /* SBJsonParser.h */; };
+		AB73A89A125047DC00026004 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7F8125047DC00026004 /* SBJsonParser.m */; };
+		AB73A89B125047DC00026004 /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7F9125047DC00026004 /* SBJsonWriter.h */; };
+		AB73A89C125047DC00026004 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7FA125047DC00026004 /* SBJsonWriter.m */; };
+		AB73A89D125047DC00026004 /* JSONConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7FB125047DC00026004 /* JSONConverter.h */; };
+		AB73A89E125047DC00026004 /* JSONConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7FC125047DC00026004 /* JSONConverter.m */; };
+		AB73A89F125047DC00026004 /* LiquidDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7FD125047DC00026004 /* LiquidDrugDosage.h */; };
+		AB73A8A0125047DC00026004 /* LiquidDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A7FE125047DC00026004 /* LiquidDrugDosage.m */; };
+		AB73A8A1125047DC00026004 /* LocalNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A7FF125047DC00026004 /* LocalNotificationManager.h */; };
+		AB73A8A2125047DC00026004 /* LocalNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A800125047DC00026004 /* LocalNotificationManager.m */; };
+		AB73A8A6125047DC00026004 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A804125047DC00026004 /* NSData+Base64.h */; };
+		AB73A8A7125047DC00026004 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A805125047DC00026004 /* NSData+Base64.m */; };
+		AB73A8A8125047DC00026004 /* NumericPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A806125047DC00026004 /* NumericPickerViewController.h */; };
+		AB73A8A9125047DC00026004 /* NumericPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A807125047DC00026004 /* NumericPickerViewController.m */; };
+		AB73A8AA125047DC00026004 /* NumericPickerViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A808125047DC00026004 /* NumericPickerViewControllerDelegate.h */; };
+		AB73A8AB125047DC00026004 /* OintmentDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A809125047DC00026004 /* OintmentDrugDosage.h */; };
+		AB73A8AC125047DC00026004 /* OintmentDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A80A125047DC00026004 /* OintmentDrugDosage.m */; };
+		AB73A8AD125047DC00026004 /* PatchDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A80B125047DC00026004 /* PatchDrugDosage.h */; };
+		AB73A8AE125047DC00026004 /* PatchDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A80C125047DC00026004 /* PatchDrugDosage.m */; };
+		AB73A8AF125047DC00026004 /* PicklistViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A80D125047DC00026004 /* PicklistViewController.h */; };
+		AB73A8B0125047DC00026004 /* PicklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A80E125047DC00026004 /* PicklistViewController.m */; };
+		AB73A8B1125047DC00026004 /* PicklistViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A80F125047DC00026004 /* PicklistViewControllerDelegate.h */; };
+		AB73A8B4125047DC00026004 /* PillDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A812125047DC00026004 /* PillDrugDosage.h */; };
+		AB73A8B5125047DC00026004 /* PillDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A813125047DC00026004 /* PillDrugDosage.m */; };
+		AB73A8B6125047DC00026004 /* PillNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A814125047DC00026004 /* PillNotificationManager.h */; };
+		AB73A8B8125047DC00026004 /* PostponePillsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A816125047DC00026004 /* PostponePillsViewController.h */; };
+		AB73A8BA125047DC00026004 /* PostponePillsViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A818125047DC00026004 /* PostponePillsViewControllerDelegate.h */; };
+		AB73A8BD125047DC00026004 /* PurchaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A81B125047DC00026004 /* PurchaseManager.h */; };
+		AB73A8BE125047DC00026004 /* PurchaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A81C125047DC00026004 /* PurchaseManager.m */; };
+		AB73A8BF125047DC00026004 /* PurchaseManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A81D125047DC00026004 /* PurchaseManagerDelegate.h */; };
+		AB73A8C0125047DC00026004 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A81E125047DC00026004 /* Reachability.h */; };
+		AB73A8C1125047DC00026004 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A81F125047DC00026004 /* Reachability.m */; };
+		AB73A8C2125047DC00026004 /* ReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A820125047DC00026004 /* ReachabilityManager.h */; };
+		AB73A8C3125047DC00026004 /* ReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A821125047DC00026004 /* ReachabilityManager.m */; };
+		AB73A8C7125047DC00026004 /* ReminderAddEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A825125047DC00026004 /* ReminderAddEditViewController.h */; };
+		AB73A8C8125047DC00026004 /* ReminderAddEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A826125047DC00026004 /* ReminderAddEditViewController.m */; };
+		AB73A8C9125047DC00026004 /* ReminderAddEditViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A827125047DC00026004 /* ReminderAddEditViewControllerDelegate.h */; };
+		AB73A8CC125047DC00026004 /* ScheduledDrugReminder.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A82A125047DC00026004 /* ScheduledDrugReminder.h */; };
+		AB73A8CD125047DC00026004 /* ScheduledDrugReminder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A82B125047DC00026004 /* ScheduledDrugReminder.m */; };
+		AB73A8CE125047DC00026004 /* ServerProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A82C125047DC00026004 /* ServerProxy.h */; };
+		AB73A8CF125047DC00026004 /* ServerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A82D125047DC00026004 /* ServerProxy.m */; };
+		AB73A8D0125047DC00026004 /* ServerProxyDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A82E125047DC00026004 /* ServerProxyDelegate.h */; };
+		AB73A8D1125047DC00026004 /* SettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A82F125047DC00026004 /* SettingsViewController.h */; };
+		AB73A8D2125047DC00026004 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A830125047DC00026004 /* SettingsViewController.m */; };
+		AB73A8D3125047DC00026004 /* SkipPillsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A831125047DC00026004 /* SkipPillsViewController.h */; };
+		AB73A8D4125047DC00026004 /* SkipPillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A832125047DC00026004 /* SkipPillsViewController.m */; };
+		AB73A8D5125047DC00026004 /* SkipPillsViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A833125047DC00026004 /* SkipPillsViewControllerDelegate.h */; };
+		AB73A8D6125047DC00026004 /* SpinnerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A834125047DC00026004 /* SpinnerViewController.h */; };
+		AB73A8D7125047DC00026004 /* SpinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A835125047DC00026004 /* SpinnerViewController.m */; };
+		AB73A8D8125047DC00026004 /* SprayDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A836125047DC00026004 /* SprayDrugDosage.h */; };
+		AB73A8D9125047DC00026004 /* SprayDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A837125047DC00026004 /* SprayDrugDosage.m */; };
+		AB73A8DA125047DC00026004 /* TakePillsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A838125047DC00026004 /* TakePillsViewController.h */; };
+		AB73A8DB125047DC00026004 /* TakePillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A839125047DC00026004 /* TakePillsViewController.m */; };
+		AB73A8DC125047DC00026004 /* TakePillsViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A83A125047DC00026004 /* TakePillsViewControllerDelegate.h */; };
+		AB73A8E9125047DC00026004 /* TextEntryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A848125047DC00026004 /* TextEntryViewController.h */; };
+		AB73A8EA125047DC00026004 /* TextEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A849125047DC00026004 /* TextEntryViewController.m */; };
+		AB73A8EB125047DC00026004 /* TextEntryViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A84A125047DC00026004 /* TextEntryViewControllerDelegate.h */; };
+		AB73A8EC125047DC00026004 /* UIButton+Glossy.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A84B125047DC00026004 /* UIButton+Glossy.h */; };
+		AB73A8ED125047DC00026004 /* UIButton+Glossy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A84C125047DC00026004 /* UIButton+Glossy.m */; };
+		AB73A96D12504D8E00026004 /* DrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB73A96912504D8E00026004 /* DrugDosage.h */; };
+		AB73A96E12504D8E00026004 /* DrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB73A96A12504D8E00026004 /* DrugDosage.m */; };
+		AB8052AF15E3EA1100726160 /* ScheduleViewDose.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8052AD15E3EA1100726160 /* ScheduleViewDose.h */; };
+		AB8052B015E3EA1100726160 /* ScheduleViewDose.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8052AE15E3EA1100726160 /* ScheduleViewDose.m */; };
+		AB80F2A413DCD77700FE725C /* PicklistEditedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = AB80F2A213DCD77700FE725C /* PicklistEditedItem.h */; };
+		AB80F2A513DCD77700FE725C /* PicklistEditedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AB80F2A313DCD77700FE725C /* PicklistEditedItem.m */; };
+		AB82781113CD0838006BDB4C /* TimePeriodViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB82780E13CD0838006BDB4C /* TimePeriodViewController.h */; };
+		AB82781213CD0838006BDB4C /* TimePeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB82780F13CD0838006BDB4C /* TimePeriodViewController.m */; };
+		AB82781313CD0838006BDB4C /* TimePeriodViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB82781013CD0838006BDB4C /* TimePeriodViewControllerDelegate.h */; };
+		AB82783713CE31C2006BDB4C /* LateDoseSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB82783413CE31C1006BDB4C /* LateDoseSettingsViewController.h */; };
+		AB82783813CE31C2006BDB4C /* LateDoseSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB82783513CE31C1006BDB4C /* LateDoseSettingsViewController.m */; };
+		AB82783913CE31C2006BDB4C /* LateDoseSettingsViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB82783613CE31C1006BDB4C /* LateDoseSettingsViewControllerDelegate.h */; };
+		AB85193F15F6CB2E0050D4A5 /* DrugNameViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB85193C15F6CB2E0050D4A5 /* DrugNameViewController.h */; };
+		AB85194015F6CB2E0050D4A5 /* DrugNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB85193D15F6CB2E0050D4A5 /* DrugNameViewController.m */; };
+		AB85194115F6CB2E0050D4A5 /* DrugNameViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB85193E15F6CB2E0050D4A5 /* DrugNameViewControllerDelegate.h */; };
+		AB87185819254A6C00ABA405 /* CapletDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB87185619254A6C00ABA405 /* CapletDrugDosage.h */; };
+		AB87185919254A6C00ABA405 /* CapletDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB87185719254A6C00ABA405 /* CapletDrugDosage.m */; };
+		AB87185C192557D400ABA405 /* CapsuleDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB87185A192557D400ABA405 /* CapsuleDrugDosage.h */; };
+		AB87185D192557D400ABA405 /* CapsuleDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB87185B192557D400ABA405 /* CapsuleDrugDosage.m */; };
+		AB87186019255C1800ABA405 /* TabletDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB87185E19255C1800ABA405 /* TabletDrugDosage.h */; };
+		AB87186119255C1800ABA405 /* TabletDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB87185F19255C1800ABA405 /* TabletDrugDosage.m */; };
+		AB871864192562CA00ABA405 /* InfusionDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB871862192562CA00ABA405 /* InfusionDrugDosage.h */; };
+		AB871865192562CA00ABA405 /* InfusionDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB871863192562CA00ABA405 /* InfusionDrugDosage.m */; };
+		AB8718681926475D00ABA405 /* SuppositoryDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8718661926475D00ABA405 /* SuppositoryDrugDosage.h */; };
+		AB8718691926475D00ABA405 /* SuppositoryDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8718671926475D00ABA405 /* SuppositoryDrugDosage.m */; };
+		AB87186C192656FA00ABA405 /* PowderDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB87186A192656FA00ABA405 /* PowderDrugDosage.h */; };
+		AB87186D192656FA00ABA405 /* PowderDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB87186B192656FA00ABA405 /* PowderDrugDosage.m */; };
+		AB8A9570192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8A956D192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.h */; };
+		AB8A9571192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A956E192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.m */; };
+		AB8A9572192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8A956F192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewControllerDelegate.h */; };
+		AB98FA25193D018500D3BC96 /* Group.h in Headers */ = {isa = PBXBuildFile; fileRef = AB98FA23193D018500D3BC96 /* Group.h */; };
+		AB98FA26193D018500D3BC96 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = AB98FA24193D018500D3BC96 /* Group.m */; };
+		AB9D16D212AC8F6F0099966D /* DrugAddEditViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9D16D012AC8F6F0099966D /* DrugAddEditViewController.h */; };
+		AB9D16D312AC8F6F0099966D /* DrugAddEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9D16D112AC8F6F0099966D /* DrugAddEditViewController.m */; };
+		ABA2F60E159628150030C817 /* DosecastCoreTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA2F60D159628150030C817 /* DosecastCoreTypes.h */; };
+		ABA886C2131AF134004E4D89 /* HistoryAddEditEventViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA886C0131AF134004E4D89 /* HistoryAddEditEventViewController.h */; };
+		ABA886C3131AF134004E4D89 /* HistoryAddEditEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA886C1131AF134004E4D89 /* HistoryAddEditEventViewController.m */; };
+		ABA886C5131AF1D2004E4D89 /* HistoryAddEditEventViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA886C4131AF1D2004E4D89 /* HistoryAddEditEventViewControllerDelegate.h */; };
+		ABAD4B2E192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAD4B2B192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.h */; };
+		ABAD4B2F192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAD4B2C192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.m */; };
+		ABAD4B30192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAD4B2D192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewControllerDelegate.h */; };
+		ABAFC4BE13DA241400B5648D /* AddressBookContact.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAFC4BC13DA23FA00B5648D /* AddressBookContact.h */; };
+		ABAFC4BF13DA241400B5648D /* AddressBookContact.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAFC4BD13DA240800B5648D /* AddressBookContact.m */; };
+		ABB14CEB15CE1469000AF6C4 /* ChecklistViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB14CE815CE1469000AF6C4 /* ChecklistViewController.h */; };
+		ABB14CEC15CE1469000AF6C4 /* ChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB14CE915CE1469000AF6C4 /* ChecklistViewController.m */; };
+		ABB14CED15CE1469000AF6C4 /* ChecklistViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB14CEA15CE1469000AF6C4 /* ChecklistViewControllerDelegate.h */; };
+		ABB25CD41A56F90B007216EB /* DosecastAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB25CD11A56F90B007216EB /* DosecastAlertController.h */; };
+		ABB25CD51A56F90B007216EB /* DosecastAlertControllerImp.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB25CD21A56F90B007216EB /* DosecastAlertControllerImp.h */; };
+		ABB25CD61A56F90B007216EB /* DosecastAlertControllerImp.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB25CD31A56F90B007216EB /* DosecastAlertControllerImp.m */; };
+		ABB25CD91A56FBDD007216EB /* DosecastAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB25CD71A56FBDD007216EB /* DosecastAlertAction.h */; };
+		ABB25CDA1A56FBDD007216EB /* DosecastAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB25CD81A56FBDD007216EB /* DosecastAlertAction.m */; };
+		ABBB503515D806FA00FC269C /* TakePillHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBB503315D806FA00FC269C /* TakePillHandler.h */; };
+		ABBB503615D806FA00FC269C /* TakePillHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBB503415D806FA00FC269C /* TakePillHandler.m */; };
+		ABBB503C15D82C0B00FC269C /* SkipPillHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBB503915D82C0A00FC269C /* SkipPillHandler.h */; };
+		ABBB503D15D82C0B00FC269C /* SkipPillHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBB503A15D82C0B00FC269C /* SkipPillHandler.m */; };
+		ABBB503E15D82C0C00FC269C /* SkipPillHandlerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBB503B15D82C0B00FC269C /* SkipPillHandlerDelegate.h */; };
+		ABBB504215D837BD00FC269C /* PostponePillHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBB503F15D837BB00FC269C /* PostponePillHandler.h */; };
+		ABBB504315D837BD00FC269C /* PostponePillHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBB504015D837BB00FC269C /* PostponePillHandler.m */; };
+		ABBB504415D837BD00FC269C /* PostponePillHandlerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBB504115D837BC00FC269C /* PostponePillHandlerDelegate.h */; };
+		ABBE2CE8131202F900882193 /* EditableHistoryEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = ABBE2CE6131202F900882193 /* EditableHistoryEvent.h */; };
+		ABBE2CE9131202F900882193 /* EditableHistoryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE2CE7131202F900882193 /* EditableHistoryEvent.m */; };
+		ABC6336519D5F8B7005DA662 /* DosecastLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC6336419D5F8B7005DA662 /* DosecastLocalNotification.m */; };
+		ABC6336719D5F8F2005DA662 /* DosecastLocalNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC6336619D5F8F2005DA662 /* DosecastLocalNotification.h */; };
+		ABC6F76C19FAA6A20030D914 /* AddressBookContactDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC6F76B19FAA6A20030D914 /* AddressBookContactDelegate.h */; };
+		ABC8FF7119F6FAA100561201 /* PreferencesItem.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC8FF6F19F6FAA100561201 /* PreferencesItem.h */; };
+		ABC8FF7219F6FAA100561201 /* PreferencesItem.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC8FF7019F6FAA100561201 /* PreferencesItem.m */; };
+		ABC8FF7519F7069300561201 /* Preferences.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC8FF7319F7069300561201 /* Preferences.h */; };
+		ABC8FF7619F7069300561201 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC8FF7419F7069300561201 /* Preferences.m */; };
+		ABCE1B1612D29C750049308D /* DrugViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCE1B1512D29C750049308D /* DrugViewControllerDelegate.h */; };
+		ABD4F77215E19BCB00324C09 /* DosecastScheduleViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD4F77015E19BCB00324C09 /* DosecastScheduleViewController.h */; };
+		ABD4F77315E19BCB00324C09 /* DosecastScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD4F77115E19BCB00324C09 /* DosecastScheduleViewController.m */; };
+		ABD4F97215E1D80900324C09 /* ScheduleViewDoseTime.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD4F97015E1D80100324C09 /* ScheduleViewDoseTime.h */; };
+		ABD4F97315E1D80900324C09 /* ScheduleViewDoseTime.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD4F97115E1D80400324C09 /* ScheduleViewDoseTime.m */; };
+		ABD7E3061A6AAB59003C9639 /* BarButtonDisabler.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD7E3041A6AAB59003C9639 /* BarButtonDisabler.h */; };
+		ABD7E3071A6AAB59003C9639 /* BarButtonDisabler.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD7E3051A6AAB59003C9639 /* BarButtonDisabler.m */; };
+		ABDA75C214B49D5100246870 /* ReminderSound.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDA75C014B49D5100246870 /* ReminderSound.h */; };
+		ABDA75C314B49D5100246870 /* ReminderSound.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDA75C114B49D5100246870 /* ReminderSound.m */; };
+		ABDE2EE513E0BD5600B2CE37 /* CustomDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDE2EE313E0BD5200B2CE37 /* CustomDrugDosage.h */; };
+		ABDE2EE613E0BD5600B2CE37 /* CustomDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDE2EE413E0BD5400B2CE37 /* CustomDrugDosage.m */; };
+		ABDE2EE913E240F000B2CE37 /* CustomNameIDList.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDE2EE713E240C500B2CE37 /* CustomNameIDList.h */; };
+		ABDE2EEA13E240F000B2CE37 /* CustomNameIDList.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDE2EE813E240E800B2CE37 /* CustomNameIDList.m */; };
+		ABDE384F12732DBD00BB33D2 /* PillNotificationManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDE384E12732DBD00BB33D2 /* PillNotificationManagerDelegate.h */; };
+		ABDE3B0012747DF000BB33D2 /* MessagePanelViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABDE3AFE12747DF000BB33D2 /* MessagePanelViewController.h */; };
+		ABDE3B0112747DF000BB33D2 /* MessagePanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDE3AFF12747DF000BB33D2 /* MessagePanelViewController.m */; };
+		ABE198B915DC8E3B0000B579 /* MedApplyLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE198A915DC8E3B0000B579 /* MedApplyLocation.h */; };
+		ABE198BA15DC8E3B0000B579 /* MedApplyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE198AA15DC8E3B0000B579 /* MedApplyLocation.m */; };
+		ABE198BB15DC8E3B0000B579 /* MedDoseUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE198AB15DC8E3B0000B579 /* MedDoseUnit.h */; };
+		ABE198BC15DC8E3B0000B579 /* MedDoseUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE198AC15DC8E3B0000B579 /* MedDoseUnit.m */; };
+		ABE198BF15DC8E3B0000B579 /* MedFormType.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE198AF15DC8E3B0000B579 /* MedFormType.h */; };
+		ABE198C015DC8E3B0000B579 /* MedFormType.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE198B015DC8E3B0000B579 /* MedFormType.m */; };
+		ABE198C115DC8E3B0000B579 /* Medication.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE198B115DC8E3B0000B579 /* Medication.h */; };
+		ABE198C215DC8E3B0000B579 /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE198B215DC8E3B0000B579 /* Medication.m */; };
+		ABE198C315DC8E3B0000B579 /* MedicationRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE198B315DC8E3B0000B579 /* MedicationRoute.h */; };
+		ABE198C415DC8E3B0000B579 /* MedicationRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE198B415DC8E3B0000B579 /* MedicationRoute.m */; };
+		ABE198C515DC8E3B0000B579 /* MedicationUpdateDate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE198B515DC8E3B0000B579 /* MedicationUpdateDate.h */; };
+		ABE198C615DC8E3B0000B579 /* MedicationUpdateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE198B615DC8E3B0000B579 /* MedicationUpdateDate.m */; };
+		ABE198C715DC8E3B0000B579 /* MedStrengthUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE198B715DC8E3B0000B579 /* MedStrengthUnit.h */; };
+		ABE198C815DC8E3B0000B579 /* MedStrengthUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE198B815DC8E3B0000B579 /* MedStrengthUnit.m */; };
+		ABE5AF0F1288ED5900E0BDC3 /* PillNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AF0D1288ED5900E0BDC3 /* PillNotificationManager.m */; };
+		ABE5AF101288ED5900E0BDC3 /* PostponePillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AF0E1288ED5900E0BDC3 /* PostponePillsViewController.m */; };
+		ABE6322A16276B8300B965F8 /* DosecastDrugsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE6322816276B8300B965F8 /* DosecastDrugsViewController.h */; };
+		ABE6322B16276B8300B965F8 /* DosecastDrugsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE6322916276B8300B965F8 /* DosecastDrugsViewController.m */; };
+		ABE8029B17CF9B730088E314 /* DrugReminderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE8029A17CF9B730088E314 /* DrugReminderDelegate.h */; };
+		ABEB142B126B5A4600A5FE93 /* DrugDosageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEB1429126B5A4600A5FE93 /* DrugDosageManager.h */; };
+		ABEB142C126B5A4600A5FE93 /* DrugDosageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEB142A126B5A4600A5FE93 /* DrugDosageManager.m */; };
+		ABEB1445126B5F3500A5FE93 /* DrugDosageManagerEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = ABEB1443126B5F3500A5FE93 /* DrugDosageManagerEntry.h */; };
+		ABEB1446126B5F3500A5FE93 /* DrugDosageManagerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEB1444126B5F3500A5FE93 /* DrugDosageManagerEntry.m */; };
+		ABECA3E714D58A430015B679 /* BooleanViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABECA3E414D58A430015B679 /* BooleanViewController.h */; };
+		ABECA3E814D58A430015B679 /* BooleanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECA3E514D58A430015B679 /* BooleanViewController.m */; };
+		ABECA3E914D58A430015B679 /* BooleanViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABECA3E614D58A430015B679 /* BooleanViewControllerDelegate.h */; };
+		ABF077D71A011FB500C9B3C9 /* SyncAddDeviceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF077D51A011FB500C9B3C9 /* SyncAddDeviceViewController.h */; };
+		ABF077D81A011FB500C9B3C9 /* SyncAddDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF077D61A011FB500C9B3C9 /* SyncAddDeviceViewController.m */; };
+		ABF077E31A01484600C9B3C9 /* SyncMoveDeviceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF077E11A01484600C9B3C9 /* SyncMoveDeviceViewController.h */; };
+		ABF077E41A01484600C9B3C9 /* SyncMoveDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF077E21A01484600C9B3C9 /* SyncMoveDeviceViewController.m */; };
+		ABF077E71A0168D800C9B3C9 /* SyncDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF077E51A0168D800C9B3C9 /* SyncDevice.h */; };
+		ABF077E81A0168D800C9B3C9 /* SyncDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF077E61A0168D800C9B3C9 /* SyncDevice.m */; };
+		ABF077F31A01759A00C9B3C9 /* SyncViewDevicesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF077F11A01759A00C9B3C9 /* SyncViewDevicesViewController.h */; };
+		ABF077F41A01759A00C9B3C9 /* SyncViewDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF077F21A01759A00C9B3C9 /* SyncViewDevicesViewController.m */; };
+		ABF504AF178BA77B0034E76C /* LocalNotificationManagerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF504AE178BA7750034E76C /* LocalNotificationManagerDelegate.h */; };
+		ABF504CB178C883F0034E76C /* PillAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF504C8178C883D0034E76C /* PillAlertViewController.h */; };
+		ABF504CC178C883F0034E76C /* PillAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF504C9178C883D0034E76C /* PillAlertViewController.m */; };
+		ABF504CD178C883F0034E76C /* PillAlertViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF504CA178C883E0034E76C /* PillAlertViewControllerDelegate.h */; };
+		ABF864F1192A7D8F00BEF736 /* ViewDeleteGroupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF864EE192A7D8F00BEF736 /* ViewDeleteGroupViewController.h */; };
+		ABF864F2192A7D8F00BEF736 /* ViewDeleteGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF864EF192A7D8F00BEF736 /* ViewDeleteGroupViewController.m */; };
+		ABF864F3192A7D8F00BEF736 /* ViewDeleteGroupViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF864F0192A7D8F00BEF736 /* ViewDeleteGroupViewControllerDelegate.h */; };
+		ABFFEAF9141C48540069F4C0 /* DosecastDataFile.h in Headers */ = {isa = PBXBuildFile; fileRef = ABFFEAF7141C48540069F4C0 /* DosecastDataFile.h */; };
+		ABFFEAFA141C48550069F4C0 /* DosecastDataFile.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEAF8141C48540069F4C0 /* DosecastDataFile.m */; };
+		ABFFEAFD141C56E80069F4C0 /* DosecastDBDataFile.h in Headers */ = {isa = PBXBuildFile; fileRef = ABFFEAFB141C56E80069F4C0 /* DosecastDBDataFile.h */; };
+		ABFFEAFE141C56E80069F4C0 /* DosecastDBDataFile.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFFEAFC141C56E80069F4C0 /* DosecastDBDataFile.m */; };
+		B65FAD63161105C70013316C /* DrugChooseImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B65FAD60161105C60013316C /* DrugChooseImageViewController.h */; };
+		B65FAD64161105C70013316C /* DrugChooseImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B65FAD61161105C60013316C /* DrugChooseImageViewController.m */; };
+		B6959BF716161CFD00CA40C4 /* UIImage+Alpha.h in Headers */ = {isa = PBXBuildFile; fileRef = B6959BF316161CFD00CA40C4 /* UIImage+Alpha.h */; };
+		B6959BF816161CFD00CA40C4 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = B6959BF416161CFD00CA40C4 /* UIImage+Alpha.m */; };
+		B6959BF916161CFD00CA40C4 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = B6959BF516161CFD00CA40C4 /* UIImage+Resize.h */; };
+		B6959BFA16161CFD00CA40C4 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = B6959BF616161CFD00CA40C4 /* UIImage+Resize.m */; };
+		B6959BFD16161EF300CA40C4 /* UIImage+RoundedCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = B6959BFB16161EF300CA40C4 /* UIImage+RoundedCorner.h */; };
+		B6959BFE16161EF300CA40C4 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = B6959BFC16161EF300CA40C4 /* UIImage+RoundedCorner.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2910D7D2160A205000418824 /* DrugPermutationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugPermutationsViewController.h; sourceTree = "<group>"; };
+		2910D7D3160A205000418824 /* DrugPermutationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugPermutationsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		29367815161AA22E008E2D52 /* DrugImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrugImageManager.h; path = DrugImage/DrugImageManager.h; sourceTree = "<group>"; };
+		29367816161AA22E008E2D52 /* DrugImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrugImageManager.m; path = DrugImage/DrugImageManager.m; sourceTree = "<group>"; };
+		29367819161AA26F008E2D52 /* DrugImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrugImage.h; path = DrugImage/DrugImage.h; sourceTree = "<group>"; };
+		2936781A161AA26F008E2D52 /* DrugImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrugImage.m; path = DrugImage/DrugImage.m; sourceTree = "<group>"; };
+		294985D01600631E0008430D /* MedicationConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedicationConstants.h; sourceTree = "<group>"; };
+		299A572D15EEF93900E8600F /* EventLogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventLogEntry.h; sourceTree = "<group>"; };
+		299A572E15EEF93900E8600F /* EventLogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventLogEntry.m; sourceTree = "<group>"; };
+		299A572F15EEF93900E8600F /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
+		299A573015EEF93900E8600F /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
+		29E0614615F8FCF200FF92F8 /* MedicationSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationSearchManager.h; sourceTree = "<group>"; };
+		29E0614715F8FCF200FF92F8 /* MedicationSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationSearchManager.m; sourceTree = "<group>"; };
+		29F0D15916113906006BD07D /* PermutationSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermutationSearchResult.h; sourceTree = "<group>"; };
+		29F0D15A16113906006BD07D /* PermutationSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermutationSearchResult.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* Dosecast_API_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dosecast_API_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB011B951400108700AC6F9D /* DoseLimitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoseLimitViewController.h; sourceTree = "<group>"; };
+		AB011B961400108700AC6F9D /* DoseLimitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DoseLimitViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB011B971400108700AC6F9D /* DoseLimitViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoseLimitViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB10B55D15EB1A6300280917 /* DrugDatabaseSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugDatabaseSearchController.h; sourceTree = "<group>"; };
+		AB10B55E15EB1A6300280917 /* DrugDatabaseSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugDatabaseSearchController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB10B55F15EB1A6300280917 /* DrugDatabaseSearchControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugDatabaseSearchControllerDelegate.h; sourceTree = "<group>"; };
+		AB1DF971127E4EAD0055C1D8 /* GlobalSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GlobalSettings.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB1DF972127E4EAD0055C1D8 /* GlobalSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GlobalSettings.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB1DF9BF127E6C3C0055C1D8 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		AB1DF9C0127E6C3C0055C1D8 /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ProgressViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB259A2B1597B5BA00ED9B0D /* DosecastUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DosecastUtil.m; sourceTree = "<group>"; };
+		AB259A2E1597B5D600ED9B0D /* DosecastUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastUtil.h; sourceTree = "<group>"; };
+		AB2EED1415C0F4B00003451F /* DrugDosageUnitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugDosageUnitManager.m; sourceTree = "<group>"; };
+		AB2EED1715C0F7CC0003451F /* DrugDosageUnitManagerEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugDosageUnitManagerEntry.h; sourceTree = "<group>"; };
+		AB2EED1815C0F7CC0003451F /* DrugDosageUnitManagerEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugDosageUnitManagerEntry.m; sourceTree = "<group>"; };
+		AB30EA3415FD5523001F425E /* DatabaseDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseDrugDosage.h; sourceTree = "<group>"; };
+		AB30EA3515FD5523001F425E /* DatabaseDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseDrugDosage.m; sourceTree = "<group>"; };
+		AB3C654E19818D9F00479C28 /* VersionNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionNumber.h; sourceTree = "<group>"; };
+		AB3C654F19818D9F00479C28 /* VersionNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionNumber.m; sourceTree = "<group>"; };
+		AB4035A713D84C8100615F96 /* StringList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringList.h; sourceTree = "<group>"; };
+		AB4035A813D84C8100615F96 /* StringList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringList.m; sourceTree = "<group>"; };
+		AB45CF2E168B734C0046D28A /* DrugImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugImagePickerController.h; sourceTree = "<group>"; };
+		AB45CF2F168B734C0046D28A /* DrugImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugImagePickerController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB45CF32168BE5490046D28A /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceHardware.h; sourceTree = "<group>"; };
+		AB45CF33168BE5490046D28A /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceHardware.m; sourceTree = "<group>"; };
+		AB470D0017AD540D00D7A83E /* ManagedDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagedDrugDosage.h; sourceTree = "<group>"; };
+		AB470D0117AD540D00D7A83E /* ManagedDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagedDrugDosage.m; sourceTree = "<group>"; };
+		AB47176B19D1CA8E00597B46 /* StringListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringListItem.h; sourceTree = "<group>"; };
+		AB47176C19D1CA8E00597B46 /* StringListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringListItem.m; sourceTree = "<group>"; };
+		AB495E0513EA329C0016E008 /* ScheduleRepeatPeriodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleRepeatPeriodViewController.h; sourceTree = "<group>"; };
+		AB495E0613EA329C0016E008 /* ScheduleRepeatPeriodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleRepeatPeriodViewController.m; sourceTree = "<group>"; };
+		AB495E0713EA329C0016E008 /* ScheduleRepeatPeriodViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleRepeatPeriodViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB498C941A16D1D400C96363 /* ContactsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsHelper.h; sourceTree = "<group>"; };
+		AB498C951A16D1D400C96363 /* ContactsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsHelper.m; sourceTree = "<group>"; };
+		AB499F661A5375480060AA0E /* TimesSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimesSquare.h; sourceTree = "<group>"; };
+		AB499F671A5375480060AA0E /* TSQCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarCell.h; sourceTree = "<group>"; };
+		AB499F681A5375480060AA0E /* TSQCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQCalendarCell.m; sourceTree = "<group>"; };
+		AB499F691A5375480060AA0E /* TSQCalendarMonthHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarMonthHeaderCell.h; sourceTree = "<group>"; };
+		AB499F6A1A5375480060AA0E /* TSQCalendarMonthHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQCalendarMonthHeaderCell.m; sourceTree = "<group>"; };
+		AB499F6B1A5375480060AA0E /* TSQCalendarRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarRowCell.h; sourceTree = "<group>"; };
+		AB499F6C1A5375480060AA0E /* TSQCalendarRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQCalendarRowCell.m; sourceTree = "<group>"; };
+		AB499F6D1A5375480060AA0E /* TSQCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarView.h; sourceTree = "<group>"; };
+		AB499F6E1A5375480060AA0E /* TSQCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQCalendarView.m; sourceTree = "<group>"; };
+		AB499F821A5395F90060AA0E /* TSQMonthPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQMonthPickerViewController.h; sourceTree = "<group>"; };
+		AB499F831A5395F90060AA0E /* TSQMonthPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQMonthPickerViewController.m; sourceTree = "<group>"; };
+		AB499F841A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQMonthPickerViewControllerCalendarRowCell.h; sourceTree = "<group>"; };
+		AB499F851A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQMonthPickerViewControllerCalendarRowCell.m; sourceTree = "<group>"; };
+		AB499F861A5395F90060AA0E /* TSQMonthPickerViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQMonthPickerViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB4C43281595F92F00DADEE0 /* FlagDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlagDictionary.h; sourceTree = "<group>"; };
+		AB4C43291595F92F00DADEE0 /* FlagDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlagDictionary.m; sourceTree = "<group>"; };
+		AB4C432C1595FD7E00DADEE0 /* DosecastAPIFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastAPIFlags.h; sourceTree = "<group>"; };
+		AB4DC33D15DF014E00B22BB7 /* DosecastMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastMainViewController.h; sourceTree = "<group>"; };
+		AB4DC33E15DF014E00B22BB7 /* DosecastMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DosecastMainViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB500B601A1466F90088202C /* SyncViewDevicesViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncViewDevicesViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB5578AE15C1BC0E003B37D1 /* DrugDosageUnitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugDosageUnitManager.h; sourceTree = "<group>"; };
+		AB60018A19C0F14E00FB9EB4 /* DosecastAPIImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastAPIImp.h; sourceTree = "<group>"; };
+		AB60D41319F84EBA00B3B305 /* GlobalSettingsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSettingsDelegate.h; sourceTree = "<group>"; };
+		AB66960F12CCD0A3009CC83D /* DebugLogEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLogEvent.h; sourceTree = "<group>"; };
+		AB66961012CCD0A3009CC83D /* DebugLogEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLogEvent.m; sourceTree = "<group>"; };
+		AB6B03AD164FD9CC0085861A /* DosecastKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastKeychainItemWrapper.h; sourceTree = "<group>"; };
+		AB6B03AE164FD9CC0085861A /* DosecastKeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DosecastKeychainItemWrapper.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7B4125047DC00026004 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		AB73A7B5125047DC00026004 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AccountViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7B6125047DC00026004 /* AccountViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A7B7125047DC00026004 /* AsNeededDrugReminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsNeededDrugReminder.h; sourceTree = "<group>"; };
+		AB73A7B8125047DC00026004 /* AsNeededDrugReminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AsNeededDrugReminder.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7B9125047DC00026004 /* BedtimePeriodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BedtimePeriodViewController.h; sourceTree = "<group>"; };
+		AB73A7BA125047DC00026004 /* BedtimePeriodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BedtimePeriodViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7BB125047DC00026004 /* BedtimePeriodViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BedtimePeriodViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A7BC125047DC00026004 /* BedtimeSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BedtimeSettingsViewController.h; sourceTree = "<group>"; };
+		AB73A7BD125047DC00026004 /* BedtimeSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BedtimeSettingsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7BE125047DC00026004 /* BedtimeSettingsViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BedtimeSettingsViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A7C2125047DC00026004 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DataModel.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB73A7C3125047DC00026004 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DataModel.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7C4125047DC00026004 /* DataModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModelDelegate.h; sourceTree = "<group>"; };
+		AB73A7C5125047DC00026004 /* DateTimePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimePickerViewController.h; sourceTree = "<group>"; };
+		AB73A7C6125047DC00026004 /* DateTimePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DateTimePickerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7C7125047DC00026004 /* DateTimePickerViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimePickerViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A7C8125047DC00026004 /* DosecastAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastAPI.h; sourceTree = "<group>"; };
+		AB73A7C9125047DC00026004 /* DosecastAPIImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DosecastAPIImp.m; sourceTree = "<group>"; };
+		AB73A7CA125047DC00026004 /* DosecastAPIDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastAPIDelegate.h; sourceTree = "<group>"; };
+		AB73A7CB125047DC00026004 /* DropDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDrugDosage.h; sourceTree = "<group>"; };
+		AB73A7CC125047DC00026004 /* DropDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DropDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7CD125047DC00026004 /* Drug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Drug.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB73A7CE125047DC00026004 /* Drug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drug.m; sourceTree = "<group>"; };
+		AB73A7D1125047DC00026004 /* DrugAddEditViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DrugAddEditViewControllerDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB73A7D2125047DC00026004 /* DrugDosageQuantity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DrugDosageQuantity.h; sourceTree = "<group>"; };
+		AB73A7D3125047DC00026004 /* DrugDosageQuantity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugDosageQuantity.m; sourceTree = "<group>"; };
+		AB73A7D4125047DC00026004 /* DrugHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DrugHistoryViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB73A7D5125047DC00026004 /* DrugHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugHistoryViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7D6125047DC00026004 /* DrugReminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugReminder.h; sourceTree = "<group>"; };
+		AB73A7D7125047DC00026004 /* DrugReminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugReminder.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7D8125047DC00026004 /* DrugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugViewController.h; sourceTree = "<group>"; };
+		AB73A7D9125047DC00026004 /* DrugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7DA125047DC00026004 /* HistoryDateEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDateEvents.h; sourceTree = "<group>"; };
+		AB73A7DB125047DC00026004 /* HistoryDateEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDateEvents.m; sourceTree = "<group>"; };
+		AB73A7DC125047DC00026004 /* HistoryEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryEvent.h; sourceTree = "<group>"; };
+		AB73A7DD125047DC00026004 /* HistoryEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryEvent.m; sourceTree = "<group>"; };
+		AB73A7DE125047DC00026004 /* HistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryManager.h; sourceTree = "<group>"; };
+		AB73A7DF125047DC00026004 /* HistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryManager.m; sourceTree = "<group>"; };
+		AB73A7E1125047DC00026004 /* HTTPWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPWrapper.h; sourceTree = "<group>"; };
+		AB73A7E2125047DC00026004 /* HTTPWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPWrapper.m; sourceTree = "<group>"; };
+		AB73A7E3125047DC00026004 /* HTTPWrapperDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPWrapperDelegate.h; sourceTree = "<group>"; };
+		AB73A7E4125047DC00026004 /* InhalerDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InhalerDrugDosage.h; sourceTree = "<group>"; };
+		AB73A7E5125047DC00026004 /* InhalerDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = InhalerDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7E6125047DC00026004 /* InjectionDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InjectionDrugDosage.h; sourceTree = "<group>"; };
+		AB73A7E7125047DC00026004 /* InjectionDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = InjectionDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7E8125047DC00026004 /* IntervalDrugReminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalDrugReminder.h; sourceTree = "<group>"; };
+		AB73A7E9125047DC00026004 /* IntervalDrugReminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntervalDrugReminder.m; sourceTree = "<group>"; };
+		AB73A7EA125047DC00026004 /* IntervalPeriodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalPeriodViewController.h; sourceTree = "<group>"; };
+		AB73A7EB125047DC00026004 /* IntervalPeriodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = IntervalPeriodViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7EC125047DC00026004 /* IntervalPeriodViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalPeriodViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A7EE125047DC00026004 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		AB73A7EF125047DC00026004 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		AB73A7F0125047DC00026004 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		AB73A7F1125047DC00026004 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		AB73A7F2125047DC00026004 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		AB73A7F5125047DC00026004 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		AB73A7F6125047DC00026004 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SBJsonBase.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7F7125047DC00026004 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		AB73A7F8125047DC00026004 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		AB73A7F9125047DC00026004 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		AB73A7FA125047DC00026004 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SBJsonWriter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7FB125047DC00026004 /* JSONConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONConverter.h; sourceTree = "<group>"; };
+		AB73A7FC125047DC00026004 /* JSONConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = JSONConverter.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7FD125047DC00026004 /* LiquidDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiquidDrugDosage.h; sourceTree = "<group>"; };
+		AB73A7FE125047DC00026004 /* LiquidDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LiquidDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A7FF125047DC00026004 /* LocalNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationManager.h; sourceTree = "<group>"; };
+		AB73A800125047DC00026004 /* LocalNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LocalNotificationManager.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A804125047DC00026004 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		AB73A805125047DC00026004 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		AB73A806125047DC00026004 /* NumericPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericPickerViewController.h; sourceTree = "<group>"; };
+		AB73A807125047DC00026004 /* NumericPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = NumericPickerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A808125047DC00026004 /* NumericPickerViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericPickerViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A809125047DC00026004 /* OintmentDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OintmentDrugDosage.h; sourceTree = "<group>"; };
+		AB73A80A125047DC00026004 /* OintmentDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = OintmentDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A80B125047DC00026004 /* PatchDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatchDrugDosage.h; sourceTree = "<group>"; };
+		AB73A80C125047DC00026004 /* PatchDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PatchDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A80D125047DC00026004 /* PicklistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicklistViewController.h; sourceTree = "<group>"; };
+		AB73A80E125047DC00026004 /* PicklistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PicklistViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A80F125047DC00026004 /* PicklistViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicklistViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A812125047DC00026004 /* PillDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillDrugDosage.h; sourceTree = "<group>"; };
+		AB73A813125047DC00026004 /* PillDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PillDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A814125047DC00026004 /* PillNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillNotificationManager.h; sourceTree = "<group>"; };
+		AB73A816125047DC00026004 /* PostponePillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostponePillsViewController.h; sourceTree = "<group>"; };
+		AB73A818125047DC00026004 /* PostponePillsViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostponePillsViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A81B125047DC00026004 /* PurchaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseManager.h; sourceTree = "<group>"; };
+		AB73A81C125047DC00026004 /* PurchaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseManager.m; sourceTree = "<group>"; };
+		AB73A81D125047DC00026004 /* PurchaseManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseManagerDelegate.h; sourceTree = "<group>"; };
+		AB73A81E125047DC00026004 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AB73A81F125047DC00026004 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AB73A820125047DC00026004 /* ReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityManager.h; sourceTree = "<group>"; };
+		AB73A821125047DC00026004 /* ReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityManager.m; sourceTree = "<group>"; };
+		AB73A825125047DC00026004 /* ReminderAddEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderAddEditViewController.h; sourceTree = "<group>"; };
+		AB73A826125047DC00026004 /* ReminderAddEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ReminderAddEditViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A827125047DC00026004 /* ReminderAddEditViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderAddEditViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A82A125047DC00026004 /* ScheduledDrugReminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduledDrugReminder.h; sourceTree = "<group>"; };
+		AB73A82B125047DC00026004 /* ScheduledDrugReminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduledDrugReminder.m; sourceTree = "<group>"; };
+		AB73A82C125047DC00026004 /* ServerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerProxy.h; sourceTree = "<group>"; };
+		AB73A82D125047DC00026004 /* ServerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ServerProxy.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A82E125047DC00026004 /* ServerProxyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerProxyDelegate.h; sourceTree = "<group>"; };
+		AB73A82F125047DC00026004 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		AB73A830125047DC00026004 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SettingsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A831125047DC00026004 /* SkipPillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipPillsViewController.h; sourceTree = "<group>"; };
+		AB73A832125047DC00026004 /* SkipPillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SkipPillsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A833125047DC00026004 /* SkipPillsViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipPillsViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A834125047DC00026004 /* SpinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerViewController.h; sourceTree = "<group>"; };
+		AB73A835125047DC00026004 /* SpinnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SpinnerViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A836125047DC00026004 /* SprayDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SprayDrugDosage.h; sourceTree = "<group>"; };
+		AB73A837125047DC00026004 /* SprayDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SprayDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A838125047DC00026004 /* TakePillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePillsViewController.h; sourceTree = "<group>"; };
+		AB73A839125047DC00026004 /* TakePillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TakePillsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A83A125047DC00026004 /* TakePillsViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePillsViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A848125047DC00026004 /* TextEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEntryViewController.h; sourceTree = "<group>"; };
+		AB73A849125047DC00026004 /* TextEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TextEntryViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73A84A125047DC00026004 /* TextEntryViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEntryViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB73A84B125047DC00026004 /* UIButton+Glossy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Glossy.h"; sourceTree = "<group>"; };
+		AB73A84C125047DC00026004 /* UIButton+Glossy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Glossy.m"; sourceTree = "<group>"; };
+		AB73A96912504D8E00026004 /* DrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DrugDosage.h; sourceTree = "<group>"; };
+		AB73A96A12504D8E00026004 /* DrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB73AB52125052E000026004 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB73AB54125052E900026004 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AB73AB56125052F000026004 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AB73AB58125052F800026004 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AB73AB5A125052FE00026004 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AB73AB5C1250530700026004 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AB73AB5E1250531000026004 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AB73AB601250531500026004 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB8052AD15E3EA1100726160 /* ScheduleViewDose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewDose.h; sourceTree = "<group>"; };
+		AB8052AE15E3EA1100726160 /* ScheduleViewDose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewDose.m; sourceTree = "<group>"; };
+		AB80F2A213DCD77700FE725C /* PicklistEditedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicklistEditedItem.h; sourceTree = "<group>"; };
+		AB80F2A313DCD77700FE725C /* PicklistEditedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicklistEditedItem.m; sourceTree = "<group>"; };
+		AB82780E13CD0838006BDB4C /* TimePeriodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePeriodViewController.h; sourceTree = "<group>"; };
+		AB82780F13CD0838006BDB4C /* TimePeriodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePeriodViewController.m; sourceTree = "<group>"; };
+		AB82781013CD0838006BDB4C /* TimePeriodViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePeriodViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB82783413CE31C1006BDB4C /* LateDoseSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LateDoseSettingsViewController.h; sourceTree = "<group>"; };
+		AB82783513CE31C1006BDB4C /* LateDoseSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = LateDoseSettingsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB82783613CE31C1006BDB4C /* LateDoseSettingsViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LateDoseSettingsViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB85193C15F6CB2E0050D4A5 /* DrugNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugNameViewController.h; sourceTree = "<group>"; };
+		AB85193D15F6CB2E0050D4A5 /* DrugNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugNameViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB85193E15F6CB2E0050D4A5 /* DrugNameViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugNameViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB87185619254A6C00ABA405 /* CapletDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapletDrugDosage.h; sourceTree = "<group>"; };
+		AB87185719254A6C00ABA405 /* CapletDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapletDrugDosage.m; sourceTree = "<group>"; };
+		AB87185A192557D400ABA405 /* CapsuleDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CapsuleDrugDosage.h; sourceTree = "<group>"; };
+		AB87185B192557D400ABA405 /* CapsuleDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CapsuleDrugDosage.m; sourceTree = "<group>"; };
+		AB87185E19255C1800ABA405 /* TabletDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabletDrugDosage.h; sourceTree = "<group>"; };
+		AB87185F19255C1800ABA405 /* TabletDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabletDrugDosage.m; sourceTree = "<group>"; };
+		AB871862192562CA00ABA405 /* InfusionDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfusionDrugDosage.h; sourceTree = "<group>"; };
+		AB871863192562CA00ABA405 /* InfusionDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfusionDrugDosage.m; sourceTree = "<group>"; };
+		AB8718661926475D00ABA405 /* SuppositoryDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuppositoryDrugDosage.h; sourceTree = "<group>"; };
+		AB8718671926475D00ABA405 /* SuppositoryDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuppositoryDrugDosage.m; sourceTree = "<group>"; };
+		AB87186A192656FA00ABA405 /* PowderDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowderDrugDosage.h; sourceTree = "<group>"; };
+		AB87186B192656FA00ABA405 /* PowderDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowderDrugDosage.m; sourceTree = "<group>"; };
+		AB8A956D192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinGroupEnterGroupNameViewController.h; sourceTree = "<group>"; };
+		AB8A956E192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinGroupEnterGroupNameViewController.m; sourceTree = "<group>"; };
+		AB8A956F192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinGroupEnterGroupNameViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB98FA23193D018500D3BC96 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		AB98FA24193D018500D3BC96 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		AB9D16D012AC8F6F0099966D /* DrugAddEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DrugAddEditViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB9D16D112AC8F6F0099966D /* DrugAddEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugAddEditViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABA2F60D159628150030C817 /* DosecastCoreTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DosecastCoreTypes.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		ABA886C0131AF134004E4D89 /* HistoryAddEditEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryAddEditEventViewController.h; sourceTree = "<group>"; };
+		ABA886C1131AF134004E4D89 /* HistoryAddEditEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = HistoryAddEditEventViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABA886C4131AF1D2004E4D89 /* HistoryAddEditEventViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryAddEditEventViewControllerDelegate.h; sourceTree = "<group>"; };
+		ABAD4B2B192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinGroupEnterPasswordViewController.h; sourceTree = "<group>"; };
+		ABAD4B2C192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinGroupEnterPasswordViewController.m; sourceTree = "<group>"; };
+		ABAD4B2D192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinGroupEnterPasswordViewControllerDelegate.h; sourceTree = "<group>"; };
+		ABAFC4BC13DA23FA00B5648D /* AddressBookContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookContact.h; sourceTree = "<group>"; };
+		ABAFC4BD13DA240800B5648D /* AddressBookContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookContact.m; sourceTree = "<group>"; };
+		ABB14CE815CE1469000AF6C4 /* ChecklistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistViewController.h; sourceTree = "<group>"; };
+		ABB14CE915CE1469000AF6C4 /* ChecklistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChecklistViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABB14CEA15CE1469000AF6C4 /* ChecklistViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistViewControllerDelegate.h; sourceTree = "<group>"; };
+		ABB25CD11A56F90B007216EB /* DosecastAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastAlertController.h; sourceTree = "<group>"; };
+		ABB25CD21A56F90B007216EB /* DosecastAlertControllerImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastAlertControllerImp.h; sourceTree = "<group>"; };
+		ABB25CD31A56F90B007216EB /* DosecastAlertControllerImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DosecastAlertControllerImp.m; sourceTree = "<group>"; };
+		ABB25CD71A56FBDD007216EB /* DosecastAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastAlertAction.h; sourceTree = "<group>"; };
+		ABB25CD81A56FBDD007216EB /* DosecastAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DosecastAlertAction.m; sourceTree = "<group>"; };
+		ABBB503315D806FA00FC269C /* TakePillHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakePillHandler.h; sourceTree = "<group>"; };
+		ABBB503415D806FA00FC269C /* TakePillHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakePillHandler.m; sourceTree = "<group>"; };
+		ABBB503815D808A800FC269C /* TakePillHandlerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TakePillHandlerDelegate.h; sourceTree = "<group>"; };
+		ABBB503915D82C0A00FC269C /* SkipPillHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipPillHandler.h; sourceTree = "<group>"; };
+		ABBB503A15D82C0B00FC269C /* SkipPillHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipPillHandler.m; sourceTree = "<group>"; };
+		ABBB503B15D82C0B00FC269C /* SkipPillHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkipPillHandlerDelegate.h; sourceTree = "<group>"; };
+		ABBB503F15D837BB00FC269C /* PostponePillHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostponePillHandler.h; sourceTree = "<group>"; };
+		ABBB504015D837BB00FC269C /* PostponePillHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostponePillHandler.m; sourceTree = "<group>"; };
+		ABBB504115D837BC00FC269C /* PostponePillHandlerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostponePillHandlerDelegate.h; sourceTree = "<group>"; };
+		ABBE2CE6131202F900882193 /* EditableHistoryEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditableHistoryEvent.h; sourceTree = "<group>"; };
+		ABBE2CE7131202F900882193 /* EditableHistoryEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditableHistoryEvent.m; sourceTree = "<group>"; };
+		ABC6336419D5F8B7005DA662 /* DosecastLocalNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DosecastLocalNotification.m; sourceTree = "<group>"; };
+		ABC6336619D5F8F2005DA662 /* DosecastLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastLocalNotification.h; sourceTree = "<group>"; };
+		ABC6F76B19FAA6A20030D914 /* AddressBookContactDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookContactDelegate.h; sourceTree = "<group>"; };
+		ABC8FF6F19F6FAA100561201 /* PreferencesItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesItem.h; sourceTree = "<group>"; };
+		ABC8FF7019F6FAA100561201 /* PreferencesItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesItem.m; sourceTree = "<group>"; };
+		ABC8FF7319F7069300561201 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
+		ABC8FF7419F7069300561201 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
+		ABCE1B1512D29C750049308D /* DrugViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugViewControllerDelegate.h; sourceTree = "<group>"; };
+		ABD4F77015E19BCB00324C09 /* DosecastScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastScheduleViewController.h; sourceTree = "<group>"; };
+		ABD4F77115E19BCB00324C09 /* DosecastScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DosecastScheduleViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABD4F97015E1D80100324C09 /* ScheduleViewDoseTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewDoseTime.h; sourceTree = "<group>"; };
+		ABD4F97115E1D80400324C09 /* ScheduleViewDoseTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewDoseTime.m; sourceTree = "<group>"; };
+		ABD7E3041A6AAB59003C9639 /* BarButtonDisabler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarButtonDisabler.h; sourceTree = "<group>"; };
+		ABD7E3051A6AAB59003C9639 /* BarButtonDisabler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarButtonDisabler.m; sourceTree = "<group>"; };
+		ABDA75C014B49D5100246870 /* ReminderSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderSound.h; sourceTree = "<group>"; };
+		ABDA75C114B49D5100246870 /* ReminderSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderSound.m; sourceTree = "<group>"; };
+		ABDE2EE313E0BD5200B2CE37 /* CustomDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDrugDosage.h; sourceTree = "<group>"; };
+		ABDE2EE413E0BD5400B2CE37 /* CustomDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CustomDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABDE2EE713E240C500B2CE37 /* CustomNameIDList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNameIDList.h; sourceTree = "<group>"; };
+		ABDE2EE813E240E800B2CE37 /* CustomNameIDList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNameIDList.m; sourceTree = "<group>"; };
+		ABDE384E12732DBD00BB33D2 /* PillNotificationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillNotificationManagerDelegate.h; sourceTree = "<group>"; };
+		ABDE3AFE12747DF000BB33D2 /* MessagePanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePanelViewController.h; sourceTree = "<group>"; };
+		ABDE3AFF12747DF000BB33D2 /* MessagePanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MessagePanelViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABE198A915DC8E3B0000B579 /* MedApplyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MedApplyLocation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		ABE198AA15DC8E3B0000B579 /* MedApplyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MedApplyLocation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABE198AB15DC8E3B0000B579 /* MedDoseUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MedDoseUnit.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		ABE198AC15DC8E3B0000B579 /* MedDoseUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MedDoseUnit.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABE198AF15DC8E3B0000B579 /* MedFormType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MedFormType.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		ABE198B015DC8E3B0000B579 /* MedFormType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedFormType.m; sourceTree = "<group>"; };
+		ABE198B115DC8E3B0000B579 /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
+		ABE198B215DC8E3B0000B579 /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
+		ABE198B315DC8E3B0000B579 /* MedicationRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationRoute.h; sourceTree = "<group>"; };
+		ABE198B415DC8E3B0000B579 /* MedicationRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationRoute.m; sourceTree = "<group>"; };
+		ABE198B515DC8E3B0000B579 /* MedicationUpdateDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationUpdateDate.h; sourceTree = "<group>"; };
+		ABE198B615DC8E3B0000B579 /* MedicationUpdateDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationUpdateDate.m; sourceTree = "<group>"; };
+		ABE198B715DC8E3B0000B579 /* MedStrengthUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedStrengthUnit.h; sourceTree = "<group>"; };
+		ABE198B815DC8E3B0000B579 /* MedStrengthUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedStrengthUnit.m; sourceTree = "<group>"; };
+		ABE5AF0D1288ED5900E0BDC3 /* PillNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillNotificationManager.m; sourceTree = "<group>"; };
+		ABE5AF0E1288ED5900E0BDC3 /* PostponePillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PostponePillsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABE6322816276B8300B965F8 /* DosecastDrugsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastDrugsViewController.h; sourceTree = "<group>"; };
+		ABE6322916276B8300B965F8 /* DosecastDrugsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DosecastDrugsViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABE8029A17CF9B730088E314 /* DrugReminderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugReminderDelegate.h; sourceTree = "<group>"; };
+		ABEB1429126B5A4600A5FE93 /* DrugDosageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugDosageManager.h; sourceTree = "<group>"; };
+		ABEB142A126B5A4600A5FE93 /* DrugDosageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugDosageManager.m; sourceTree = "<group>"; };
+		ABEB1443126B5F3500A5FE93 /* DrugDosageManagerEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugDosageManagerEntry.h; sourceTree = "<group>"; };
+		ABEB1444126B5F3500A5FE93 /* DrugDosageManagerEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrugDosageManagerEntry.m; sourceTree = "<group>"; };
+		ABECA3E414D58A430015B679 /* BooleanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanViewController.h; sourceTree = "<group>"; };
+		ABECA3E514D58A430015B679 /* BooleanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BooleanViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABECA3E614D58A430015B679 /* BooleanViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanViewControllerDelegate.h; sourceTree = "<group>"; };
+		ABF077D51A011FB500C9B3C9 /* SyncAddDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncAddDeviceViewController.h; sourceTree = "<group>"; };
+		ABF077D61A011FB500C9B3C9 /* SyncAddDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncAddDeviceViewController.m; sourceTree = "<group>"; };
+		ABF077E11A01484600C9B3C9 /* SyncMoveDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncMoveDeviceViewController.h; sourceTree = "<group>"; };
+		ABF077E21A01484600C9B3C9 /* SyncMoveDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncMoveDeviceViewController.m; sourceTree = "<group>"; };
+		ABF077E51A0168D800C9B3C9 /* SyncDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncDevice.h; sourceTree = "<group>"; };
+		ABF077E61A0168D800C9B3C9 /* SyncDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncDevice.m; sourceTree = "<group>"; };
+		ABF077F11A01759A00C9B3C9 /* SyncViewDevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncViewDevicesViewController.h; sourceTree = "<group>"; };
+		ABF077F21A01759A00C9B3C9 /* SyncViewDevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncViewDevicesViewController.m; sourceTree = "<group>"; };
+		ABF504AE178BA7750034E76C /* LocalNotificationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationManagerDelegate.h; sourceTree = "<group>"; };
+		ABF504C8178C883D0034E76C /* PillAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillAlertViewController.h; sourceTree = "<group>"; };
+		ABF504C9178C883D0034E76C /* PillAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillAlertViewController.m; sourceTree = "<group>"; };
+		ABF504CA178C883E0034E76C /* PillAlertViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillAlertViewControllerDelegate.h; sourceTree = "<group>"; };
+		ABF864EE192A7D8F00BEF736 /* ViewDeleteGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDeleteGroupViewController.h; sourceTree = "<group>"; };
+		ABF864EF192A7D8F00BEF736 /* ViewDeleteGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewDeleteGroupViewController.m; sourceTree = "<group>"; };
+		ABF864F0192A7D8F00BEF736 /* ViewDeleteGroupViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDeleteGroupViewControllerDelegate.h; sourceTree = "<group>"; };
+		ABFFEAF7141C48540069F4C0 /* DosecastDataFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastDataFile.h; sourceTree = "<group>"; };
+		ABFFEAF8141C48540069F4C0 /* DosecastDataFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DosecastDataFile.m; sourceTree = "<group>"; };
+		ABFFEAFB141C56E80069F4C0 /* DosecastDBDataFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastDBDataFile.h; sourceTree = "<group>"; };
+		ABFFEAFC141C56E80069F4C0 /* DosecastDBDataFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DosecastDBDataFile.m; sourceTree = "<group>"; };
+		B65FAD60161105C60013316C /* DrugChooseImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugChooseImageViewController.h; sourceTree = "<group>"; };
+		B65FAD61161105C60013316C /* DrugChooseImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DrugChooseImageViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		B6959BF316161CFD00CA40C4 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		B6959BF416161CFD00CA40C4 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		B6959BF516161CFD00CA40C4 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		B6959BF616161CFD00CA40C4 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		B6959BFB16161EF300CA40C4 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		B6959BFC16161EF300CA40C4 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* libDosecast_API.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDosecast_API.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libDosecast_API.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Dosecast-API */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = "Dosecast-API";
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB73AB52125052E000026004 /* UIKit.framework */,
+				AB73AB54125052E900026004 /* CoreGraphics.framework */,
+				AB73AB56125052F000026004 /* AudioToolbox.framework */,
+				AB73AB58125052F800026004 /* SystemConfiguration.framework */,
+				AB73AB5A125052FE00026004 /* StoreKit.framework */,
+				AB73AB5C1250530700026004 /* QuartzCore.framework */,
+				AB73AB5E1250531000026004 /* MessageUI.framework */,
+				AB73AB601250531500026004 /* CoreData.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB4C43251595F7B600DADEE0 /* API Interface */,
+				AB4C43271595F7C100DADEE0 /* API Implementation */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		29367813161AA202008E2D52 /* DrugImage */ = {
+			isa = PBXGroup;
+			children = (
+				29367819161AA26F008E2D52 /* DrugImage.h */,
+				2936781A161AA26F008E2D52 /* DrugImage.m */,
+				29367815161AA22E008E2D52 /* DrugImageManager.h */,
+				29367816161AA22E008E2D52 /* DrugImageManager.m */,
+			);
+			name = DrugImage;
+			sourceTree = "<group>";
+		};
+		299A572C15EEF93900E8600F /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				299A572D15EEF93900E8600F /* EventLogEntry.h */,
+				299A572E15EEF93900E8600F /* EventLogEntry.m */,
+				299A572F15EEF93900E8600F /* LogManager.h */,
+				299A573015EEF93900E8600F /* LogManager.m */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B6959BF116161CDD00CA40C4 /* UIImage Categories */,
+				AA747D9E0F9514B9006C5449 /* Dosecast_API_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		AB499F651A5375480060AA0E /* TimesSquare */ = {
+			isa = PBXGroup;
+			children = (
+				AB499F661A5375480060AA0E /* TimesSquare.h */,
+				AB499F671A5375480060AA0E /* TSQCalendarCell.h */,
+				AB499F681A5375480060AA0E /* TSQCalendarCell.m */,
+				AB499F691A5375480060AA0E /* TSQCalendarMonthHeaderCell.h */,
+				AB499F6A1A5375480060AA0E /* TSQCalendarMonthHeaderCell.m */,
+				AB499F6B1A5375480060AA0E /* TSQCalendarRowCell.h */,
+				AB499F6C1A5375480060AA0E /* TSQCalendarRowCell.m */,
+				AB499F6D1A5375480060AA0E /* TSQCalendarView.h */,
+				AB499F6E1A5375480060AA0E /* TSQCalendarView.m */,
+				AB499F821A5395F90060AA0E /* TSQMonthPickerViewController.h */,
+				AB499F831A5395F90060AA0E /* TSQMonthPickerViewController.m */,
+				AB499F861A5395F90060AA0E /* TSQMonthPickerViewControllerDelegate.h */,
+				AB499F841A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.h */,
+				AB499F851A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.m */,
+			);
+			path = TimesSquare;
+			sourceTree = "<group>";
+		};
+		AB4C43251595F7B600DADEE0 /* API Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AB73A7C8125047DC00026004 /* DosecastAPI.h */,
+				AB4C432C1595FD7E00DADEE0 /* DosecastAPIFlags.h */,
+				AB73A7CA125047DC00026004 /* DosecastAPIDelegate.h */,
+				ABB25CD11A56F90B007216EB /* DosecastAlertController.h */,
+				ABB25CD71A56FBDD007216EB /* DosecastAlertAction.h */,
+				ABA2F60D159628150030C817 /* DosecastCoreTypes.h */,
+				AB259A2E1597B5D600ED9B0D /* DosecastUtil.h */,
+				AB73A96912504D8E00026004 /* DrugDosage.h */,
+				ABEB1429126B5A4600A5FE93 /* DrugDosageManager.h */,
+				AB73A7D2125047DC00026004 /* DrugDosageQuantity.h */,
+				AB5578AE15C1BC0E003B37D1 /* DrugDosageUnitManager.h */,
+				AB1DF9BF127E6C3C0055C1D8 /* ProgressViewController.h */,
+				AB73A834125047DC00026004 /* SpinnerViewController.h */,
+			);
+			name = "API Interface";
+			sourceTree = "<group>";
+		};
+		AB4C43271595F7C100DADEE0 /* API Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				29367813161AA202008E2D52 /* DrugImage */,
+				299A572C15EEF93900E8600F /* Logging */,
+				AB73A7E0125047DC00026004 /* HTTPWrapper */,
+				AB73A7ED125047DC00026004 /* JSON */,
+				ABE198A815DC8E3B0000B579 /* MedicationDB */,
+				AB499F651A5375480060AA0E /* TimesSquare */,
+				AB73A7B4125047DC00026004 /* AccountViewController.h */,
+				AB73A7B5125047DC00026004 /* AccountViewController.m */,
+				AB73A7B6125047DC00026004 /* AccountViewControllerDelegate.h */,
+				ABAFC4BC13DA23FA00B5648D /* AddressBookContact.h */,
+				ABAFC4BD13DA240800B5648D /* AddressBookContact.m */,
+				ABC6F76B19FAA6A20030D914 /* AddressBookContactDelegate.h */,
+				AB73A7B7125047DC00026004 /* AsNeededDrugReminder.h */,
+				AB73A7B8125047DC00026004 /* AsNeededDrugReminder.m */,
+				ABD7E3041A6AAB59003C9639 /* BarButtonDisabler.h */,
+				ABD7E3051A6AAB59003C9639 /* BarButtonDisabler.m */,
+				AB73A7B9125047DC00026004 /* BedtimePeriodViewController.h */,
+				AB73A7BA125047DC00026004 /* BedtimePeriodViewController.m */,
+				AB73A7BB125047DC00026004 /* BedtimePeriodViewControllerDelegate.h */,
+				AB73A7BC125047DC00026004 /* BedtimeSettingsViewController.h */,
+				AB73A7BD125047DC00026004 /* BedtimeSettingsViewController.m */,
+				AB73A7BE125047DC00026004 /* BedtimeSettingsViewControllerDelegate.h */,
+				ABECA3E414D58A430015B679 /* BooleanViewController.h */,
+				ABECA3E514D58A430015B679 /* BooleanViewController.m */,
+				ABECA3E614D58A430015B679 /* BooleanViewControllerDelegate.h */,
+				AB87185619254A6C00ABA405 /* CapletDrugDosage.h */,
+				AB87185719254A6C00ABA405 /* CapletDrugDosage.m */,
+				AB87185A192557D400ABA405 /* CapsuleDrugDosage.h */,
+				AB87185B192557D400ABA405 /* CapsuleDrugDosage.m */,
+				ABB14CE815CE1469000AF6C4 /* ChecklistViewController.h */,
+				ABB14CE915CE1469000AF6C4 /* ChecklistViewController.m */,
+				ABB14CEA15CE1469000AF6C4 /* ChecklistViewControllerDelegate.h */,
+				AB498C941A16D1D400C96363 /* ContactsHelper.h */,
+				AB498C951A16D1D400C96363 /* ContactsHelper.m */,
+				ABDE2EE313E0BD5200B2CE37 /* CustomDrugDosage.h */,
+				ABDE2EE413E0BD5400B2CE37 /* CustomDrugDosage.m */,
+				ABDE2EE713E240C500B2CE37 /* CustomNameIDList.h */,
+				ABDE2EE813E240E800B2CE37 /* CustomNameIDList.m */,
+				AB30EA3415FD5523001F425E /* DatabaseDrugDosage.h */,
+				AB30EA3515FD5523001F425E /* DatabaseDrugDosage.m */,
+				AB73A7C2125047DC00026004 /* DataModel.h */,
+				AB73A7C3125047DC00026004 /* DataModel.m */,
+				AB73A7C4125047DC00026004 /* DataModelDelegate.h */,
+				AB73A7C5125047DC00026004 /* DateTimePickerViewController.h */,
+				AB73A7C6125047DC00026004 /* DateTimePickerViewController.m */,
+				AB73A7C7125047DC00026004 /* DateTimePickerViewControllerDelegate.h */,
+				AB66960F12CCD0A3009CC83D /* DebugLogEvent.h */,
+				AB66961012CCD0A3009CC83D /* DebugLogEvent.m */,
+				ABB25CD21A56F90B007216EB /* DosecastAlertControllerImp.h */,
+				ABB25CD31A56F90B007216EB /* DosecastAlertControllerImp.m */,
+				ABB25CD81A56FBDD007216EB /* DosecastAlertAction.m */,
+				AB60018A19C0F14E00FB9EB4 /* DosecastAPIImp.h */,
+				AB73A7C9125047DC00026004 /* DosecastAPIImp.m */,
+				ABFFEAF7141C48540069F4C0 /* DosecastDataFile.h */,
+				ABFFEAF8141C48540069F4C0 /* DosecastDataFile.m */,
+				ABFFEAFB141C56E80069F4C0 /* DosecastDBDataFile.h */,
+				ABFFEAFC141C56E80069F4C0 /* DosecastDBDataFile.m */,
+				ABE6322816276B8300B965F8 /* DosecastDrugsViewController.h */,
+				ABE6322916276B8300B965F8 /* DosecastDrugsViewController.m */,
+				AB6B03AD164FD9CC0085861A /* DosecastKeychainItemWrapper.h */,
+				AB6B03AE164FD9CC0085861A /* DosecastKeychainItemWrapper.m */,
+				ABC6336619D5F8F2005DA662 /* DosecastLocalNotification.h */,
+				ABC6336419D5F8B7005DA662 /* DosecastLocalNotification.m */,
+				AB4DC33D15DF014E00B22BB7 /* DosecastMainViewController.h */,
+				AB4DC33E15DF014E00B22BB7 /* DosecastMainViewController.m */,
+				ABD4F77015E19BCB00324C09 /* DosecastScheduleViewController.h */,
+				ABD4F77115E19BCB00324C09 /* DosecastScheduleViewController.m */,
+				AB259A2B1597B5BA00ED9B0D /* DosecastUtil.m */,
+				AB011B951400108700AC6F9D /* DoseLimitViewController.h */,
+				AB011B961400108700AC6F9D /* DoseLimitViewController.m */,
+				AB011B971400108700AC6F9D /* DoseLimitViewControllerDelegate.h */,
+				AB73A7CB125047DC00026004 /* DropDrugDosage.h */,
+				AB73A7CC125047DC00026004 /* DropDrugDosage.m */,
+				AB73A7CD125047DC00026004 /* Drug.h */,
+				AB73A7CE125047DC00026004 /* Drug.m */,
+				AB9D16D012AC8F6F0099966D /* DrugAddEditViewController.h */,
+				AB9D16D112AC8F6F0099966D /* DrugAddEditViewController.m */,
+				AB73A7D1125047DC00026004 /* DrugAddEditViewControllerDelegate.h */,
+				B65FAD60161105C60013316C /* DrugChooseImageViewController.h */,
+				B65FAD61161105C60013316C /* DrugChooseImageViewController.m */,
+				AB10B55D15EB1A6300280917 /* DrugDatabaseSearchController.h */,
+				AB10B55E15EB1A6300280917 /* DrugDatabaseSearchController.m */,
+				AB10B55F15EB1A6300280917 /* DrugDatabaseSearchControllerDelegate.h */,
+				AB73A96A12504D8E00026004 /* DrugDosage.m */,
+				ABEB142A126B5A4600A5FE93 /* DrugDosageManager.m */,
+				ABEB1443126B5F3500A5FE93 /* DrugDosageManagerEntry.h */,
+				ABEB1444126B5F3500A5FE93 /* DrugDosageManagerEntry.m */,
+				AB73A7D3125047DC00026004 /* DrugDosageQuantity.m */,
+				AB2EED1415C0F4B00003451F /* DrugDosageUnitManager.m */,
+				AB2EED1715C0F7CC0003451F /* DrugDosageUnitManagerEntry.h */,
+				AB2EED1815C0F7CC0003451F /* DrugDosageUnitManagerEntry.m */,
+				AB73A7D4125047DC00026004 /* DrugHistoryViewController.h */,
+				AB73A7D5125047DC00026004 /* DrugHistoryViewController.m */,
+				AB45CF2E168B734C0046D28A /* DrugImagePickerController.h */,
+				AB45CF2F168B734C0046D28A /* DrugImagePickerController.m */,
+				AB85193C15F6CB2E0050D4A5 /* DrugNameViewController.h */,
+				AB85193D15F6CB2E0050D4A5 /* DrugNameViewController.m */,
+				AB85193E15F6CB2E0050D4A5 /* DrugNameViewControllerDelegate.h */,
+				AB73A7D6125047DC00026004 /* DrugReminder.h */,
+				AB73A7D7125047DC00026004 /* DrugReminder.m */,
+				ABE8029A17CF9B730088E314 /* DrugReminderDelegate.h */,
+				AB73A7D8125047DC00026004 /* DrugViewController.h */,
+				AB73A7D9125047DC00026004 /* DrugViewController.m */,
+				ABCE1B1512D29C750049308D /* DrugViewControllerDelegate.h */,
+				ABBE2CE6131202F900882193 /* EditableHistoryEvent.h */,
+				ABBE2CE7131202F900882193 /* EditableHistoryEvent.m */,
+				AB4C43281595F92F00DADEE0 /* FlagDictionary.h */,
+				AB4C43291595F92F00DADEE0 /* FlagDictionary.m */,
+				AB1DF971127E4EAD0055C1D8 /* GlobalSettings.h */,
+				AB1DF972127E4EAD0055C1D8 /* GlobalSettings.m */,
+				AB60D41319F84EBA00B3B305 /* GlobalSettingsDelegate.h */,
+				AB98FA23193D018500D3BC96 /* Group.h */,
+				AB98FA24193D018500D3BC96 /* Group.m */,
+				ABA886C0131AF134004E4D89 /* HistoryAddEditEventViewController.h */,
+				ABA886C1131AF134004E4D89 /* HistoryAddEditEventViewController.m */,
+				ABA886C4131AF1D2004E4D89 /* HistoryAddEditEventViewControllerDelegate.h */,
+				AB73A7DA125047DC00026004 /* HistoryDateEvents.h */,
+				AB73A7DB125047DC00026004 /* HistoryDateEvents.m */,
+				AB73A7DC125047DC00026004 /* HistoryEvent.h */,
+				AB73A7DD125047DC00026004 /* HistoryEvent.m */,
+				AB73A7DE125047DC00026004 /* HistoryManager.h */,
+				AB73A7DF125047DC00026004 /* HistoryManager.m */,
+				AB871862192562CA00ABA405 /* InfusionDrugDosage.h */,
+				AB871863192562CA00ABA405 /* InfusionDrugDosage.m */,
+				AB73A7E4125047DC00026004 /* InhalerDrugDosage.h */,
+				AB73A7E5125047DC00026004 /* InhalerDrugDosage.m */,
+				AB73A7E6125047DC00026004 /* InjectionDrugDosage.h */,
+				AB73A7E7125047DC00026004 /* InjectionDrugDosage.m */,
+				AB73A7E8125047DC00026004 /* IntervalDrugReminder.h */,
+				AB73A7E9125047DC00026004 /* IntervalDrugReminder.m */,
+				AB73A7EA125047DC00026004 /* IntervalPeriodViewController.h */,
+				AB73A7EB125047DC00026004 /* IntervalPeriodViewController.m */,
+				AB73A7EC125047DC00026004 /* IntervalPeriodViewControllerDelegate.h */,
+				AB8A956D192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.h */,
+				AB8A956E192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.m */,
+				AB8A956F192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewControllerDelegate.h */,
+				ABAD4B2B192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.h */,
+				ABAD4B2C192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.m */,
+				ABAD4B2D192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewControllerDelegate.h */,
+				AB73A7FB125047DC00026004 /* JSONConverter.h */,
+				AB73A7FC125047DC00026004 /* JSONConverter.m */,
+				AB82783413CE31C1006BDB4C /* LateDoseSettingsViewController.h */,
+				AB82783513CE31C1006BDB4C /* LateDoseSettingsViewController.m */,
+				AB82783613CE31C1006BDB4C /* LateDoseSettingsViewControllerDelegate.h */,
+				AB73A7FD125047DC00026004 /* LiquidDrugDosage.h */,
+				AB73A7FE125047DC00026004 /* LiquidDrugDosage.m */,
+				ABF504AE178BA7750034E76C /* LocalNotificationManagerDelegate.h */,
+				AB73A7FF125047DC00026004 /* LocalNotificationManager.h */,
+				AB73A800125047DC00026004 /* LocalNotificationManager.m */,
+				AB470D0017AD540D00D7A83E /* ManagedDrugDosage.h */,
+				AB470D0117AD540D00D7A83E /* ManagedDrugDosage.m */,
+				ABDE3AFE12747DF000BB33D2 /* MessagePanelViewController.h */,
+				ABDE3AFF12747DF000BB33D2 /* MessagePanelViewController.m */,
+				AB73A804125047DC00026004 /* NSData+Base64.h */,
+				AB73A805125047DC00026004 /* NSData+Base64.m */,
+				AB73A806125047DC00026004 /* NumericPickerViewController.h */,
+				AB73A807125047DC00026004 /* NumericPickerViewController.m */,
+				AB73A808125047DC00026004 /* NumericPickerViewControllerDelegate.h */,
+				AB73A809125047DC00026004 /* OintmentDrugDosage.h */,
+				AB73A80A125047DC00026004 /* OintmentDrugDosage.m */,
+				AB73A80B125047DC00026004 /* PatchDrugDosage.h */,
+				AB73A80C125047DC00026004 /* PatchDrugDosage.m */,
+				AB80F2A213DCD77700FE725C /* PicklistEditedItem.h */,
+				AB80F2A313DCD77700FE725C /* PicklistEditedItem.m */,
+				AB73A80D125047DC00026004 /* PicklistViewController.h */,
+				AB73A80E125047DC00026004 /* PicklistViewController.m */,
+				AB73A80F125047DC00026004 /* PicklistViewControllerDelegate.h */,
+				ABF504C8178C883D0034E76C /* PillAlertViewController.h */,
+				ABF504C9178C883D0034E76C /* PillAlertViewController.m */,
+				ABF504CA178C883E0034E76C /* PillAlertViewControllerDelegate.h */,
+				AB73A812125047DC00026004 /* PillDrugDosage.h */,
+				AB73A813125047DC00026004 /* PillDrugDosage.m */,
+				AB73A814125047DC00026004 /* PillNotificationManager.h */,
+				ABE5AF0D1288ED5900E0BDC3 /* PillNotificationManager.m */,
+				ABDE384E12732DBD00BB33D2 /* PillNotificationManagerDelegate.h */,
+				ABBB503F15D837BB00FC269C /* PostponePillHandler.h */,
+				ABBB504015D837BB00FC269C /* PostponePillHandler.m */,
+				ABBB504115D837BC00FC269C /* PostponePillHandlerDelegate.h */,
+				AB73A816125047DC00026004 /* PostponePillsViewController.h */,
+				ABE5AF0E1288ED5900E0BDC3 /* PostponePillsViewController.m */,
+				AB73A818125047DC00026004 /* PostponePillsViewControllerDelegate.h */,
+				AB87186A192656FA00ABA405 /* PowderDrugDosage.h */,
+				AB87186B192656FA00ABA405 /* PowderDrugDosage.m */,
+				ABC8FF7319F7069300561201 /* Preferences.h */,
+				ABC8FF7419F7069300561201 /* Preferences.m */,
+				ABC8FF6F19F6FAA100561201 /* PreferencesItem.h */,
+				ABC8FF7019F6FAA100561201 /* PreferencesItem.m */,
+				AB1DF9C0127E6C3C0055C1D8 /* ProgressViewController.m */,
+				AB73A81B125047DC00026004 /* PurchaseManager.h */,
+				AB73A81C125047DC00026004 /* PurchaseManager.m */,
+				AB73A81D125047DC00026004 /* PurchaseManagerDelegate.h */,
+				AB73A81E125047DC00026004 /* Reachability.h */,
+				AB73A81F125047DC00026004 /* Reachability.m */,
+				AB73A820125047DC00026004 /* ReachabilityManager.h */,
+				AB73A821125047DC00026004 /* ReachabilityManager.m */,
+				AB73A825125047DC00026004 /* ReminderAddEditViewController.h */,
+				AB73A826125047DC00026004 /* ReminderAddEditViewController.m */,
+				AB73A827125047DC00026004 /* ReminderAddEditViewControllerDelegate.h */,
+				ABDA75C014B49D5100246870 /* ReminderSound.h */,
+				ABDA75C114B49D5100246870 /* ReminderSound.m */,
+				AB73A82A125047DC00026004 /* ScheduledDrugReminder.h */,
+				AB73A82B125047DC00026004 /* ScheduledDrugReminder.m */,
+				AB495E0513EA329C0016E008 /* ScheduleRepeatPeriodViewController.h */,
+				AB495E0613EA329C0016E008 /* ScheduleRepeatPeriodViewController.m */,
+				AB495E0713EA329C0016E008 /* ScheduleRepeatPeriodViewControllerDelegate.h */,
+				AB8052AD15E3EA1100726160 /* ScheduleViewDose.h */,
+				AB8052AE15E3EA1100726160 /* ScheduleViewDose.m */,
+				ABD4F97015E1D80100324C09 /* ScheduleViewDoseTime.h */,
+				ABD4F97115E1D80400324C09 /* ScheduleViewDoseTime.m */,
+				AB73A82C125047DC00026004 /* ServerProxy.h */,
+				AB73A82D125047DC00026004 /* ServerProxy.m */,
+				AB73A82E125047DC00026004 /* ServerProxyDelegate.h */,
+				AB73A82F125047DC00026004 /* SettingsViewController.h */,
+				AB73A830125047DC00026004 /* SettingsViewController.m */,
+				ABBB503915D82C0A00FC269C /* SkipPillHandler.h */,
+				ABBB503A15D82C0B00FC269C /* SkipPillHandler.m */,
+				ABBB503B15D82C0B00FC269C /* SkipPillHandlerDelegate.h */,
+				AB73A831125047DC00026004 /* SkipPillsViewController.h */,
+				AB73A832125047DC00026004 /* SkipPillsViewController.m */,
+				AB73A833125047DC00026004 /* SkipPillsViewControllerDelegate.h */,
+				AB73A835125047DC00026004 /* SpinnerViewController.m */,
+				AB73A836125047DC00026004 /* SprayDrugDosage.h */,
+				AB73A837125047DC00026004 /* SprayDrugDosage.m */,
+				AB4035A713D84C8100615F96 /* StringList.h */,
+				AB4035A813D84C8100615F96 /* StringList.m */,
+				AB47176B19D1CA8E00597B46 /* StringListItem.h */,
+				AB47176C19D1CA8E00597B46 /* StringListItem.m */,
+				AB8718661926475D00ABA405 /* SuppositoryDrugDosage.h */,
+				AB8718671926475D00ABA405 /* SuppositoryDrugDosage.m */,
+				ABF077D51A011FB500C9B3C9 /* SyncAddDeviceViewController.h */,
+				ABF077D61A011FB500C9B3C9 /* SyncAddDeviceViewController.m */,
+				ABF077E51A0168D800C9B3C9 /* SyncDevice.h */,
+				ABF077E61A0168D800C9B3C9 /* SyncDevice.m */,
+				ABF077E11A01484600C9B3C9 /* SyncMoveDeviceViewController.h */,
+				ABF077E21A01484600C9B3C9 /* SyncMoveDeviceViewController.m */,
+				ABF077F11A01759A00C9B3C9 /* SyncViewDevicesViewController.h */,
+				ABF077F21A01759A00C9B3C9 /* SyncViewDevicesViewController.m */,
+				AB500B601A1466F90088202C /* SyncViewDevicesViewControllerDelegate.h */,
+				ABBB503315D806FA00FC269C /* TakePillHandler.h */,
+				ABBB503415D806FA00FC269C /* TakePillHandler.m */,
+				ABBB503815D808A800FC269C /* TakePillHandlerDelegate.h */,
+				AB73A838125047DC00026004 /* TakePillsViewController.h */,
+				AB73A839125047DC00026004 /* TakePillsViewController.m */,
+				AB73A83A125047DC00026004 /* TakePillsViewControllerDelegate.h */,
+				AB73A848125047DC00026004 /* TextEntryViewController.h */,
+				AB73A849125047DC00026004 /* TextEntryViewController.m */,
+				AB73A84A125047DC00026004 /* TextEntryViewControllerDelegate.h */,
+				AB87185E19255C1800ABA405 /* TabletDrugDosage.h */,
+				AB87185F19255C1800ABA405 /* TabletDrugDosage.m */,
+				AB82780E13CD0838006BDB4C /* TimePeriodViewController.h */,
+				AB82780F13CD0838006BDB4C /* TimePeriodViewController.m */,
+				AB82781013CD0838006BDB4C /* TimePeriodViewControllerDelegate.h */,
+				AB73A84B125047DC00026004 /* UIButton+Glossy.h */,
+				AB73A84C125047DC00026004 /* UIButton+Glossy.m */,
+				AB45CF32168BE5490046D28A /* UIDeviceHardware.h */,
+				AB45CF33168BE5490046D28A /* UIDeviceHardware.m */,
+				AB3C654E19818D9F00479C28 /* VersionNumber.h */,
+				AB3C654F19818D9F00479C28 /* VersionNumber.m */,
+				ABF864EE192A7D8F00BEF736 /* ViewDeleteGroupViewController.h */,
+				ABF864EF192A7D8F00BEF736 /* ViewDeleteGroupViewController.m */,
+				ABF864F0192A7D8F00BEF736 /* ViewDeleteGroupViewControllerDelegate.h */,
+			);
+			name = "API Implementation";
+			sourceTree = "<group>";
+		};
+		AB73A7E0125047DC00026004 /* HTTPWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				AB73A7E1125047DC00026004 /* HTTPWrapper.h */,
+				AB73A7E2125047DC00026004 /* HTTPWrapper.m */,
+				AB73A7E3125047DC00026004 /* HTTPWrapperDelegate.h */,
+			);
+			path = HTTPWrapper;
+			sourceTree = "<group>";
+		};
+		AB73A7ED125047DC00026004 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				AB73A7EE125047DC00026004 /* JSON.h */,
+				AB73A7EF125047DC00026004 /* NSObject+SBJSON.h */,
+				AB73A7F0125047DC00026004 /* NSObject+SBJSON.m */,
+				AB73A7F1125047DC00026004 /* NSString+SBJSON.h */,
+				AB73A7F2125047DC00026004 /* NSString+SBJSON.m */,
+				AB73A7F5125047DC00026004 /* SBJsonBase.h */,
+				AB73A7F6125047DC00026004 /* SBJsonBase.m */,
+				AB73A7F7125047DC00026004 /* SBJsonParser.h */,
+				AB73A7F8125047DC00026004 /* SBJsonParser.m */,
+				AB73A7F9125047DC00026004 /* SBJsonWriter.h */,
+				AB73A7FA125047DC00026004 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		ABE198A815DC8E3B0000B579 /* MedicationDB */ = {
+			isa = PBXGroup;
+			children = (
+				2910D7D2160A205000418824 /* DrugPermutationsViewController.h */,
+				2910D7D3160A205000418824 /* DrugPermutationsViewController.m */,
+				ABE198A915DC8E3B0000B579 /* MedApplyLocation.h */,
+				ABE198AA15DC8E3B0000B579 /* MedApplyLocation.m */,
+				ABE198AB15DC8E3B0000B579 /* MedDoseUnit.h */,
+				ABE198AC15DC8E3B0000B579 /* MedDoseUnit.m */,
+				ABE198AF15DC8E3B0000B579 /* MedFormType.h */,
+				ABE198B015DC8E3B0000B579 /* MedFormType.m */,
+				ABE198B115DC8E3B0000B579 /* Medication.h */,
+				ABE198B215DC8E3B0000B579 /* Medication.m */,
+				ABE198B315DC8E3B0000B579 /* MedicationRoute.h */,
+				ABE198B415DC8E3B0000B579 /* MedicationRoute.m */,
+				ABE198B515DC8E3B0000B579 /* MedicationUpdateDate.h */,
+				ABE198B615DC8E3B0000B579 /* MedicationUpdateDate.m */,
+				ABE198B715DC8E3B0000B579 /* MedStrengthUnit.h */,
+				ABE198B815DC8E3B0000B579 /* MedStrengthUnit.m */,
+				29E0614615F8FCF200FF92F8 /* MedicationSearchManager.h */,
+				29E0614715F8FCF200FF92F8 /* MedicationSearchManager.m */,
+				294985D01600631E0008430D /* MedicationConstants.h */,
+				29F0D15916113906006BD07D /* PermutationSearchResult.h */,
+				29F0D15A16113906006BD07D /* PermutationSearchResult.m */,
+			);
+			path = MedicationDB;
+			sourceTree = "<group>";
+		};
+		B6959BF116161CDD00CA40C4 /* UIImage Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B6959BF316161CFD00CA40C4 /* UIImage+Alpha.h */,
+				B6959BF416161CFD00CA40C4 /* UIImage+Alpha.m */,
+				B6959BF516161CFD00CA40C4 /* UIImage+Resize.h */,
+				B6959BF616161CFD00CA40C4 /* UIImage+Resize.m */,
+				B6959BFB16161EF300CA40C4 /* UIImage+RoundedCorner.h */,
+				B6959BFC16161EF300CA40C4 /* UIImage+RoundedCorner.m */,
+			);
+			name = "UIImage Categories";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				294985D2160063880008430D /* MedicationConstants.h in Headers */,
+				AA747D9F0F9514B9006C5449 /* Dosecast_API_Prefix.pch in Headers */,
+				AB73A858125047DC00026004 /* AccountViewController.h in Headers */,
+				AB73A85A125047DC00026004 /* AccountViewControllerDelegate.h in Headers */,
+				AB73A85B125047DC00026004 /* AsNeededDrugReminder.h in Headers */,
+				AB73A85D125047DC00026004 /* BedtimePeriodViewController.h in Headers */,
+				AB73A85F125047DC00026004 /* BedtimePeriodViewControllerDelegate.h in Headers */,
+				AB73A860125047DC00026004 /* BedtimeSettingsViewController.h in Headers */,
+				AB73A862125047DC00026004 /* BedtimeSettingsViewControllerDelegate.h in Headers */,
+				AB73A866125047DC00026004 /* DataModel.h in Headers */,
+				ABF077F31A01759A00C9B3C9 /* SyncViewDevicesViewController.h in Headers */,
+				AB73A868125047DC00026004 /* DataModelDelegate.h in Headers */,
+				AB73A869125047DC00026004 /* DateTimePickerViewController.h in Headers */,
+				AB73A86B125047DC00026004 /* DateTimePickerViewControllerDelegate.h in Headers */,
+				ABB25CD51A56F90B007216EB /* DosecastAlertControllerImp.h in Headers */,
+				AB73A86C125047DC00026004 /* DosecastAPI.h in Headers */,
+				AB73A86E125047DC00026004 /* DosecastAPIDelegate.h in Headers */,
+				AB73A86F125047DC00026004 /* DropDrugDosage.h in Headers */,
+				AB73A871125047DC00026004 /* Drug.h in Headers */,
+				AB73A875125047DC00026004 /* DrugAddEditViewControllerDelegate.h in Headers */,
+				AB73A876125047DC00026004 /* DrugDosageQuantity.h in Headers */,
+				ABE8029B17CF9B730088E314 /* DrugReminderDelegate.h in Headers */,
+				AB87185819254A6C00ABA405 /* CapletDrugDosage.h in Headers */,
+				ABF077E71A0168D800C9B3C9 /* SyncDevice.h in Headers */,
+				AB73A878125047DC00026004 /* DrugHistoryViewController.h in Headers */,
+				AB73A87A125047DC00026004 /* DrugReminder.h in Headers */,
+				AB73A87C125047DC00026004 /* DrugViewController.h in Headers */,
+				AB73A87E125047DC00026004 /* HistoryDateEvents.h in Headers */,
+				AB73A880125047DC00026004 /* HistoryEvent.h in Headers */,
+				AB73A882125047DC00026004 /* HistoryManager.h in Headers */,
+				AB73A884125047DC00026004 /* HTTPWrapper.h in Headers */,
+				AB73A886125047DC00026004 /* HTTPWrapperDelegate.h in Headers */,
+				ABC8FF7519F7069300561201 /* Preferences.h in Headers */,
+				AB73A887125047DC00026004 /* InhalerDrugDosage.h in Headers */,
+				AB73A889125047DC00026004 /* InjectionDrugDosage.h in Headers */,
+				AB73A88B125047DC00026004 /* IntervalDrugReminder.h in Headers */,
+				AB73A88D125047DC00026004 /* IntervalPeriodViewController.h in Headers */,
+				AB73A88F125047DC00026004 /* IntervalPeriodViewControllerDelegate.h in Headers */,
+				ABF077E31A01484600C9B3C9 /* SyncMoveDeviceViewController.h in Headers */,
+				AB73A890125047DC00026004 /* JSON.h in Headers */,
+				AB87186C192656FA00ABA405 /* PowderDrugDosage.h in Headers */,
+				AB73A891125047DC00026004 /* NSObject+SBJSON.h in Headers */,
+				ABF864F1192A7D8F00BEF736 /* ViewDeleteGroupViewController.h in Headers */,
+				AB73A893125047DC00026004 /* NSString+SBJSON.h in Headers */,
+				AB73A897125047DC00026004 /* SBJsonBase.h in Headers */,
+				AB73A899125047DC00026004 /* SBJsonParser.h in Headers */,
+				AB73A89B125047DC00026004 /* SBJsonWriter.h in Headers */,
+				AB73A89D125047DC00026004 /* JSONConverter.h in Headers */,
+				AB73A89F125047DC00026004 /* LiquidDrugDosage.h in Headers */,
+				AB73A8A1125047DC00026004 /* LocalNotificationManager.h in Headers */,
+				AB8A9572192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewControllerDelegate.h in Headers */,
+				AB871864192562CA00ABA405 /* InfusionDrugDosage.h in Headers */,
+				ABAD4B30192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewControllerDelegate.h in Headers */,
+				AB73A8A6125047DC00026004 /* NSData+Base64.h in Headers */,
+				AB73A8A8125047DC00026004 /* NumericPickerViewController.h in Headers */,
+				AB73A8AA125047DC00026004 /* NumericPickerViewControllerDelegate.h in Headers */,
+				AB73A8AB125047DC00026004 /* OintmentDrugDosage.h in Headers */,
+				AB73A8AD125047DC00026004 /* PatchDrugDosage.h in Headers */,
+				AB73A8AF125047DC00026004 /* PicklistViewController.h in Headers */,
+				AB73A8B1125047DC00026004 /* PicklistViewControllerDelegate.h in Headers */,
+				AB73A8B4125047DC00026004 /* PillDrugDosage.h in Headers */,
+				AB73A8B6125047DC00026004 /* PillNotificationManager.h in Headers */,
+				AB73A8B8125047DC00026004 /* PostponePillsViewController.h in Headers */,
+				AB73A8BA125047DC00026004 /* PostponePillsViewControllerDelegate.h in Headers */,
+				AB499F741A5375480060AA0E /* TSQCalendarCell.h in Headers */,
+				AB73A8BD125047DC00026004 /* PurchaseManager.h in Headers */,
+				AB3C655019818D9F00479C28 /* VersionNumber.h in Headers */,
+				AB73A8BF125047DC00026004 /* PurchaseManagerDelegate.h in Headers */,
+				AB73A8C0125047DC00026004 /* Reachability.h in Headers */,
+				AB498C961A16D1D400C96363 /* ContactsHelper.h in Headers */,
+				ABAD4B2E192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.h in Headers */,
+				AB499F8B1A5395F90060AA0E /* TSQMonthPickerViewControllerDelegate.h in Headers */,
+				ABD7E3061A6AAB59003C9639 /* BarButtonDisabler.h in Headers */,
+				AB73A8C2125047DC00026004 /* ReachabilityManager.h in Headers */,
+				AB73A8C7125047DC00026004 /* ReminderAddEditViewController.h in Headers */,
+				AB73A8C9125047DC00026004 /* ReminderAddEditViewControllerDelegate.h in Headers */,
+				AB73A8CC125047DC00026004 /* ScheduledDrugReminder.h in Headers */,
+				AB73A8CE125047DC00026004 /* ServerProxy.h in Headers */,
+				AB500B611A1466F90088202C /* SyncViewDevicesViewControllerDelegate.h in Headers */,
+				AB73A8D0125047DC00026004 /* ServerProxyDelegate.h in Headers */,
+				AB73A8D1125047DC00026004 /* SettingsViewController.h in Headers */,
+				AB73A8D3125047DC00026004 /* SkipPillsViewController.h in Headers */,
+				AB470D0217AD540D00D7A83E /* ManagedDrugDosage.h in Headers */,
+				AB73A8D5125047DC00026004 /* SkipPillsViewControllerDelegate.h in Headers */,
+				AB73A8D6125047DC00026004 /* SpinnerViewController.h in Headers */,
+				AB73A8D8125047DC00026004 /* SprayDrugDosage.h in Headers */,
+				AB87185C192557D400ABA405 /* CapsuleDrugDosage.h in Headers */,
+				AB73A8DA125047DC00026004 /* TakePillsViewController.h in Headers */,
+				AB73A8DC125047DC00026004 /* TakePillsViewControllerDelegate.h in Headers */,
+				AB499F891A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.h in Headers */,
+				AB73A8E9125047DC00026004 /* TextEntryViewController.h in Headers */,
+				AB73A8EB125047DC00026004 /* TextEntryViewControllerDelegate.h in Headers */,
+				AB73A8EC125047DC00026004 /* UIButton+Glossy.h in Headers */,
+				AB73A96D12504D8E00026004 /* DrugDosage.h in Headers */,
+				ABEB142B126B5A4600A5FE93 /* DrugDosageManager.h in Headers */,
+				ABEB1445126B5F3500A5FE93 /* DrugDosageManagerEntry.h in Headers */,
+				ABDE384F12732DBD00BB33D2 /* PillNotificationManagerDelegate.h in Headers */,
+				AB98FA25193D018500D3BC96 /* Group.h in Headers */,
+				ABDE3B0012747DF000BB33D2 /* MessagePanelViewController.h in Headers */,
+				AB499F871A5395F90060AA0E /* TSQMonthPickerViewController.h in Headers */,
+				AB1DF973127E4EAD0055C1D8 /* GlobalSettings.h in Headers */,
+				AB1DF9C1127E6C3C0055C1D8 /* ProgressViewController.h in Headers */,
+				AB9D16D212AC8F6F0099966D /* DrugAddEditViewController.h in Headers */,
+				AB66961112CCD0A3009CC83D /* DebugLogEvent.h in Headers */,
+				ABF077D71A011FB500C9B3C9 /* SyncAddDeviceViewController.h in Headers */,
+				ABCE1B1612D29C750049308D /* DrugViewControllerDelegate.h in Headers */,
+				ABBE2CE8131202F900882193 /* EditableHistoryEvent.h in Headers */,
+				ABA886C2131AF134004E4D89 /* HistoryAddEditEventViewController.h in Headers */,
+				ABA886C5131AF1D2004E4D89 /* HistoryAddEditEventViewControllerDelegate.h in Headers */,
+				AB82781113CD0838006BDB4C /* TimePeriodViewController.h in Headers */,
+				AB82781313CD0838006BDB4C /* TimePeriodViewControllerDelegate.h in Headers */,
+				AB82783713CE31C2006BDB4C /* LateDoseSettingsViewController.h in Headers */,
+				AB82783913CE31C2006BDB4C /* LateDoseSettingsViewControllerDelegate.h in Headers */,
+				ABB25CD91A56FBDD007216EB /* DosecastAlertAction.h in Headers */,
+				AB4035A913D84C8100615F96 /* StringList.h in Headers */,
+				ABAFC4BE13DA241400B5648D /* AddressBookContact.h in Headers */,
+				AB80F2A413DCD77700FE725C /* PicklistEditedItem.h in Headers */,
+				ABDE2EE513E0BD5600B2CE37 /* CustomDrugDosage.h in Headers */,
+				ABC6336719D5F8F2005DA662 /* DosecastLocalNotification.h in Headers */,
+				ABDE2EE913E240F000B2CE37 /* CustomNameIDList.h in Headers */,
+				AB499F781A5375480060AA0E /* TSQCalendarRowCell.h in Headers */,
+				ABC6F76C19FAA6A20030D914 /* AddressBookContactDelegate.h in Headers */,
+				AB495E0813EA329C0016E008 /* ScheduleRepeatPeriodViewController.h in Headers */,
+				AB499F731A5375480060AA0E /* TimesSquare.h in Headers */,
+				AB495E0A13EA329C0016E008 /* ScheduleRepeatPeriodViewControllerDelegate.h in Headers */,
+				AB011B981400108700AC6F9D /* DoseLimitViewController.h in Headers */,
+				AB011B9A1400108700AC6F9D /* DoseLimitViewControllerDelegate.h in Headers */,
+				ABFFEAF9141C48540069F4C0 /* DosecastDataFile.h in Headers */,
+				ABFFEAFD141C56E80069F4C0 /* DosecastDBDataFile.h in Headers */,
+				ABC8FF7119F6FAA100561201 /* PreferencesItem.h in Headers */,
+				ABDA75C214B49D5100246870 /* ReminderSound.h in Headers */,
+				ABECA3E714D58A430015B679 /* BooleanViewController.h in Headers */,
+				ABECA3E914D58A430015B679 /* BooleanViewControllerDelegate.h in Headers */,
+				AB4C432A1595F92F00DADEE0 /* FlagDictionary.h in Headers */,
+				AB4C432D1595FD7E00DADEE0 /* DosecastAPIFlags.h in Headers */,
+				ABA2F60E159628150030C817 /* DosecastCoreTypes.h in Headers */,
+				AB259A2F1597B5D600ED9B0D /* DosecastUtil.h in Headers */,
+				AB2EED1915C0F7CD0003451F /* DrugDosageUnitManagerEntry.h in Headers */,
+				AB5578AF15C1BC0E003B37D1 /* DrugDosageUnitManager.h in Headers */,
+				ABB14CEB15CE1469000AF6C4 /* ChecklistViewController.h in Headers */,
+				ABB14CED15CE1469000AF6C4 /* ChecklistViewControllerDelegate.h in Headers */,
+				ABBB503515D806FA00FC269C /* TakePillHandler.h in Headers */,
+				ABBB503C15D82C0B00FC269C /* SkipPillHandler.h in Headers */,
+				ABBB503E15D82C0C00FC269C /* SkipPillHandlerDelegate.h in Headers */,
+				ABBB504215D837BD00FC269C /* PostponePillHandler.h in Headers */,
+				ABBB504415D837BD00FC269C /* PostponePillHandlerDelegate.h in Headers */,
+				ABE198B915DC8E3B0000B579 /* MedApplyLocation.h in Headers */,
+				ABE198BB15DC8E3B0000B579 /* MedDoseUnit.h in Headers */,
+				ABE198BF15DC8E3B0000B579 /* MedFormType.h in Headers */,
+				ABE198C115DC8E3B0000B579 /* Medication.h in Headers */,
+				ABE198C315DC8E3B0000B579 /* MedicationRoute.h in Headers */,
+				ABE198C515DC8E3B0000B579 /* MedicationUpdateDate.h in Headers */,
+				AB499F7A1A5375480060AA0E /* TSQCalendarView.h in Headers */,
+				ABE198C715DC8E3B0000B579 /* MedStrengthUnit.h in Headers */,
+				AB4DC33F15DF014E00B22BB7 /* DosecastMainViewController.h in Headers */,
+				ABD4F77215E19BCB00324C09 /* DosecastScheduleViewController.h in Headers */,
+				ABD4F97215E1D80900324C09 /* ScheduleViewDoseTime.h in Headers */,
+				AB8052AF15E3EA1100726160 /* ScheduleViewDose.h in Headers */,
+				AB499F761A5375480060AA0E /* TSQCalendarMonthHeaderCell.h in Headers */,
+				AB10B56015EB1A6300280917 /* DrugDatabaseSearchController.h in Headers */,
+				AB60018B19C0F14E00FB9EB4 /* DosecastAPIImp.h in Headers */,
+				AB10B56215EB1A6300280917 /* DrugDatabaseSearchControllerDelegate.h in Headers */,
+				299A573115EEF93900E8600F /* EventLogEntry.h in Headers */,
+				299A573315EEF93900E8600F /* LogManager.h in Headers */,
+				AB85193F15F6CB2E0050D4A5 /* DrugNameViewController.h in Headers */,
+				AB60D41419F84EBA00B3B305 /* GlobalSettingsDelegate.h in Headers */,
+				AB85194115F6CB2E0050D4A5 /* DrugNameViewControllerDelegate.h in Headers */,
+				29E0614815F8FCF200FF92F8 /* MedicationSearchManager.h in Headers */,
+				AB30EA3615FD5523001F425E /* DatabaseDrugDosage.h in Headers */,
+				ABB25CD41A56F90B007216EB /* DosecastAlertController.h in Headers */,
+				B65FAD63161105C70013316C /* DrugChooseImageViewController.h in Headers */,
+				B6959BF716161CFD00CA40C4 /* UIImage+Alpha.h in Headers */,
+				B6959BF916161CFD00CA40C4 /* UIImage+Resize.h in Headers */,
+				B6959BFD16161EF300CA40C4 /* UIImage+RoundedCorner.h in Headers */,
+				ABF864F3192A7D8F00BEF736 /* ViewDeleteGroupViewControllerDelegate.h in Headers */,
+				2910D7D4160A205000418824 /* DrugPermutationsViewController.h in Headers */,
+				AB47176D19D1CA8E00597B46 /* StringListItem.h in Headers */,
+				29F0D15B16113906006BD07D /* PermutationSearchResult.h in Headers */,
+				AB8718681926475D00ABA405 /* SuppositoryDrugDosage.h in Headers */,
+				29367817161AA22E008E2D52 /* DrugImageManager.h in Headers */,
+				2936781B161AA26F008E2D52 /* DrugImage.h in Headers */,
+				ABE6322A16276B8300B965F8 /* DosecastDrugsViewController.h in Headers */,
+				AB87186019255C1800ABA405 /* TabletDrugDosage.h in Headers */,
+				AB6B03AF164FD9CC0085861A /* DosecastKeychainItemWrapper.h in Headers */,
+				AB45CF30168B734C0046D28A /* DrugImagePickerController.h in Headers */,
+				AB45CF34168BE5490046D28A /* UIDeviceHardware.h in Headers */,
+				ABF504AF178BA77B0034E76C /* LocalNotificationManagerDelegate.h in Headers */,
+				AB8A9570192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.h in Headers */,
+				ABF504CB178C883F0034E76C /* PillAlertViewController.h in Headers */,
+				ABF504CD178C883F0034E76C /* PillAlertViewControllerDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* Dosecast-API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Dosecast-API" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dosecast-API";
+			productName = "Dosecast-API";
+			productReference = D2AAC07E0554694100DB518D /* libDosecast_API.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Montuno Software, LLC";
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Dosecast-API" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Dosecast-API */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Dosecast-API */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB73A859125047DC00026004 /* AccountViewController.m in Sources */,
+				AB73A85C125047DC00026004 /* AsNeededDrugReminder.m in Sources */,
+				AB73A85E125047DC00026004 /* BedtimePeriodViewController.m in Sources */,
+				AB73A861125047DC00026004 /* BedtimeSettingsViewController.m in Sources */,
+				AB73A867125047DC00026004 /* DataModel.m in Sources */,
+				AB73A86A125047DC00026004 /* DateTimePickerViewController.m in Sources */,
+				AB73A86D125047DC00026004 /* DosecastAPIImp.m in Sources */,
+				AB73A870125047DC00026004 /* DropDrugDosage.m in Sources */,
+				AB3C655119818D9F00479C28 /* VersionNumber.m in Sources */,
+				AB73A872125047DC00026004 /* Drug.m in Sources */,
+				AB73A877125047DC00026004 /* DrugDosageQuantity.m in Sources */,
+				AB8A9571192A2E97002DCBE7 /* JoinGroupEnterGroupNameViewController.m in Sources */,
+				AB73A879125047DC00026004 /* DrugHistoryViewController.m in Sources */,
+				AB73A87B125047DC00026004 /* DrugReminder.m in Sources */,
+				AB73A87D125047DC00026004 /* DrugViewController.m in Sources */,
+				AB73A87F125047DC00026004 /* HistoryDateEvents.m in Sources */,
+				AB73A881125047DC00026004 /* HistoryEvent.m in Sources */,
+				AB498C971A16D1D400C96363 /* ContactsHelper.m in Sources */,
+				AB73A883125047DC00026004 /* HistoryManager.m in Sources */,
+				AB73A885125047DC00026004 /* HTTPWrapper.m in Sources */,
+				AB73A888125047DC00026004 /* InhalerDrugDosage.m in Sources */,
+				AB73A88A125047DC00026004 /* InjectionDrugDosage.m in Sources */,
+				AB73A88C125047DC00026004 /* IntervalDrugReminder.m in Sources */,
+				AB73A88E125047DC00026004 /* IntervalPeriodViewController.m in Sources */,
+				AB73A892125047DC00026004 /* NSObject+SBJSON.m in Sources */,
+				AB8718691926475D00ABA405 /* SuppositoryDrugDosage.m in Sources */,
+				AB73A894125047DC00026004 /* NSString+SBJSON.m in Sources */,
+				AB499F8A1A5395F90060AA0E /* TSQMonthPickerViewControllerCalendarRowCell.m in Sources */,
+				AB499F7B1A5375480060AA0E /* TSQCalendarView.m in Sources */,
+				AB87185919254A6C00ABA405 /* CapletDrugDosage.m in Sources */,
+				AB73A898125047DC00026004 /* SBJsonBase.m in Sources */,
+				AB73A89A125047DC00026004 /* SBJsonParser.m in Sources */,
+				AB73A89C125047DC00026004 /* SBJsonWriter.m in Sources */,
+				AB73A89E125047DC00026004 /* JSONConverter.m in Sources */,
+				AB73A8A0125047DC00026004 /* LiquidDrugDosage.m in Sources */,
+				AB499F791A5375480060AA0E /* TSQCalendarRowCell.m in Sources */,
+				ABC6336519D5F8B7005DA662 /* DosecastLocalNotification.m in Sources */,
+				AB73A8A2125047DC00026004 /* LocalNotificationManager.m in Sources */,
+				ABAD4B2F192CF9CB00AA7EE0 /* JoinGroupEnterPasswordViewController.m in Sources */,
+				AB73A8A7125047DC00026004 /* NSData+Base64.m in Sources */,
+				AB73A8A9125047DC00026004 /* NumericPickerViewController.m in Sources */,
+				AB73A8AC125047DC00026004 /* OintmentDrugDosage.m in Sources */,
+				AB73A8AE125047DC00026004 /* PatchDrugDosage.m in Sources */,
+				AB73A8B0125047DC00026004 /* PicklistViewController.m in Sources */,
+				ABC8FF7619F7069300561201 /* Preferences.m in Sources */,
+				AB73A8B5125047DC00026004 /* PillDrugDosage.m in Sources */,
+				AB98FA26193D018500D3BC96 /* Group.m in Sources */,
+				ABF864F2192A7D8F00BEF736 /* ViewDeleteGroupViewController.m in Sources */,
+				AB73A8BE125047DC00026004 /* PurchaseManager.m in Sources */,
+				AB73A8C1125047DC00026004 /* Reachability.m in Sources */,
+				AB73A8C3125047DC00026004 /* ReachabilityManager.m in Sources */,
+				AB73A8C8125047DC00026004 /* ReminderAddEditViewController.m in Sources */,
+				AB73A8CD125047DC00026004 /* ScheduledDrugReminder.m in Sources */,
+				ABC8FF7219F6FAA100561201 /* PreferencesItem.m in Sources */,
+				AB73A8CF125047DC00026004 /* ServerProxy.m in Sources */,
+				AB73A8D2125047DC00026004 /* SettingsViewController.m in Sources */,
+				AB470D0317AD540D00D7A83E /* ManagedDrugDosage.m in Sources */,
+				AB73A8D4125047DC00026004 /* SkipPillsViewController.m in Sources */,
+				AB73A8D7125047DC00026004 /* SpinnerViewController.m in Sources */,
+				AB73A8D9125047DC00026004 /* SprayDrugDosage.m in Sources */,
+				ABF077D81A011FB500C9B3C9 /* SyncAddDeviceViewController.m in Sources */,
+				AB73A8DB125047DC00026004 /* TakePillsViewController.m in Sources */,
+				AB73A8EA125047DC00026004 /* TextEntryViewController.m in Sources */,
+				AB87185D192557D400ABA405 /* CapsuleDrugDosage.m in Sources */,
+				AB73A8ED125047DC00026004 /* UIButton+Glossy.m in Sources */,
+				AB73A96E12504D8E00026004 /* DrugDosage.m in Sources */,
+				ABF077E81A0168D800C9B3C9 /* SyncDevice.m in Sources */,
+				ABEB142C126B5A4600A5FE93 /* DrugDosageManager.m in Sources */,
+				ABEB1446126B5F3500A5FE93 /* DrugDosageManagerEntry.m in Sources */,
+				ABDE3B0112747DF000BB33D2 /* MessagePanelViewController.m in Sources */,
+				AB1DF974127E4EAD0055C1D8 /* GlobalSettings.m in Sources */,
+				AB1DF9C2127E6C3C0055C1D8 /* ProgressViewController.m in Sources */,
+				ABE5AF0F1288ED5900E0BDC3 /* PillNotificationManager.m in Sources */,
+				ABE5AF101288ED5900E0BDC3 /* PostponePillsViewController.m in Sources */,
+				AB9D16D312AC8F6F0099966D /* DrugAddEditViewController.m in Sources */,
+				AB66961212CCD0A3009CC83D /* DebugLogEvent.m in Sources */,
+				ABBE2CE9131202F900882193 /* EditableHistoryEvent.m in Sources */,
+				ABA886C3131AF134004E4D89 /* HistoryAddEditEventViewController.m in Sources */,
+				AB82781213CD0838006BDB4C /* TimePeriodViewController.m in Sources */,
+				AB82783813CE31C2006BDB4C /* LateDoseSettingsViewController.m in Sources */,
+				AB4035AA13D84C8100615F96 /* StringList.m in Sources */,
+				ABAFC4BF13DA241400B5648D /* AddressBookContact.m in Sources */,
+				AB80F2A513DCD77700FE725C /* PicklistEditedItem.m in Sources */,
+				ABDE2EE613E0BD5600B2CE37 /* CustomDrugDosage.m in Sources */,
+				ABDE2EEA13E240F000B2CE37 /* CustomNameIDList.m in Sources */,
+				AB495E0913EA329C0016E008 /* ScheduleRepeatPeriodViewController.m in Sources */,
+				AB499F771A5375480060AA0E /* TSQCalendarMonthHeaderCell.m in Sources */,
+				AB011B991400108700AC6F9D /* DoseLimitViewController.m in Sources */,
+				ABFFEAFA141C48550069F4C0 /* DosecastDataFile.m in Sources */,
+				AB499F881A5395F90060AA0E /* TSQMonthPickerViewController.m in Sources */,
+				ABFFEAFE141C56E80069F4C0 /* DosecastDBDataFile.m in Sources */,
+				ABDA75C314B49D5100246870 /* ReminderSound.m in Sources */,
+				ABECA3E814D58A430015B679 /* BooleanViewController.m in Sources */,
+				AB4C432B1595F92F00DADEE0 /* FlagDictionary.m in Sources */,
+				AB259A2C1597B5BA00ED9B0D /* DosecastUtil.m in Sources */,
+				AB2EED1615C0F4B00003451F /* DrugDosageUnitManager.m in Sources */,
+				AB2EED1A15C0F7CD0003451F /* DrugDosageUnitManagerEntry.m in Sources */,
+				ABB14CEC15CE1469000AF6C4 /* ChecklistViewController.m in Sources */,
+				ABD7E3071A6AAB59003C9639 /* BarButtonDisabler.m in Sources */,
+				ABBB503615D806FA00FC269C /* TakePillHandler.m in Sources */,
+				ABF077F41A01759A00C9B3C9 /* SyncViewDevicesViewController.m in Sources */,
+				ABBB503D15D82C0B00FC269C /* SkipPillHandler.m in Sources */,
+				ABBB504315D837BD00FC269C /* PostponePillHandler.m in Sources */,
+				ABE198BA15DC8E3B0000B579 /* MedApplyLocation.m in Sources */,
+				ABF077E41A01484600C9B3C9 /* SyncMoveDeviceViewController.m in Sources */,
+				ABE198BC15DC8E3B0000B579 /* MedDoseUnit.m in Sources */,
+				ABE198C015DC8E3B0000B579 /* MedFormType.m in Sources */,
+				ABE198C215DC8E3B0000B579 /* Medication.m in Sources */,
+				ABE198C415DC8E3B0000B579 /* MedicationRoute.m in Sources */,
+				ABE198C615DC8E3B0000B579 /* MedicationUpdateDate.m in Sources */,
+				ABE198C815DC8E3B0000B579 /* MedStrengthUnit.m in Sources */,
+				AB4DC34015DF014E00B22BB7 /* DosecastMainViewController.m in Sources */,
+				ABD4F77315E19BCB00324C09 /* DosecastScheduleViewController.m in Sources */,
+				ABB25CD61A56F90B007216EB /* DosecastAlertControllerImp.m in Sources */,
+				ABD4F97315E1D80900324C09 /* ScheduleViewDoseTime.m in Sources */,
+				AB8052B015E3EA1100726160 /* ScheduleViewDose.m in Sources */,
+				AB10B56115EB1A6300280917 /* DrugDatabaseSearchController.m in Sources */,
+				299A573215EEF93900E8600F /* EventLogEntry.m in Sources */,
+				299A573415EEF93900E8600F /* LogManager.m in Sources */,
+				AB85194015F6CB2E0050D4A5 /* DrugNameViewController.m in Sources */,
+				29E0614915F8FCF200FF92F8 /* MedicationSearchManager.m in Sources */,
+				AB30EA3715FD5523001F425E /* DatabaseDrugDosage.m in Sources */,
+				B65FAD64161105C70013316C /* DrugChooseImageViewController.m in Sources */,
+				AB87186119255C1800ABA405 /* TabletDrugDosage.m in Sources */,
+				B6959BF816161CFD00CA40C4 /* UIImage+Alpha.m in Sources */,
+				B6959BFA16161CFD00CA40C4 /* UIImage+Resize.m in Sources */,
+				AB499F751A5375480060AA0E /* TSQCalendarCell.m in Sources */,
+				B6959BFE16161EF300CA40C4 /* UIImage+RoundedCorner.m in Sources */,
+				2910D7D5160A205000418824 /* DrugPermutationsViewController.m in Sources */,
+				AB871865192562CA00ABA405 /* InfusionDrugDosage.m in Sources */,
+				29F0D15C16113906006BD07D /* PermutationSearchResult.m in Sources */,
+				29367818161AA22E008E2D52 /* DrugImageManager.m in Sources */,
+				2936781C161AA26F008E2D52 /* DrugImage.m in Sources */,
+				ABE6322B16276B8300B965F8 /* DosecastDrugsViewController.m in Sources */,
+				AB6B03B0164FD9CC0085861A /* DosecastKeychainItemWrapper.m in Sources */,
+				AB47176E19D1CA8E00597B46 /* StringListItem.m in Sources */,
+				AB45CF31168B734C0046D28A /* DrugImagePickerController.m in Sources */,
+				ABB25CDA1A56FBDD007216EB /* DosecastAlertAction.m in Sources */,
+				AB45CF35168BE5490046D28A /* UIDeviceHardware.m in Sources */,
+				ABF504CC178C883F0034E76C /* PillAlertViewController.m in Sources */,
+				AB87186D192656FA00ABA405 /* PowderDrugDosage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Dosecast_API.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dosecast_API_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					DEBUG_SERVER,
+				);
+				GCC_THUMB_SUPPORT = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Dosecast_API;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development;
+		};
+		1DEB922008733DC00010E9CD /* Ad_Hoc_Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Dosecast_API.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dosecast_API_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Dosecast_API;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Ad_Hoc_Distribution;
+		};
+		1DEB922308733DC00010E9CD /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development;
+		};
+		1DEB922408733DC00010E9CD /* Ad_Hoc_Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Ad_Hoc_Distribution;
+		};
+		AB20C7FD1A2CFAB700DB9D25 /* Development_Prod_Server */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development_Prod_Server;
+		};
+		AB20C7FE1A2CFAB700DB9D25 /* Development_Prod_Server */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Dosecast_API.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dosecast_API_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_THUMB_SUPPORT = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Dosecast_API;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development_Prod_Server;
+		};
+		AB73AFCE1250687D00026004 /* App_Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = App_Store;
+		};
+		AB73AFCF1250687D00026004 /* App_Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Dosecast_API.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dosecast_API_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = APP_STORE;
+				GCC_THUMB_SUPPORT = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = Dosecast_API;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIPFLAGS = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = App_Store;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Dosecast-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Development */,
+				AB20C7FE1A2CFAB700DB9D25 /* Development_Prod_Server */,
+				1DEB922008733DC00010E9CD /* Ad_Hoc_Distribution */,
+				AB73AFCF1250687D00026004 /* App_Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Dosecast-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Development */,
+				AB20C7FD1A2CFAB700DB9D25 /* Development_Prod_Server */,
+				1DEB922408733DC00010E9CD /* Ad_Hoc_Distribution */,
+				AB73AFCE1250687D00026004 /* App_Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>icon_114x114.png</string>
+		<string>icon_72x72.png</string>
+		<string>icon_58x58.png</string>
+		<string>icon_57x57.png</string>
+		<string>icon_48x48.png</string>
+		<string>icon_29x29.png</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.brandingbrandmobile.gnc</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2010 General Nutrition Centers, Inc.</string>
+	<key>NSMainNibFile</key>
+	<string>MainWindow</string>
+	<key>SBUsesNetwork</key>
+	<true/>
+	<key>UIRequiresPersistentWiFi</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleBlackOpaque</string>
+</dict>
+</plist>

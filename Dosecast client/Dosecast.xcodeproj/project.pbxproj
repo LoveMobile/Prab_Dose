@@ -1,0 +1,1165 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		AB259A211597AECE00ED9B0D /* RegistrationViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB259A191597AECE00ED9B0D /* RegistrationViewController-iPad.xib */; };
+		AB259A231597AECE00ED9B0D /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB259A1A1597AECE00ED9B0D /* RegistrationViewController.xib */; };
+		AB290DE9159A642F00F84B40 /* AboutViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB290DE1159A642F00F84B40 /* AboutViewController-iPad.xib */; };
+		AB290DEB159A642F00F84B40 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB290DE2159A642F00F84B40 /* AboutViewController.xib */; };
+		AB290DED159A642F00F84B40 /* PrivacyPolicyViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB290DE3159A642F00F84B40 /* PrivacyPolicyViewController-iPad.xib */; };
+		AB290DEF159A642F00F84B40 /* PrivacyPolicyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB290DE4159A642F00F84B40 /* PrivacyPolicyViewController.xib */; };
+		AB290DF1159A642F00F84B40 /* TermsOfServiceViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB290DE5159A642F00F84B40 /* TermsOfServiceViewController-iPad.xib */; };
+		AB290DF3159A642F00F84B40 /* TermsOfServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB290DE6159A642F00F84B40 /* TermsOfServiceViewController.xib */; };
+		AB290DF5159A642F00F84B40 /* WhatsNewViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB290DE7159A642F00F84B40 /* WhatsNewViewController-iPad.xib */; };
+		AB290DF7159A642F00F84B40 /* WhatsNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB290DE8159A642F00F84B40 /* WhatsNewViewController.xib */; };
+		AB290E01159A646500F84B40 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB290DFA159A646500F84B40 /* AboutViewController.m */; };
+		AB290E03159A646500F84B40 /* PrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB290DFC159A646500F84B40 /* PrivacyPolicyViewController.m */; };
+		AB290E05159A646500F84B40 /* TermsOfServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB290DFE159A646500F84B40 /* TermsOfServiceViewController.m */; };
+		AB290E07159A646500F84B40 /* WhatsNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB290E00159A646500F84B40 /* WhatsNewViewController.m */; };
+		AB290E12159A68C700F84B40 /* AboutIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AB290E10159A68C700F84B40 /* AboutIcon.png */; };
+		AB290E14159A68C700F84B40 /* AboutIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB290E11159A68C700F84B40 /* AboutIcon@2x.png */; };
+		AB3380BE19CC81AB000F61DB /* Log.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3380BA19CC81AB000F61DB /* Log.png */; };
+		AB3380C019CC81AB000F61DB /* Log@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3380BB19CC81AB000F61DB /* Log@2x.png */; };
+		AB3380C219CC81AB000F61DB /* Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3380BC19CC81AB000F61DB /* Mail.png */; };
+		AB3380C419CC81AB000F61DB /* Mail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB3380BD19CC81AB000F61DB /* Mail@2x.png */; };
+		AB369D1E19784F03000F32E5 /* Apex.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0319784F03000F32E5 /* Apex.caf */; };
+		AB369D2019784F03000F32E5 /* Beacon.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0419784F03000F32E5 /* Beacon.caf */; };
+		AB369D2219784F03000F32E5 /* Bulletin.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0519784F03000F32E5 /* Bulletin.caf */; };
+		AB369D2419784F03000F32E5 /* By The Seaside.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0619784F03000F32E5 /* By The Seaside.caf */; };
+		AB369D2619784F03000F32E5 /* Chimes.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0719784F03000F32E5 /* Chimes.caf */; };
+		AB369D2819784F03000F32E5 /* Circuit.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0819784F03000F32E5 /* Circuit.caf */; };
+		AB369D2A19784F03000F32E5 /* Constellation.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0919784F03000F32E5 /* Constellation.caf */; };
+		AB369D2C19784F03000F32E5 /* Cosmic.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0A19784F03000F32E5 /* Cosmic.caf */; };
+		AB369D2E19784F03000F32E5 /* Crystals.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0B19784F03000F32E5 /* Crystals.caf */; };
+		AB369D3019784F03000F32E5 /* Hillside.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0C19784F03000F32E5 /* Hillside.caf */; };
+		AB369D3219784F03000F32E5 /* Illuminate.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0D19784F03000F32E5 /* Illuminate.caf */; };
+		AB369D3419784F03000F32E5 /* Night Owl.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0E19784F03000F32E5 /* Night Owl.caf */; };
+		AB369D3619784F03000F32E5 /* Opening.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D0F19784F03000F32E5 /* Opening.caf */; };
+		AB369D3819784F03000F32E5 /* Playtime.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1019784F03000F32E5 /* Playtime.caf */; };
+		AB369D3A19784F03000F32E5 /* Presto.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1119784F03000F32E5 /* Presto.caf */; };
+		AB369D3C19784F03000F32E5 /* Radar.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1219784F03000F32E5 /* Radar.caf */; };
+		AB369D3E19784F03000F32E5 /* Radiate.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1319784F03000F32E5 /* Radiate.caf */; };
+		AB369D4019784F03000F32E5 /* Ripples.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1419784F03000F32E5 /* Ripples.caf */; };
+		AB369D4219784F03000F32E5 /* Sencha.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1519784F03000F32E5 /* Sencha.caf */; };
+		AB369D4419784F03000F32E5 /* Signal.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1619784F03000F32E5 /* Signal.caf */; };
+		AB369D4619784F03000F32E5 /* Silk.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1719784F03000F32E5 /* Silk.caf */; };
+		AB369D4819784F03000F32E5 /* Slow Rise.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1819784F03000F32E5 /* Slow Rise.caf */; };
+		AB369D4A19784F03000F32E5 /* Stargaze.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1919784F03000F32E5 /* Stargaze.caf */; };
+		AB369D4C19784F03000F32E5 /* Summit.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1A19784F03000F32E5 /* Summit.caf */; };
+		AB369D4E19784F03000F32E5 /* Twinkle.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1B19784F03000F32E5 /* Twinkle.caf */; };
+		AB369D5019784F03000F32E5 /* Uplift.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1C19784F03000F32E5 /* Uplift.caf */; };
+		AB369D5219784F03000F32E5 /* Waves.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB369D1D19784F03000F32E5 /* Waves.caf */; };
+		AB39FA331629069C00D31917 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB39FA321629069C00D31917 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AB499F931A53BFB30060AA0E /* AboutIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F8E1A53BFB30060AA0E /* AboutIcon@3x.png */; };
+		AB499F951A53BFB30060AA0E /* Gear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F8F1A53BFB30060AA0E /* Gear@3x.png */; };
+		AB499F971A53BFB30060AA0E /* Help@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F901A53BFB30060AA0E /* Help@3x.png */; };
+		AB499F991A53BFB30060AA0E /* Log@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F911A53BFB30060AA0E /* Log@3x.png */; };
+		AB499F9B1A53BFB30060AA0E /* Mail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F921A53BFB30060AA0E /* Mail@3x.png */; };
+		AB4F683C19785688004F0DC6 /* Alarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB4F683619785688004F0DC6 /* Alarm.caf */; };
+		AB4F683E19785688004F0DC6 /* Digital.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB4F683719785688004F0DC6 /* Digital.caf */; };
+		AB4F684019785688004F0DC6 /* Old Phone.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB4F683819785688004F0DC6 /* Old Phone.caf */; };
+		AB4F684219785688004F0DC6 /* Pinball.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB4F683919785688004F0DC6 /* Pinball.caf */; };
+		AB4F684419785688004F0DC6 /* Robot.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB4F683A19785688004F0DC6 /* Robot.caf */; };
+		AB4F684619785688004F0DC6 /* Sci-Fi.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB4F683B19785688004F0DC6 /* Sci-Fi.caf */; };
+		AB50A45412704ABC0059D15F /* Ascending.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44012704ABC0059D15F /* Ascending.caf */; };
+		AB50A45512704ABC0059D15F /* Bark.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44112704ABC0059D15F /* Bark.caf */; };
+		AB50A45612704ABC0059D15F /* Bell Tower.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44212704ABC0059D15F /* Bell Tower.caf */; };
+		AB50A45712704ABC0059D15F /* Blues.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44312704ABC0059D15F /* Blues.caf */; };
+		AB50A45812704ABC0059D15F /* Boing.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44412704ABC0059D15F /* Boing.caf */; };
+		AB50A45912704ABC0059D15F /* Crickets.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44512704ABC0059D15F /* Crickets.caf */; };
+		AB50A45A12704ABC0059D15F /* Default.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44612704ABC0059D15F /* Default.caf */; };
+		AB50A45B12704ABC0059D15F /* Doorbell.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44712704ABC0059D15F /* Doorbell.caf */; };
+		AB50A45C12704ABC0059D15F /* Duck.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44812704ABC0059D15F /* Duck.caf */; };
+		AB50A45D12704ABC0059D15F /* Harp.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44912704ABC0059D15F /* Harp.caf */; };
+		AB50A45E12704ABC0059D15F /* Marimba.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44A12704ABC0059D15F /* Marimba.caf */; };
+		AB50A45F12704ABC0059D15F /* Motorcycle.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44B12704ABC0059D15F /* Motorcycle.caf */; };
+		AB50A46012704ABC0059D15F /* Old Car Horn.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44C12704ABC0059D15F /* Old Car Horn.caf */; };
+		AB50A46112704ABC0059D15F /* Piano Riff.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44D12704ABC0059D15F /* Piano Riff.caf */; };
+		AB50A46212704ABC0059D15F /* Sonar.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44E12704ABC0059D15F /* Sonar.caf */; };
+		AB50A46312704ABC0059D15F /* Strum.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A44F12704ABC0059D15F /* Strum.caf */; };
+		AB50A46412704ABC0059D15F /* Timba.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A45012704ABC0059D15F /* Timba.caf */; };
+		AB50A46512704ABC0059D15F /* Time Passing.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A45112704ABC0059D15F /* Time Passing.caf */; };
+		AB50A46612704ABC0059D15F /* Trill.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A45212704ABC0059D15F /* Trill.caf */; };
+		AB50A46712704ABC0059D15F /* Xylophone.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB50A45312704ABC0059D15F /* Xylophone.caf */; };
+		AB591BD61BB1B5FE00E684E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB591BD51BB1B5FE00E684E4 /* AVFoundation.framework */; };
+		AB6A7F131618EA00004E76DF /* DosecastNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6A7F121618EA00004E76DF /* DosecastNavigationController.m */; };
+		AB6B03B4165071A60085861A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6B03B2165071990085861A /* Security.framework */; };
+		AB6F575B1A0D750C0067B064 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6F575A1A0D750C0067B064 /* AssetsLibrary.framework */; };
+		AB6F575D1A0D753F0067B064 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6F575C1A0D753F0067B064 /* MobileCoreServices.framework */; };
+		AB6F575F1A0D754F0067B064 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB6F575E1A0D754F0067B064 /* QuickLook.framework */; };
+		AB73A42012500E4200026004 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB73A41E12500E4200026004 /* MainWindow-iPad.xib */; };
+		AB73A42112500E4200026004 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB73A41F12500E4200026004 /* MainWindow.xib */; };
+		AB73AB781250541400026004 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		AB73AB7D1250543700026004 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5BBA4512066AE000A3875A /* CoreData.framework */; };
+		AB73AB7E1250544400026004 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE7CAD4117ACD0E00697946 /* QuartzCore.framework */; };
+		AB73AB7F1250544400026004 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB476ABC116ABB27002B9968 /* StoreKit.framework */; };
+		AB73AB861250547600026004 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD9A469115C92C700BA53EC /* AudioToolbox.framework */; };
+		AB73AB871250547600026004 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		AB73AB881250547600026004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		AB73AB891250547600026004 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9A717C11ADC1FB0039B0BF /* MessageUI.framework */; };
+		AB73AB8A1250547600026004 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB229DC1165768100A949CE /* SystemConfiguration.framework */; };
+		AB73AE1F12505EC100026004 /* libDosecast_API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB73AE0712505D6200026004 /* libDosecast_API.a */; };
+		AB73B03512506ADC00026004 /* Dosecast-resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB73AE1012505D7100026004 /* Dosecast-resources.bundle */; };
+		AB835C2317FF69B300145911 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB835C2217FF69B300145911 /* CoreText.framework */; };
+		AB8FA1EF162BD0B100CAA631 /* Dosecast-client.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB259A141597AECE00ED9B0D /* Dosecast-client.strings */; };
+		AB8FA1F0162BD0C200CAA631 /* Dosecast-client.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB259A111597AECE00ED9B0D /* Dosecast-client.strings */; };
+		AB8FA1F1162BD0CB00CAA631 /* Dosecast-client.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB259A171597AECE00ED9B0D /* Dosecast-client.strings */; };
+		AB99F8021BB1CD3900A39638 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AB99F8011BB1CD3900A39638 /* libc++.tbd */; };
+		AB9F668019CC6D8500059E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9F667F19CC6D8500059E3A /* LaunchScreen.storyboard */; };
+		ABAA1CB817BB30910081CD0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4EDB9717A943B700C937A5 /* Images.xcassets */; };
+		ABAE5FC51C2B4028003256DC /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAE5FC21C2B4028003256DC /* HockeySDK.framework */; };
+		ABAE5FC61C2B4028003256DC /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ABAE5FC41C2B4028003256DC /* HockeySDKResources.bundle */; };
+		ABAFC4B613D91E0E00B5648D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAFC4B413D91E0E00B5648D /* AddressBook.framework */; };
+		ABAFC4B713D91E0E00B5648D /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABAFC4B513D91E0E00B5648D /* AddressBookUI.framework */; };
+		ABB85118118E23BE00D28F24 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = ABB85117118E23BE00D28F24 /* iTunesArtwork */; };
+		ABBCE97A159AA9A5003FAE65 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBCE979159AA9A5003FAE65 /* RegistrationViewController.m */; };
+		ABD8B653117AE1A000176B8F /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABD8B652117AE1A000176B8F /* Entitlements.plist */; };
+		ABE94AA415E4486D00BBC0A2 /* Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE94AA015E4486D00BBC0A2 /* Gear.png */; };
+		ABE94AA715E4486D00BBC0A2 /* Gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE94AA115E4486D00BBC0A2 /* Gear@2x.png */; };
+		ABE94AAA15E4486D00BBC0A2 /* Help.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE94AA215E4486D00BBC0A2 /* Help.png */; };
+		ABE94AAD15E4486D00BBC0A2 /* Help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE94AA315E4486D00BBC0A2 /* Help@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB73AE0612505D6200026004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB73ADFF12505D6200026004 /* Dosecast-API.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "Dosecast-API";
+		};
+		AB73AE0F12505D7100026004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB73AE0812505D7100026004 /* Dosecast-resources.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = "Dosecast-resources";
+		};
+		AB73AE1712505DB500026004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB73AE0812505D7100026004 /* Dosecast-resources.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = "Dosecast-resources";
+		};
+		AB73AE1912505DBD00026004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB73ADFF12505D6200026004 /* Dosecast-API.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "Dosecast-API";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		1D6058910D05DD3D006BFB54 /* Dosecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dosecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* Dosecast_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dosecast_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* PillPopper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PillPopper-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		AB259A0915979EB600ED9B0D /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		AB259A0B15979EB600ED9B0D /* RegistrationViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB259A121597AECE00ED9B0D /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = "Dosecast-client.strings"; sourceTree = "<group>"; };
+		AB259A151597AECE00ED9B0D /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = "Dosecast-client.strings"; sourceTree = "<group>"; };
+		AB259A181597AECE00ED9B0D /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = "Dosecast-client.strings"; sourceTree = "<group>"; };
+		AB259A191597AECE00ED9B0D /* RegistrationViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "RegistrationViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB259A1A1597AECE00ED9B0D /* RegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		AB290DE1159A642F00F84B40 /* AboutViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "AboutViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB290DE2159A642F00F84B40 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		AB290DE3159A642F00F84B40 /* PrivacyPolicyViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PrivacyPolicyViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB290DE4159A642F00F84B40 /* PrivacyPolicyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacyPolicyViewController.xib; sourceTree = "<group>"; };
+		AB290DE5159A642F00F84B40 /* TermsOfServiceViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "TermsOfServiceViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB290DE6159A642F00F84B40 /* TermsOfServiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermsOfServiceViewController.xib; sourceTree = "<group>"; };
+		AB290DE7159A642F00F84B40 /* WhatsNewViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WhatsNewViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB290DE8159A642F00F84B40 /* WhatsNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhatsNewViewController.xib; sourceTree = "<group>"; };
+		AB290DF9159A646500F84B40 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		AB290DFA159A646500F84B40 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AboutViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB290DFB159A646500F84B40 /* PrivacyPolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivacyPolicyViewController.h; sourceTree = "<group>"; };
+		AB290DFC159A646500F84B40 /* PrivacyPolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PrivacyPolicyViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB290DFD159A646500F84B40 /* TermsOfServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsOfServiceViewController.h; sourceTree = "<group>"; };
+		AB290DFE159A646500F84B40 /* TermsOfServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = TermsOfServiceViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB290DFF159A646500F84B40 /* WhatsNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsNewViewController.h; sourceTree = "<group>"; };
+		AB290E00159A646500F84B40 /* WhatsNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = WhatsNewViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB290E10159A68C700F84B40 /* AboutIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AboutIcon.png; sourceTree = "<group>"; };
+		AB290E11159A68C700F84B40 /* AboutIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AboutIcon@2x.png"; sourceTree = "<group>"; };
+		AB290E17159A6B6000F84B40 /* PersistentFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistentFlags.h; sourceTree = "<group>"; };
+		AB3380BA19CC81AB000F61DB /* Log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Log.png; sourceTree = "<group>"; };
+		AB3380BB19CC81AB000F61DB /* Log@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Log@2x.png"; sourceTree = "<group>"; };
+		AB3380BC19CC81AB000F61DB /* Mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mail.png; sourceTree = "<group>"; };
+		AB3380BD19CC81AB000F61DB /* Mail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mail@2x.png"; sourceTree = "<group>"; };
+		AB369D0319784F03000F32E5 /* Apex.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apex.caf; sourceTree = "<group>"; };
+		AB369D0419784F03000F32E5 /* Beacon.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Beacon.caf; sourceTree = "<group>"; };
+		AB369D0519784F03000F32E5 /* Bulletin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bulletin.caf; sourceTree = "<group>"; };
+		AB369D0619784F03000F32E5 /* By The Seaside.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "By The Seaside.caf"; sourceTree = "<group>"; };
+		AB369D0719784F03000F32E5 /* Chimes.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chimes.caf; sourceTree = "<group>"; };
+		AB369D0819784F03000F32E5 /* Circuit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Circuit.caf; sourceTree = "<group>"; };
+		AB369D0919784F03000F32E5 /* Constellation.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Constellation.caf; sourceTree = "<group>"; };
+		AB369D0A19784F03000F32E5 /* Cosmic.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cosmic.caf; sourceTree = "<group>"; };
+		AB369D0B19784F03000F32E5 /* Crystals.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crystals.caf; sourceTree = "<group>"; };
+		AB369D0C19784F03000F32E5 /* Hillside.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hillside.caf; sourceTree = "<group>"; };
+		AB369D0D19784F03000F32E5 /* Illuminate.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Illuminate.caf; sourceTree = "<group>"; };
+		AB369D0E19784F03000F32E5 /* Night Owl.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Night Owl.caf"; sourceTree = "<group>"; };
+		AB369D0F19784F03000F32E5 /* Opening.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Opening.caf; sourceTree = "<group>"; };
+		AB369D1019784F03000F32E5 /* Playtime.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Playtime.caf; sourceTree = "<group>"; };
+		AB369D1119784F03000F32E5 /* Presto.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Presto.caf; sourceTree = "<group>"; };
+		AB369D1219784F03000F32E5 /* Radar.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Radar.caf; sourceTree = "<group>"; };
+		AB369D1319784F03000F32E5 /* Radiate.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Radiate.caf; sourceTree = "<group>"; };
+		AB369D1419784F03000F32E5 /* Ripples.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ripples.caf; sourceTree = "<group>"; };
+		AB369D1519784F03000F32E5 /* Sencha.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sencha.caf; sourceTree = "<group>"; };
+		AB369D1619784F03000F32E5 /* Signal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Signal.caf; sourceTree = "<group>"; };
+		AB369D1719784F03000F32E5 /* Silk.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silk.caf; sourceTree = "<group>"; };
+		AB369D1819784F03000F32E5 /* Slow Rise.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Slow Rise.caf"; sourceTree = "<group>"; };
+		AB369D1919784F03000F32E5 /* Stargaze.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stargaze.caf; sourceTree = "<group>"; };
+		AB369D1A19784F03000F32E5 /* Summit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Summit.caf; sourceTree = "<group>"; };
+		AB369D1B19784F03000F32E5 /* Twinkle.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Twinkle.caf; sourceTree = "<group>"; };
+		AB369D1C19784F03000F32E5 /* Uplift.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uplift.caf; sourceTree = "<group>"; };
+		AB369D1D19784F03000F32E5 /* Waves.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Waves.caf; sourceTree = "<group>"; };
+		AB39FA321629069C00D31917 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		AB476ABC116ABB27002B9968 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AB499F8E1A53BFB30060AA0E /* AboutIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AboutIcon@3x.png"; sourceTree = "<group>"; };
+		AB499F8F1A53BFB30060AA0E /* Gear@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gear@3x.png"; sourceTree = "<group>"; };
+		AB499F901A53BFB30060AA0E /* Help@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Help@3x.png"; sourceTree = "<group>"; };
+		AB499F911A53BFB30060AA0E /* Log@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Log@3x.png"; sourceTree = "<group>"; };
+		AB499F921A53BFB30060AA0E /* Mail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mail@3x.png"; sourceTree = "<group>"; };
+		AB4EDB9717A943B700C937A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Dosecast/Images.xcassets; sourceTree = "<group>"; };
+		AB4F683619785688004F0DC6 /* Alarm.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Alarm.caf; sourceTree = "<group>"; };
+		AB4F683719785688004F0DC6 /* Digital.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Digital.caf; sourceTree = "<group>"; };
+		AB4F683819785688004F0DC6 /* Old Phone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Old Phone.caf"; sourceTree = "<group>"; };
+		AB4F683919785688004F0DC6 /* Pinball.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pinball.caf; sourceTree = "<group>"; };
+		AB4F683A19785688004F0DC6 /* Robot.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Robot.caf; sourceTree = "<group>"; };
+		AB4F683B19785688004F0DC6 /* Sci-Fi.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sci-Fi.caf"; sourceTree = "<group>"; };
+		AB50A44012704ABC0059D15F /* Ascending.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ascending.caf; sourceTree = "<group>"; };
+		AB50A44112704ABC0059D15F /* Bark.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bark.caf; sourceTree = "<group>"; };
+		AB50A44212704ABC0059D15F /* Bell Tower.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bell Tower.caf"; sourceTree = "<group>"; };
+		AB50A44312704ABC0059D15F /* Blues.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blues.caf; sourceTree = "<group>"; };
+		AB50A44412704ABC0059D15F /* Boing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Boing.caf; sourceTree = "<group>"; };
+		AB50A44512704ABC0059D15F /* Crickets.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crickets.caf; sourceTree = "<group>"; };
+		AB50A44612704ABC0059D15F /* Default.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Default.caf; sourceTree = "<group>"; };
+		AB50A44712704ABC0059D15F /* Doorbell.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Doorbell.caf; sourceTree = "<group>"; };
+		AB50A44812704ABC0059D15F /* Duck.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Duck.caf; sourceTree = "<group>"; };
+		AB50A44912704ABC0059D15F /* Harp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Harp.caf; sourceTree = "<group>"; };
+		AB50A44A12704ABC0059D15F /* Marimba.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marimba.caf; sourceTree = "<group>"; };
+		AB50A44B12704ABC0059D15F /* Motorcycle.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Motorcycle.caf; sourceTree = "<group>"; };
+		AB50A44C12704ABC0059D15F /* Old Car Horn.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Old Car Horn.caf"; sourceTree = "<group>"; };
+		AB50A44D12704ABC0059D15F /* Piano Riff.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Piano Riff.caf"; sourceTree = "<group>"; };
+		AB50A44E12704ABC0059D15F /* Sonar.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sonar.caf; sourceTree = "<group>"; };
+		AB50A44F12704ABC0059D15F /* Strum.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Strum.caf; sourceTree = "<group>"; };
+		AB50A45012704ABC0059D15F /* Timba.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timba.caf; sourceTree = "<group>"; };
+		AB50A45112704ABC0059D15F /* Time Passing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Time Passing.caf"; sourceTree = "<group>"; };
+		AB50A45212704ABC0059D15F /* Trill.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trill.caf; sourceTree = "<group>"; };
+		AB50A45312704ABC0059D15F /* Xylophone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Xylophone.caf; sourceTree = "<group>"; };
+		AB591BD51BB1B5FE00E684E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AB5BBA4512066AE000A3875A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB6A7F111618E9FF004E76DF /* DosecastNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastNavigationController.h; sourceTree = "<group>"; };
+		AB6A7F121618EA00004E76DF /* DosecastNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DosecastNavigationController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB6B03B2165071990085861A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AB6F575A1A0D750C0067B064 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		AB6F575C1A0D753F0067B064 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AB6F575E1A0D754F0067B064 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		AB73A41E12500E4200026004 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		AB73A41F12500E4200026004 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		AB73ADFF12505D6200026004 /* Dosecast-API.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Dosecast-API.xcodeproj"; path = "../Dosecast-API/Dosecast-API.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		AB73AE0812505D7100026004 /* Dosecast-resources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Dosecast-resources.xcodeproj"; path = "../Dosecast-resources/Dosecast-resources.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		AB835C2217FF69B300145911 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		AB99F8011BB1CD3900A39638 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AB9A717C11ADC1FB0039B0BF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AB9F667F19CC6D8500059E3A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABAE5FC21C2B4028003256DC /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		ABAE5FC41C2B4028003256DC /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		ABAFC4B413D91E0E00B5648D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		ABAFC4B513D91E0E00B5648D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		ABB229DC1165768100A949CE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ABB85117118E23BE00D28F24 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = text; path = iTunesArtwork; sourceTree = "<group>"; };
+		ABBCE979159AA9A5003FAE65 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = RegistrationViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABD8B652117AE1A000176B8F /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		ABD9A469115C92C700BA53EC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ABE7CAD4117ACD0E00697946 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ABE94AA015E4486D00BBC0A2 /* Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gear.png; sourceTree = "<group>"; };
+		ABE94AA115E4486D00BBC0A2 /* Gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Gear@2x.png"; sourceTree = "<group>"; };
+		ABE94AA215E4486D00BBC0A2 /* Help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Help.png; sourceTree = "<group>"; };
+		ABE94AA315E4486D00BBC0A2 /* Help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Help@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB99F8021BB1CD3900A39638 /* libc++.tbd in Frameworks */,
+				AB6F575B1A0D750C0067B064 /* AssetsLibrary.framework in Frameworks */,
+				AB591BD61BB1B5FE00E684E4 /* AVFoundation.framework in Frameworks */,
+				AB6F575F1A0D754F0067B064 /* QuickLook.framework in Frameworks */,
+				AB6F575D1A0D753F0067B064 /* MobileCoreServices.framework in Frameworks */,
+				AB835C2317FF69B300145911 /* CoreText.framework in Frameworks */,
+				AB6B03B4165071A60085861A /* Security.framework in Frameworks */,
+				AB39FA331629069C00D31917 /* AdSupport.framework in Frameworks */,
+				ABAFC4B613D91E0E00B5648D /* AddressBook.framework in Frameworks */,
+				ABAFC4B713D91E0E00B5648D /* AddressBookUI.framework in Frameworks */,
+				AB73AE1F12505EC100026004 /* libDosecast_API.a in Frameworks */,
+				AB73AB781250541400026004 /* UIKit.framework in Frameworks */,
+				AB73AB7D1250543700026004 /* CoreData.framework in Frameworks */,
+				AB73AB7E1250544400026004 /* QuartzCore.framework in Frameworks */,
+				AB73AB7F1250544400026004 /* StoreKit.framework in Frameworks */,
+				AB73AB861250547600026004 /* AudioToolbox.framework in Frameworks */,
+				AB73AB871250547600026004 /* CoreGraphics.framework in Frameworks */,
+				AB73AB881250547600026004 /* Foundation.framework in Frameworks */,
+				AB73AB891250547600026004 /* MessageUI.framework in Frameworks */,
+				AB73AB8A1250547600026004 /* SystemConfiguration.framework in Frameworks */,
+				ABAE5FC51C2B4028003256DC /* HockeySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB290DF9159A646500F84B40 /* AboutViewController.h */,
+				AB290DFA159A646500F84B40 /* AboutViewController.m */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				AB6A7F111618E9FF004E76DF /* DosecastNavigationController.h */,
+				AB6A7F121618EA00004E76DF /* DosecastNavigationController.m */,
+				AB290E17159A6B6000F84B40 /* PersistentFlags.h */,
+				AB290DFB159A646500F84B40 /* PrivacyPolicyViewController.h */,
+				AB290DFC159A646500F84B40 /* PrivacyPolicyViewController.m */,
+				AB259A0915979EB600ED9B0D /* RegistrationViewController.h */,
+				ABBCE979159AA9A5003FAE65 /* RegistrationViewController.m */,
+				AB259A0B15979EB600ED9B0D /* RegistrationViewControllerDelegate.h */,
+				AB290DFD159A646500F84B40 /* TermsOfServiceViewController.h */,
+				AB290DFE159A646500F84B40 /* TermsOfServiceViewController.m */,
+				AB290DFF159A646500F84B40 /* WhatsNewViewController.h */,
+				AB290E00159A646500F84B40 /* WhatsNewViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Dosecast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				AB73ADFF12505D6200026004 /* Dosecast-API.xcodeproj */,
+				AB73AE0812505D7100026004 /* Dosecast-resources.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				ABAE5FC11C2B4028003256DC /* HockeySDK.embeddedframework */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				ABD8B652117AE1A000176B8F /* Entitlements.plist */,
+				28A0AAE50D9B0CCF005BE974 /* Dosecast_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB4EDB9717A943B700C937A5 /* Images.xcassets */,
+				AB259A101597AECE00ED9B0D /* de.lproj */,
+				AB259A131597AECE00ED9B0D /* en.lproj */,
+				AB259A161597AECE00ED9B0D /* fr.lproj */,
+				AB290E10159A68C700F84B40 /* AboutIcon.png */,
+				AB499F8E1A53BFB30060AA0E /* AboutIcon@3x.png */,
+				AB499F8F1A53BFB30060AA0E /* Gear@3x.png */,
+				AB499F901A53BFB30060AA0E /* Help@3x.png */,
+				AB499F911A53BFB30060AA0E /* Log@3x.png */,
+				AB499F921A53BFB30060AA0E /* Mail@3x.png */,
+				AB290E11159A68C700F84B40 /* AboutIcon@2x.png */,
+				AB290DE1159A642F00F84B40 /* AboutViewController-iPad.xib */,
+				AB290DE2159A642F00F84B40 /* AboutViewController.xib */,
+				ABE94AA015E4486D00BBC0A2 /* Gear.png */,
+				ABE94AA115E4486D00BBC0A2 /* Gear@2x.png */,
+				ABE94AA215E4486D00BBC0A2 /* Help.png */,
+				ABE94AA315E4486D00BBC0A2 /* Help@2x.png */,
+				AB3380BA19CC81AB000F61DB /* Log.png */,
+				AB3380BB19CC81AB000F61DB /* Log@2x.png */,
+				AB3380BC19CC81AB000F61DB /* Mail.png */,
+				AB3380BD19CC81AB000F61DB /* Mail@2x.png */,
+				ABB85117118E23BE00D28F24 /* iTunesArtwork */,
+				AB73A41E12500E4200026004 /* MainWindow-iPad.xib */,
+				AB73A41F12500E4200026004 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* PillPopper-Info.plist */,
+				AB290DE3159A642F00F84B40 /* PrivacyPolicyViewController-iPad.xib */,
+				AB290DE4159A642F00F84B40 /* PrivacyPolicyViewController.xib */,
+				AB259A191597AECE00ED9B0D /* RegistrationViewController-iPad.xib */,
+				AB259A1A1597AECE00ED9B0D /* RegistrationViewController.xib */,
+				AB290DE5159A642F00F84B40 /* TermsOfServiceViewController-iPad.xib */,
+				AB290DE6159A642F00F84B40 /* TermsOfServiceViewController.xib */,
+				AB290DE7159A642F00F84B40 /* WhatsNewViewController-iPad.xib */,
+				AB290DE8159A642F00F84B40 /* WhatsNewViewController.xib */,
+				AB50A43F12704ABC0059D15F /* ReminderSounds */,
+				AB9F667F19CC6D8500059E3A /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB99F8011BB1CD3900A39638 /* libc++.tbd */,
+				AB591BD51BB1B5FE00E684E4 /* AVFoundation.framework */,
+				AB6F575E1A0D754F0067B064 /* QuickLook.framework */,
+				AB6F575C1A0D753F0067B064 /* MobileCoreServices.framework */,
+				AB6F575A1A0D750C0067B064 /* AssetsLibrary.framework */,
+				AB835C2217FF69B300145911 /* CoreText.framework */,
+				AB6B03B2165071990085861A /* Security.framework */,
+				ABAFC4B413D91E0E00B5648D /* AddressBook.framework */,
+				ABAFC4B513D91E0E00B5648D /* AddressBookUI.framework */,
+				AB39FA321629069C00D31917 /* AdSupport.framework */,
+				AB5BBA4512066AE000A3875A /* CoreData.framework */,
+				AB9A717C11ADC1FB0039B0BF /* MessageUI.framework */,
+				ABE7CAD4117ACD0E00697946 /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				ABD9A469115C92C700BA53EC /* AudioToolbox.framework */,
+				ABB229DC1165768100A949CE /* SystemConfiguration.framework */,
+				AB476ABC116ABB27002B9968 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB259A101597AECE00ED9B0D /* de.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AB259A111597AECE00ED9B0D /* Dosecast-client.strings */,
+			);
+			path = de.lproj;
+			sourceTree = "<group>";
+		};
+		AB259A131597AECE00ED9B0D /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AB259A141597AECE00ED9B0D /* Dosecast-client.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		AB259A161597AECE00ED9B0D /* fr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AB259A171597AECE00ED9B0D /* Dosecast-client.strings */,
+			);
+			path = fr.lproj;
+			sourceTree = "<group>";
+		};
+		AB50A43F12704ABC0059D15F /* ReminderSounds */ = {
+			isa = PBXGroup;
+			children = (
+				AB369D0319784F03000F32E5 /* Apex.caf */,
+				AB369D0419784F03000F32E5 /* Beacon.caf */,
+				AB369D0519784F03000F32E5 /* Bulletin.caf */,
+				AB369D0619784F03000F32E5 /* By The Seaside.caf */,
+				AB369D0719784F03000F32E5 /* Chimes.caf */,
+				AB369D0819784F03000F32E5 /* Circuit.caf */,
+				AB369D0919784F03000F32E5 /* Constellation.caf */,
+				AB369D0A19784F03000F32E5 /* Cosmic.caf */,
+				AB369D0B19784F03000F32E5 /* Crystals.caf */,
+				AB369D0C19784F03000F32E5 /* Hillside.caf */,
+				AB369D0D19784F03000F32E5 /* Illuminate.caf */,
+				AB369D0E19784F03000F32E5 /* Night Owl.caf */,
+				AB369D0F19784F03000F32E5 /* Opening.caf */,
+				AB369D1019784F03000F32E5 /* Playtime.caf */,
+				AB369D1119784F03000F32E5 /* Presto.caf */,
+				AB369D1219784F03000F32E5 /* Radar.caf */,
+				AB369D1319784F03000F32E5 /* Radiate.caf */,
+				AB369D1419784F03000F32E5 /* Ripples.caf */,
+				AB369D1519784F03000F32E5 /* Sencha.caf */,
+				AB369D1619784F03000F32E5 /* Signal.caf */,
+				AB369D1719784F03000F32E5 /* Silk.caf */,
+				AB369D1819784F03000F32E5 /* Slow Rise.caf */,
+				AB369D1919784F03000F32E5 /* Stargaze.caf */,
+				AB369D1A19784F03000F32E5 /* Summit.caf */,
+				AB369D1B19784F03000F32E5 /* Twinkle.caf */,
+				AB369D1C19784F03000F32E5 /* Uplift.caf */,
+				AB369D1D19784F03000F32E5 /* Waves.caf */,
+				AB4F683619785688004F0DC6 /* Alarm.caf */,
+				AB50A44012704ABC0059D15F /* Ascending.caf */,
+				AB50A44112704ABC0059D15F /* Bark.caf */,
+				AB50A44212704ABC0059D15F /* Bell Tower.caf */,
+				AB50A44312704ABC0059D15F /* Blues.caf */,
+				AB50A44412704ABC0059D15F /* Boing.caf */,
+				AB50A44512704ABC0059D15F /* Crickets.caf */,
+				AB50A44612704ABC0059D15F /* Default.caf */,
+				AB4F683719785688004F0DC6 /* Digital.caf */,
+				AB50A44712704ABC0059D15F /* Doorbell.caf */,
+				AB50A44812704ABC0059D15F /* Duck.caf */,
+				AB50A44912704ABC0059D15F /* Harp.caf */,
+				AB50A44A12704ABC0059D15F /* Marimba.caf */,
+				AB50A44B12704ABC0059D15F /* Motorcycle.caf */,
+				AB50A44C12704ABC0059D15F /* Old Car Horn.caf */,
+				AB4F683819785688004F0DC6 /* Old Phone.caf */,
+				AB50A44D12704ABC0059D15F /* Piano Riff.caf */,
+				AB4F683919785688004F0DC6 /* Pinball.caf */,
+				AB4F683A19785688004F0DC6 /* Robot.caf */,
+				AB4F683B19785688004F0DC6 /* Sci-Fi.caf */,
+				AB50A44E12704ABC0059D15F /* Sonar.caf */,
+				AB50A44F12704ABC0059D15F /* Strum.caf */,
+				AB50A45012704ABC0059D15F /* Timba.caf */,
+				AB50A45112704ABC0059D15F /* Time Passing.caf */,
+				AB50A45212704ABC0059D15F /* Trill.caf */,
+				AB50A45312704ABC0059D15F /* Xylophone.caf */,
+			);
+			path = ReminderSounds;
+			sourceTree = "<group>";
+		};
+		AB73AE0012505D6200026004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB73AE0712505D6200026004 /* libDosecast_API.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB73AE0912505D7100026004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB73AE1012505D7100026004 /* Dosecast-resources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABAE5FC11C2B4028003256DC /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE5FC21C2B4028003256DC /* HockeySDK.framework */,
+				ABAE5FC31C2B4028003256DC /* Resources */,
+			);
+			path = HockeySDK.embeddedframework;
+			sourceTree = "<group>";
+		};
+		ABAE5FC31C2B4028003256DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABAE5FC41C2B4028003256DC /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Dosecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Dosecast" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB73AE1812505DB500026004 /* PBXTargetDependency */,
+				AB73AE1A12505DBD00026004 /* PBXTargetDependency */,
+			);
+			name = Dosecast;
+			productName = PillPopper;
+			productReference = 1D6058910D05DD3D006BFB54 /* Dosecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Montuno Software, LLC";
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = YFGDYWZCK8;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Dosecast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				de,
+				fr,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AB73AE0012505D6200026004 /* Products */;
+					ProjectRef = AB73ADFF12505D6200026004 /* Dosecast-API.xcodeproj */;
+				},
+				{
+					ProductGroup = AB73AE0912505D7100026004 /* Products */;
+					ProjectRef = AB73AE0812505D7100026004 /* Dosecast-resources.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Dosecast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AB73AE0712505D6200026004 /* libDosecast_API.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDosecast_API.a;
+			remoteRef = AB73AE0612505D6200026004 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB73AE1012505D7100026004 /* Dosecast-resources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Dosecast-resources.bundle";
+			remoteRef = AB73AE0F12505D7100026004 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8FA1F1162BD0CB00CAA631 /* Dosecast-client.strings in Resources */,
+				AB369D2A19784F03000F32E5 /* Constellation.caf in Resources */,
+				AB499F971A53BFB30060AA0E /* Help@3x.png in Resources */,
+				AB369D4019784F03000F32E5 /* Ripples.caf in Resources */,
+				ABAA1CB817BB30910081CD0D /* Images.xcassets in Resources */,
+				AB369D2819784F03000F32E5 /* Circuit.caf in Resources */,
+				AB8FA1F0162BD0C200CAA631 /* Dosecast-client.strings in Resources */,
+				AB369D5019784F03000F32E5 /* Uplift.caf in Resources */,
+				AB369D3819784F03000F32E5 /* Playtime.caf in Resources */,
+				AB8FA1EF162BD0B100CAA631 /* Dosecast-client.strings in Resources */,
+				AB369D4419784F03000F32E5 /* Signal.caf in Resources */,
+				AB369D4819784F03000F32E5 /* Slow Rise.caf in Resources */,
+				AB3380C419CC81AB000F61DB /* Mail@2x.png in Resources */,
+				AB369D4619784F03000F32E5 /* Silk.caf in Resources */,
+				AB369D2219784F03000F32E5 /* Bulletin.caf in Resources */,
+				AB73B03512506ADC00026004 /* Dosecast-resources.bundle in Resources */,
+				ABD8B653117AE1A000176B8F /* Entitlements.plist in Resources */,
+				ABB85118118E23BE00D28F24 /* iTunesArtwork in Resources */,
+				AB369D3219784F03000F32E5 /* Illuminate.caf in Resources */,
+				AB3380C219CC81AB000F61DB /* Mail.png in Resources */,
+				AB369D3419784F03000F32E5 /* Night Owl.caf in Resources */,
+				AB369D3019784F03000F32E5 /* Hillside.caf in Resources */,
+				AB369D1E19784F03000F32E5 /* Apex.caf in Resources */,
+				AB73A42012500E4200026004 /* MainWindow-iPad.xib in Resources */,
+				AB73A42112500E4200026004 /* MainWindow.xib in Resources */,
+				AB499F9B1A53BFB30060AA0E /* Mail@3x.png in Resources */,
+				AB50A45412704ABC0059D15F /* Ascending.caf in Resources */,
+				AB4F683E19785688004F0DC6 /* Digital.caf in Resources */,
+				AB50A45512704ABC0059D15F /* Bark.caf in Resources */,
+				AB50A45612704ABC0059D15F /* Bell Tower.caf in Resources */,
+				AB369D4E19784F03000F32E5 /* Twinkle.caf in Resources */,
+				AB369D4A19784F03000F32E5 /* Stargaze.caf in Resources */,
+				AB50A45712704ABC0059D15F /* Blues.caf in Resources */,
+				AB4F684219785688004F0DC6 /* Pinball.caf in Resources */,
+				AB50A45812704ABC0059D15F /* Boing.caf in Resources */,
+				AB3380C019CC81AB000F61DB /* Log@2x.png in Resources */,
+				AB50A45912704ABC0059D15F /* Crickets.caf in Resources */,
+				AB4F683C19785688004F0DC6 /* Alarm.caf in Resources */,
+				AB50A45A12704ABC0059D15F /* Default.caf in Resources */,
+				AB50A45B12704ABC0059D15F /* Doorbell.caf in Resources */,
+				ABAE5FC61C2B4028003256DC /* HockeySDKResources.bundle in Resources */,
+				AB50A45C12704ABC0059D15F /* Duck.caf in Resources */,
+				AB369D4219784F03000F32E5 /* Sencha.caf in Resources */,
+				AB369D2419784F03000F32E5 /* By The Seaside.caf in Resources */,
+				AB50A45D12704ABC0059D15F /* Harp.caf in Resources */,
+				AB499F991A53BFB30060AA0E /* Log@3x.png in Resources */,
+				AB50A45E12704ABC0059D15F /* Marimba.caf in Resources */,
+				AB50A45F12704ABC0059D15F /* Motorcycle.caf in Resources */,
+				AB369D5219784F03000F32E5 /* Waves.caf in Resources */,
+				AB369D2C19784F03000F32E5 /* Cosmic.caf in Resources */,
+				AB50A46012704ABC0059D15F /* Old Car Horn.caf in Resources */,
+				AB50A46112704ABC0059D15F /* Piano Riff.caf in Resources */,
+				AB50A46212704ABC0059D15F /* Sonar.caf in Resources */,
+				AB50A46312704ABC0059D15F /* Strum.caf in Resources */,
+				AB369D2019784F03000F32E5 /* Beacon.caf in Resources */,
+				AB50A46412704ABC0059D15F /* Timba.caf in Resources */,
+				AB4F684619785688004F0DC6 /* Sci-Fi.caf in Resources */,
+				AB50A46512704ABC0059D15F /* Time Passing.caf in Resources */,
+				AB50A46612704ABC0059D15F /* Trill.caf in Resources */,
+				AB50A46712704ABC0059D15F /* Xylophone.caf in Resources */,
+				AB259A211597AECE00ED9B0D /* RegistrationViewController-iPad.xib in Resources */,
+				AB369D3E19784F03000F32E5 /* Radiate.caf in Resources */,
+				AB4F684419785688004F0DC6 /* Robot.caf in Resources */,
+				AB3380BE19CC81AB000F61DB /* Log.png in Resources */,
+				AB259A231597AECE00ED9B0D /* RegistrationViewController.xib in Resources */,
+				AB290DE9159A642F00F84B40 /* AboutViewController-iPad.xib in Resources */,
+				AB369D4C19784F03000F32E5 /* Summit.caf in Resources */,
+				AB290DEB159A642F00F84B40 /* AboutViewController.xib in Resources */,
+				AB369D3C19784F03000F32E5 /* Radar.caf in Resources */,
+				AB290DED159A642F00F84B40 /* PrivacyPolicyViewController-iPad.xib in Resources */,
+				AB290DEF159A642F00F84B40 /* PrivacyPolicyViewController.xib in Resources */,
+				AB290DF1159A642F00F84B40 /* TermsOfServiceViewController-iPad.xib in Resources */,
+				AB290DF3159A642F00F84B40 /* TermsOfServiceViewController.xib in Resources */,
+				AB499F931A53BFB30060AA0E /* AboutIcon@3x.png in Resources */,
+				AB369D2E19784F03000F32E5 /* Crystals.caf in Resources */,
+				AB290DF5159A642F00F84B40 /* WhatsNewViewController-iPad.xib in Resources */,
+				AB369D3A19784F03000F32E5 /* Presto.caf in Resources */,
+				AB290DF7159A642F00F84B40 /* WhatsNewViewController.xib in Resources */,
+				AB290E12159A68C700F84B40 /* AboutIcon.png in Resources */,
+				AB290E14159A68C700F84B40 /* AboutIcon@2x.png in Resources */,
+				AB369D2619784F03000F32E5 /* Chimes.caf in Resources */,
+				AB9F668019CC6D8500059E3A /* LaunchScreen.storyboard in Resources */,
+				AB499F951A53BFB30060AA0E /* Gear@3x.png in Resources */,
+				ABE94AA415E4486D00BBC0A2 /* Gear.png in Resources */,
+				ABE94AA715E4486D00BBC0A2 /* Gear@2x.png in Resources */,
+				ABE94AAA15E4486D00BBC0A2 /* Help.png in Resources */,
+				ABE94AAD15E4486D00BBC0A2 /* Help@2x.png in Resources */,
+				AB4F684019785688004F0DC6 /* Old Phone.caf in Resources */,
+				AB369D3619784F03000F32E5 /* Opening.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				AB290E01159A646500F84B40 /* AboutViewController.m in Sources */,
+				AB290E03159A646500F84B40 /* PrivacyPolicyViewController.m in Sources */,
+				AB290E05159A646500F84B40 /* TermsOfServiceViewController.m in Sources */,
+				AB290E07159A646500F84B40 /* WhatsNewViewController.m in Sources */,
+				ABBCE97A159AA9A5003FAE65 /* RegistrationViewController.m in Sources */,
+				AB6A7F131618EA00004E76DF /* DosecastNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB73AE1812505DB500026004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Dosecast-resources";
+			targetProxy = AB73AE1712505DB500026004 /* PBXContainerItemProxy */;
+		};
+		AB73AE1A12505DBD00026004 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Dosecast-API";
+			targetProxy = AB73AE1912505DBD00026004 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB259A111597AECE00ED9B0D /* Dosecast-client.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB259A121597AECE00ED9B0D /* de */,
+			);
+			name = "Dosecast-client.strings";
+			sourceTree = "<group>";
+		};
+		AB259A141597AECE00ED9B0D /* Dosecast-client.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB259A151597AECE00ED9B0D /* en */,
+			);
+			name = "Dosecast-client.strings";
+			sourceTree = "<group>";
+		};
+		AB259A171597AECE00ED9B0D /* Dosecast-client.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB259A181597AECE00ED9B0D /* fr */,
+			);
+			name = "Dosecast-client.strings";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK.embeddedframework",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dosecast_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					DEBUG_SERVER,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = "'${PROJECT_DIR}/../Dosecast-API'";
+				INFOPLIST_FILE = "PillPopper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"'$(SRCROOT)'",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-weak_framework",
+					UIKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.montunosoftware.pillpopper;
+				PRODUCT_NAME = Dosecast;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development;
+		};
+		1D6058950D05DD3E006BFB54 /* Ad_Hoc_Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dosecast_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = "'${PROJECT_DIR}/../Dosecast-API'";
+				INFOPLIST_FILE = "PillPopper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"'$(SRCROOT)'",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-weak_framework",
+					UIKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.montunosoftware.pillpopper;
+				PRODUCT_NAME = Dosecast;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Ad_Hoc_Distribution;
+		};
+		AB20C8011A2CFB2C00DB9D25 /* Development_Prod_Server */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-weak_framework",
+					UIKit,
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development_Prod_Server;
+		};
+		AB20C8021A2CFB2C00DB9D25 /* Development_Prod_Server */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK.embeddedframework",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dosecast_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = "'${PROJECT_DIR}/../Dosecast-API'";
+				INFOPLIST_FILE = "PillPopper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"'$(SRCROOT)'",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-weak_framework",
+					UIKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.montunosoftware.pillpopper;
+				PRODUCT_NAME = Dosecast;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development_Prod_Server;
+		};
+		AB640FBF118F3797007F8DD7 /* App_Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-weak_framework",
+					UIKit,
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				STRIP_INSTALLED_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = App_Store;
+		};
+		AB640FC0118F3797007F8DD7 /* App_Store */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Dosecast_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = APP_STORE;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_THUMB_SUPPORT = NO;
+				HEADER_SEARCH_PATHS = "'${PROJECT_DIR}/../Dosecast-API'";
+				INFOPLIST_FILE = "PillPopper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"'$(SRCROOT)'",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-weak_framework",
+					UIKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.montunosoftware.pillpopper;
+				PRODUCT_NAME = Dosecast;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = App_Store;
+		};
+		C01FCF4F08A954540054247B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-weak_framework",
+					UIKit,
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development;
+		};
+		C01FCF5008A954540054247B /* Ad_Hoc_Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-weak_framework",
+					UIKit,
+					"-ObjC",
+				);
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				STRIP_INSTALLED_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Ad_Hoc_Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Dosecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Development */,
+				AB20C8021A2CFB2C00DB9D25 /* Development_Prod_Server */,
+				1D6058950D05DD3E006BFB54 /* Ad_Hoc_Distribution */,
+				AB640FC0118F3797007F8DD7 /* App_Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Ad_Hoc_Distribution;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Dosecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Development */,
+				AB20C8011A2CFB2C00DB9D25 /* Development_Prod_Server */,
+				C01FCF5008A954540054247B /* Ad_Hoc_Distribution */,
+				AB640FBF118F3797007F8DD7 /* App_Store */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Ad_Hoc_Distribution;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DrugAddEditViewController">
+            <connections>
+                <outlet property="archiveButtonCell" destination="6XR-4Y-Kbu" id="Evz-Lw-wJO"/>
+                <outlet property="deleteButtonCell" destination="tV0-o6-hy8" id="hCE-j3-ZLb"/>
+                <outlet property="directionsCell" destination="23l-UY-j6i" id="LcG-ev-YZF"/>
+                <outlet property="doctorCell" destination="jfj-p9-SLa" id="iSP-QS-Vgr"/>
+                <outlet property="drugImageCell" destination="5OG-uU-brp" id="fm2-d9-zJI"/>
+                <outlet property="drugNameCell" destination="FBy-iL-TT3" id="aoN-17-nU4"/>
+                <outlet property="drugPlaceholderImageView" destination="JGY-0W-S0L" id="ZxH-Up-8b5"/>
+                <outlet property="drugTypeCell" destination="DWe-3O-ZlV" id="uDC-S9-Sdw"/>
+                <outlet property="expirationAlertCell" destination="C37-Uc-8i1" id="fri-8X-nmP"/>
+                <outlet property="expirationDateCell" destination="cpa-i7-YWi" id="Y57-Qp-taF"/>
+                <outlet property="logMissedDosesCell" destination="ssb-OW-yIo" id="xel-67-LeH"/>
+                <outlet property="notesCell" destination="439-8C-dt7" id="1Dv-mB-7PR"/>
+                <outlet property="personCell" destination="bOl-kf-m4l" id="rMQ-Tw-G0P"/>
+                <outlet property="pharmacyCell" destination="l7O-h6-bty" id="mqP-62-Nrq"/>
+                <outlet property="prescriptionNumCell" destination="fel-Sg-Dp7" id="zue-A9-Mny"/>
+                <outlet property="refillAlertCell" destination="J4X-aN-AgA" id="KuR-Zd-uYf"/>
+                <outlet property="refillCell" destination="PwC-ig-TiW" id="Jvl-8K-qDw"/>
+                <outlet property="refillsRemainingCell" destination="kbS-GG-tft" id="11c-pD-Za4"/>
+                <outlet property="remainingCell" destination="ek1-Pq-HrC" id="uTo-ZF-2N8"/>
+                <outlet property="remindersCell" destination="55Y-T4-UY4" id="7Ro-kw-Zxe"/>
+                <outlet property="secondaryRemindersCell" destination="Qua-6l-RK6" id="V6L-s2-WXd"/>
+                <outlet property="tableView" destination="173" id="177"/>
+                <outlet property="takeDrugAsNeededCell" destination="ioh-E7-exA" id="cQm-FR-Lpx"/>
+                <outlet property="takeDrugIntervalCell" destination="Hvp-S5-nxB" id="CCG-Jg-PjY"/>
+                <outlet property="takeDrugScheduledCell" destination="V60-0z-j72" id="bYW-2f-Vy2"/>
+                <outlet property="unarchiveButtonCell" destination="E67-iN-aef" id="hF7-kd-9O6"/>
+                <outlet property="view" destination="121" id="176"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="121">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="173">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="189"/>
+                        <outlet property="delegate" destination="-1" id="190"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="JGY-0W-S0L">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="jfj-p9-SLa" userLabel="DoctorCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jfj-p9-SLa" id="hg0-az-doY">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Doctor" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="e3o-md-aOF">
+                        <rect key="frame" x="6" y="0.0" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="NqR-7g-Abd">
+                        <rect key="frame" x="120" y="0.0" width="164" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="fel-Sg-Dp7" userLabel="PrescriptionNumCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fel-Sg-Dp7" id="xro-eA-iUD">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Prescription #" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="6QJ-Ci-HsO">
+                        <rect key="frame" x="6" y="0.0" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="bFf-5N-z9C">
+                        <rect key="frame" x="150" y="0.0" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="J4X-aN-AgA" userLabel="RefillAlertCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J4X-aN-AgA" id="con-QL-4At">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Refill Alert" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="gqL-oE-afP">
+                        <rect key="frame" x="6" y="0.0" width="132" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="4 weeks before empty" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="V2a-pL-bdQ">
+                        <rect key="frame" x="146" y="0.0" width="138" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Qua-6l-RK6" userLabel="SecondaryRemindersCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qua-6l-RK6" id="1wJ-0O-Hbd">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Secondary Reminders" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="zdl-5I-I4I">
+                        <rect key="frame" x="6" y="0.0" width="204" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Cu1-lh-rR1">
+                        <rect key="frame" x="259" y="6" width="51" height="31"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    </switch>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="FBy-iL-TT3" userLabel="DrugNameCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FBy-iL-TT3" id="Mc5-e5-B05">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Drug Name" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="Lye-B6-0yd">
+                        <rect key="frame" x="6" y="0.0" width="111" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="10" minimumFontSize="10" id="FBP-X0-P0A">
+                        <rect key="frame" x="125" y="0.0" width="159" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="ek1-Pq-HrC" userLabel="RemainingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ek1-Pq-HrC" id="tPI-in-4aQ">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Applications Remaining" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="mtm-67-dR2">
+                        <rect key="frame" x="6" y="0.0" width="190" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="100.05 mL" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="BSF-3D-dyg">
+                        <rect key="frame" x="204" y="0.0" width="80" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="6XR-4Y-Kbu" userLabel="ArchiveButtonCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6XR-4Y-Kbu" id="Fre-bi-0D3">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FtU-En-iXE">
+                        <rect key="frame" x="0.0" y="1" width="318" height="42"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="handleArchive:" destination="-1" eventType="touchUpInside" id="cxv-LK-y0K"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="E67-iN-aef" userLabel="UnarchiveButtonCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E67-iN-aef" id="piz-ly-BVT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fQF-mD-t8h">
+                        <rect key="frame" x="0.0" y="1" width="318" height="42"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="handleArchive:" destination="-1" eventType="touchUpInside" id="Br6-sP-Kad"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="23l-UY-j6i" userLabel="DirectionsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="23l-UY-j6i" id="tuh-uz-ynm">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Directions" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="ntz-GW-bxy">
+                        <rect key="frame" x="6" y="0.0" width="111" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="10" minimumFontSize="10" id="qeE-2q-5j0">
+                        <rect key="frame" x="125" y="0.0" width="159" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="ioh-E7-exA" userLabel="TakeDrugAsNeededCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ioh-E7-exA" id="9W9-KS-WNu">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Take Drug" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="8I2-HS-Pzm">
+                        <rect key="frame" x="6" y="0.0" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" text="Limit Doses" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="36E-u7-2KX">
+                        <rect key="frame" x="6" y="44" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="As needed" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="CcK-vB-dqd">
+                        <rect key="frame" x="148" y="0.0" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" text="10/30/10" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="hxT-Tb-HN7">
+                        <rect key="frame" x="148" y="88" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" text="Starting" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="D7W-LC-iaP">
+                        <rect key="frame" x="6" y="88" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" text="Ending" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="gQ6-Rz-HBi">
+                        <rect key="frame" x="6" y="132" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" text="11/15/10" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="TXw-tj-piA">
+                        <rect key="frame" x="148" y="132" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" text="Max 2 doses per day" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="Vwu-Ko-enP">
+                        <rect key="frame" x="120" y="44" width="164" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="V60-0z-j72" userLabel="TakeDrugScheduledCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="510"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V60-0z-j72" id="Fq8-qI-xOR">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="509"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Take Drug" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="Gwe-Yf-MDc">
+                        <rect key="frame" x="6" y="0.0" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="On a schedule" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="R4G-bR-MSE">
+                        <rect key="frame" x="148" y="0.0" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" text="Frequency" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="2mb-Dl-UMt">
+                        <rect key="frame" x="6" y="44" width="85" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" text="Toutes les semaines, chaque:" textAlignment="right" lineBreakMode="wordWrap" minimumFontSize="11" id="KhU-bC-mHb">
+                        <rect key="frame" x="93" y="55" width="191" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" text="Sunday" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="0UK-jy-1cc">
+                        <rect key="frame" x="148" y="76" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" text="Sunday" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="w86-3O-bA6">
+                        <rect key="frame" x="148" y="97" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" text="Sunday" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="Tj6-Kp-5GF">
+                        <rect key="frame" x="148" y="118" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" text="Sunday" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="vdF-JG-DPR">
+                        <rect key="frame" x="148" y="139" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" text="Sunday" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="lQG-SR-SrQ">
+                        <rect key="frame" x="148" y="160" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" text="Sunday" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="Ywk-c1-xFb">
+                        <rect key="frame" x="148" y="181" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="scaleToFill" text="Sunday" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="Ffm-f0-CXD">
+                        <rect key="frame" x="148" y="202" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" text="Starting" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="EBg-vd-nad">
+                        <rect key="frame" x="6" y="233" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="13" contentMode="scaleToFill" text="10/30/10" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="B6Q-aG-hIe">
+                        <rect key="frame" x="148" y="233" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="14" contentMode="scaleToFill" text="Ending" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="RpB-tN-MjN">
+                        <rect key="frame" x="6" y="277" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="15" contentMode="scaleToFill" text="11/15/10" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="IKG-cS-A6Y">
+                        <rect key="frame" x="148" y="277" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="16" contentMode="scaleToFill" text="Time of Day" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="M2x-KJ-85M">
+                        <rect key="frame" x="6" y="321" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="17" contentMode="scaleToFill" text="9:00 am" textAlignment="right" lineBreakMode="wordWrap" minimumFontSize="10" id="UOR-UH-gtm">
+                        <rect key="frame" x="148" y="332" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="18" contentMode="scaleToFill" text="11:00 am" textAlignment="right" lineBreakMode="wordWrap" minimumFontSize="10" id="SWw-ow-dhf">
+                        <rect key="frame" x="148" y="353" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="19" contentMode="scaleToFill" text="2:00 pm" textAlignment="right" lineBreakMode="wordWrap" minimumFontSize="10" id="0Sh-Aa-7Ia">
+                        <rect key="frame" x="148" y="374" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="scaleToFill" text="5:30 pm" textAlignment="right" lineBreakMode="wordWrap" minimumFontSize="10" id="vPh-Ry-ARU">
+                        <rect key="frame" x="148" y="395" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="21" contentMode="scaleToFill" text="5:30 pm" textAlignment="right" lineBreakMode="wordWrap" minimumFontSize="10" id="vkv-Pf-AIe">
+                        <rect key="frame" x="148" y="416" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="22" contentMode="scaleToFill" text="5:30 pm" textAlignment="right" lineBreakMode="wordWrap" minimumFontSize="10" id="inJ-id-evR">
+                        <rect key="frame" x="148" y="437" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="23" contentMode="scaleToFill" text="5:30 pm" textAlignment="right" lineBreakMode="wordWrap" minimumFontSize="10" id="Qhz-M3-zAN">
+                        <rect key="frame" x="148" y="458" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="24" contentMode="scaleToFill" text="5:30 pm" textAlignment="right" lineBreakMode="wordWrap" minimumFontSize="10" id="8yp-Iz-m8L">
+                        <rect key="frame" x="148" y="479" width="136" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="55Y-T4-UY4" userLabel="RemindersCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="55Y-T4-UY4" id="Lrb-OV-L1a">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Reminders" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="5bl-LL-JWX">
+                        <rect key="frame" x="6" y="0.0" width="204" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="uzw-LB-ciK">
+                        <rect key="frame" x="259" y="6" width="51" height="31"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    </switch>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="kbS-GG-tft" userLabel="RefillsRemainingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kbS-GG-tft" id="p1r-zj-GlO">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Refills Remaining" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="7pB-sR-l7e">
+                        <rect key="frame" x="6" y="0.0" width="164" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="wFO-NH-c6w">
+                        <rect key="frame" x="178" y="0.0" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="bOl-kf-m4l" userLabel="PersonCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bOl-kf-m4l" id="K5q-Xr-wz3">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="For" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="Y3O-KL-79h" userLabel="Label - For">
+                        <rect key="frame" x="6" y="0.0" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="9tv-CN-xTf">
+                        <rect key="frame" x="120" y="0.0" width="164" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="cpa-i7-YWi" userLabel="ExpirationDateCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cpa-i7-YWi" id="1ne-sq-cfH">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Expiration Date" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="CCP-3Y-M3V">
+                        <rect key="frame" x="6" y="0.0" width="164" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="9Jw-3O-h9e">
+                        <rect key="frame" x="178" y="0.0" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="C37-Uc-8i1" userLabel="ExpirationAlertCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C37-Uc-8i1" id="ezj-pg-6FZ">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Expiration Alert" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="eM6-qz-DRM">
+                        <rect key="frame" x="6" y="0.0" width="164" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="WWY-bG-KZh">
+                        <rect key="frame" x="178" y="0.0" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="5OG-uU-brp" userLabel="DrugImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5OG-uU-brp" id="Eb3-SF-w0t">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" id="SPc-X3-xNB">
+                        <rect key="frame" x="112" y="5" width="75" height="75"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" text="No drug image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fHK-oq-9dU">
+                        <rect key="frame" x="112" y="5" width="75" height="75"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WpM-iD-xdA">
+                        <rect key="frame" x="152" y="85" width="68" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <state key="normal" title="Clear">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="clearDrugImage:" destination="-1" eventType="touchUpInside" id="fYb-Ac-SAv"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XIG-w3-PQr">
+                        <rect key="frame" x="78" y="85" width="68" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <state key="normal" title="Edit">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="editDrugImage:" destination="-1" eventType="touchUpInside" id="oyV-kR-jS0"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C0O-0c-AjX">
+                        <rect key="frame" x="85" y="85" width="128" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <state key="normal" title="Add Drug Image">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addDrugImage:" destination="-1" eventType="touchUpInside" id="CW3-7c-ggd"/>
+                        </connections>
+                    </button>
+                    <activityIndicatorView hidden="YES" opaque="NO" tag="1000" contentMode="scaleToFill" hidesWhenStopped="YES" style="white" id="MWZ-n8-txo">
+                        <rect key="frame" x="139" y="33" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="ssb-OW-yIo" userLabel="LogMissedDosesCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ssb-OW-yIo" id="BVv-mf-bfP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Log Missed Doses" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="fFp-H7-lJY">
+                        <rect key="frame" x="6" y="0.0" width="204" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="oCn-mt-Say">
+                        <rect key="frame" x="259" y="6" width="51" height="31"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    </switch>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="439-8C-dt7" userLabel="NotesCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="439-8C-dt7" id="HIM-mK-8yC">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="177"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Notes" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="qrb-mV-Di5">
+                        <rect key="frame" x="6" y="0.0" width="234" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" editable="NO" id="Fnx-GP-irq">
+                        <rect key="frame" x="6" y="44" width="278" height="132"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                    </textView>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="Hvp-S5-nxB" userLabel="TakeDrugIntervalCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hvp-S5-nxB" id="6BD-b8-kH6">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Take Drug" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="Ecu-oH-LFY">
+                        <rect key="frame" x="6" y="0.0" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" text="Limit Doses" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="geD-gT-uZs">
+                        <rect key="frame" x="6" y="88" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" text="Max 2 doses per day" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="bXQ-Ct-Kaf">
+                        <rect key="frame" x="120" y="88" width="164" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="At intervals until bedtime" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="35V-b5-IoJ">
+                        <rect key="frame" x="148" y="0.0" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" text="4 hours after dose" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="xls-r3-Xye">
+                        <rect key="frame" x="148" y="44" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" text="10/30/10" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="MtH-d1-hJU">
+                        <rect key="frame" x="148" y="132" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" text="Interval" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="gGx-ro-ham">
+                        <rect key="frame" x="6" y="44" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" text="Starting" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="tUi-jK-CcM">
+                        <rect key="frame" x="6" y="132" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" text="Ending" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="jo7-Xn-g5b">
+                        <rect key="frame" x="6" y="176" width="134" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" text="11/15/10" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="11" id="xYD-eb-Ckx">
+                        <rect key="frame" x="148" y="176" width="136" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="PwC-ig-TiW" userLabel="RefillCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PwC-ig-TiW" id="3aW-ne-cGm">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Applications per Refill" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="6eU-u7-nsH">
+                        <rect key="frame" x="6" y="0.0" width="190" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="100.05 mL" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="xhN-gc-5el">
+                        <rect key="frame" x="204" y="0.0" width="80" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="tV0-o6-hy8" userLabel="DeleteButtonCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tV0-o6-hy8" id="SUZ-qB-5Do">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clearsContextBeforeDrawing="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BMy-uH-wDR">
+                        <rect key="frame" x="0.0" y="1" width="318" height="42"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <state key="normal" title="Delete Drug">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="handleDelete:" destination="-1" eventType="touchUpInside" id="2qr-TZ-27A"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="DWe-3O-ZlV" userLabel="DrugTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DWe-3O-ZlV" id="mHZ-Tc-BuC">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Drug Type" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="hAd-4T-2Xx">
+                        <rect key="frame" x="6" y="0.0" width="128" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="qZ3-fq-FaX">
+                        <rect key="frame" x="142" y="0.0" width="142" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+        <tableViewCell clearsContextBeforeDrawing="NO" contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" id="l7O-h6-bty" userLabel="PharmacyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="l7O-h6-bty" id="9MA-Je-TWG">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" text="Pharmacy" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="uQD-3O-5R9">
+                        <rect key="frame" x="6" y="0.0" width="106" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" text="" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" id="38N-cj-EV2">
+                        <rect key="frame" x="120" y="0.0" width="164" height="43"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                        <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="-12" maxY="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

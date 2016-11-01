@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'FDADatabaseParser' target in the 'FDADatabaseParser' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#endif

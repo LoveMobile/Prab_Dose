@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB67EBC414C11878008C1EFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB67EBC314C11878008C1EFC /* Foundation.framework */; };
+		AB67EBC714C11878008C1EFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB67EBC614C11878008C1EFC /* main.m */; };
+		AB67EBCB14C11878008C1EFC /* CompareLocalizationStrings.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB67EBCA14C11878008C1EFC /* CompareLocalizationStrings.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB67EBBD14C11878008C1EFC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				AB67EBCB14C11878008C1EFC /* CompareLocalizationStrings.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB67EBBF14C11878008C1EFC /* CompareLocalizationStrings */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CompareLocalizationStrings; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB67EBC314C11878008C1EFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB67EBC614C11878008C1EFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB67EBC914C11878008C1EFC /* CompareLocalizationStrings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CompareLocalizationStrings-Prefix.pch"; sourceTree = "<group>"; };
+		AB67EBCA14C11878008C1EFC /* CompareLocalizationStrings.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CompareLocalizationStrings.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB67EBBC14C11878008C1EFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB67EBC414C11878008C1EFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB67EBB414C11878008C1EFC = {
+			isa = PBXGroup;
+			children = (
+				AB67EBC514C11878008C1EFC /* CompareLocalizationStrings */,
+				AB67EBC214C11878008C1EFC /* Frameworks */,
+				AB67EBC014C11878008C1EFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB67EBC014C11878008C1EFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB67EBBF14C11878008C1EFC /* CompareLocalizationStrings */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB67EBC214C11878008C1EFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB67EBC314C11878008C1EFC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB67EBC514C11878008C1EFC /* CompareLocalizationStrings */ = {
+			isa = PBXGroup;
+			children = (
+				AB67EBC614C11878008C1EFC /* main.m */,
+				AB67EBCA14C11878008C1EFC /* CompareLocalizationStrings.1 */,
+				AB67EBC814C11878008C1EFC /* Supporting Files */,
+			);
+			path = CompareLocalizationStrings;
+			sourceTree = "<group>";
+		};
+		AB67EBC814C11878008C1EFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB67EBC914C11878008C1EFC /* CompareLocalizationStrings-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB67EBBE14C11878008C1EFC /* CompareLocalizationStrings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB67EBCE14C11878008C1EFC /* Build configuration list for PBXNativeTarget "CompareLocalizationStrings" */;
+			buildPhases = (
+				AB67EBBB14C11878008C1EFC /* Sources */,
+				AB67EBBC14C11878008C1EFC /* Frameworks */,
+				AB67EBBD14C11878008C1EFC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CompareLocalizationStrings;
+			productName = CompareLocalizationStrings;
+			productReference = AB67EBBF14C11878008C1EFC /* CompareLocalizationStrings */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB67EBB614C11878008C1EFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = AB67EBB914C11878008C1EFC /* Build configuration list for PBXProject "CompareLocalizationStrings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB67EBB414C11878008C1EFC;
+			productRefGroup = AB67EBC014C11878008C1EFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB67EBBE14C11878008C1EFC /* CompareLocalizationStrings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB67EBBB14C11878008C1EFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB67EBC714C11878008C1EFC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB67EBCC14C11878008C1EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AB67EBCD14C11878008C1EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB67EBCF14C11878008C1EFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CompareLocalizationStrings/CompareLocalizationStrings-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB67EBD014C11878008C1EFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CompareLocalizationStrings/CompareLocalizationStrings-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB67EBB914C11878008C1EFC /* Build configuration list for PBXProject "CompareLocalizationStrings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB67EBCC14C11878008C1EFC /* Debug */,
+				AB67EBCD14C11878008C1EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB67EBCE14C11878008C1EFC /* Build configuration list for PBXNativeTarget "CompareLocalizationStrings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB67EBCF14C11878008C1EFC /* Debug */,
+				AB67EBD014C11878008C1EFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB67EBB614C11878008C1EFC /* Project object */;
+}

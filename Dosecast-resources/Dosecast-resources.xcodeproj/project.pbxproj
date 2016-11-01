@@ -1,0 +1,1034 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		295B214E15EFFB1D008E4657 /* Logging.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 295B214C15EFFB1D008E4657 /* Logging.xcdatamodeld */; };
+		295E41F116240E7D00D10A85 /* DrugImages.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 295E41ED16240E7D00D10A85 /* DrugImages.xcdatamodeld */; };
+		2978DA5D160C21AA0095438B /* DrugPermutationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2978DA5B160C21AA0095438B /* DrugPermutationCell.xib */; };
+		2978DA61160C21E40095438B /* DrugPermutationsViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2978DA60160C21E40095438B /* DrugPermutationsViewController-iPad.xib */; };
+		AB011B921400100B00AC6F9D /* DoseLimitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB011B911400100B00AC6F9D /* DoseLimitViewController.xib */; };
+		AB011B941400106700AC6F9D /* DoseLimitViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB011B931400106700AC6F9D /* DoseLimitViewController-iPad.xib */; };
+		AB10B55915EB19E200280917 /* DrugDatabaseSearchController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB10B55815EB19E200280917 /* DrugDatabaseSearchController.xib */; };
+		AB10B55C15EB1A0000280917 /* DrugDatabaseSearchController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB10B55B15EB1A0000280917 /* DrugDatabaseSearchController-iPad.xib */; };
+		AB10B56515EB1B1100280917 /* DrugDatabaseSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB10B56415EB1B1100280917 /* DrugDatabaseSearchCell.xib */; };
+		AB13CE0914E4B66200C08597 /* Dosecast.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB13CE0514E4B66200C08597 /* Dosecast.strings */; };
+		AB1DF9B6127E6BF60055C1D8 /* ProgressViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1DF9B5127E6BF60055C1D8 /* ProgressViewController-iPad.xib */; };
+		AB1DF9B9127E6C120055C1D8 /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB1DF9B8127E6C120055C1D8 /* ProgressViewController.xib */; };
+		AB20388E13E27859002154C2 /* DrugAddEditDoseInputTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB20388D13E27859002154C2 /* DrugAddEditDoseInputTextTableViewCell.xib */; };
+		AB27ED6715DD210800585F84 /* ToolbarButtons.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB27ED6615DD210800585F84 /* ToolbarButtons.xib */; };
+		AB2C989F13E5B47F00BEF51F /* TextEntryMultilineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2C989E13E5B47F00BEF51F /* TextEntryMultilineTableViewCell.xib */; };
+		AB335C0617A156A5006F891B /* NumericPickerViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C0517A156A5006F891B /* NumericPickerViewController-iPad.xib */; };
+		AB335C0817A156B6006F891B /* NumericPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C0717A156B6006F891B /* NumericPickerViewController.xib */; };
+		AB335C3417A21047006F891B /* IntervalPeriodViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C3317A21047006F891B /* IntervalPeriodViewController-iPad.xib */; };
+		AB335C3617A21059006F891B /* IntervalPeriodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C3517A21059006F891B /* IntervalPeriodViewController.xib */; };
+		AB335C3C17A212B7006F891B /* TimePeriodViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C3B17A212B7006F891B /* TimePeriodViewController-iPad.xib */; };
+		AB335C3E17A212CF006F891B /* TimePeriodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C3D17A212CF006F891B /* TimePeriodViewController.xib */; };
+		AB335C4617A214AC006F891B /* ScheduleRepeatPeriodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C4517A214AC006F891B /* ScheduleRepeatPeriodViewController.xib */; };
+		AB335C4817A214BB006F891B /* ScheduleRepeatPeriodViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C4717A214BB006F891B /* ScheduleRepeatPeriodViewController-iPad.xib */; };
+		AB335C4E17A21737006F891B /* PostponePillsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C4D17A21737006F891B /* PostponePillsViewController.xib */; };
+		AB335C5017A2174A006F891B /* PostponePillsViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C4F17A2174A006F891B /* PostponePillsViewController-iPad.xib */; };
+		AB335C5A17A21BD2006F891B /* BedtimePeriodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C5917A21BD2006F891B /* BedtimePeriodViewController.xib */; };
+		AB335C5C17A21BE1006F891B /* BedtimePeriodViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C5B17A21BE1006F891B /* BedtimePeriodViewController-iPad.xib */; };
+		AB335C6617A21EAD006F891B /* DateTimePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C6517A21EAD006F891B /* DateTimePickerViewController.xib */; };
+		AB335C6817A21EBB006F891B /* DateTimePickerViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB335C6717A21EBB006F891B /* DateTimePickerViewController-iPad.xib */; };
+		AB33E421142691F2006DBE06 /* Dosecast.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB33E41D142691F2006DBE06 /* Dosecast.strings */; };
+		AB495E0413EA32330016E008 /* ScheduleRepeatPeriodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB495E0313EA32330016E008 /* ScheduleRepeatPeriodTableViewCell.xib */; };
+		AB499F561A5375300060AA0E /* CalendarPreviousMonth.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F471A5375300060AA0E /* CalendarPreviousMonth.png */; };
+		AB499F571A5375300060AA0E /* CalendarPreviousMonth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F481A5375300060AA0E /* CalendarPreviousMonth@2x.png */; };
+		AB499F581A5375300060AA0E /* CalendarPreviousMonth@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F491A5375300060AA0E /* CalendarPreviousMonth@3x.png */; };
+		AB499F591A5375300060AA0E /* CalendarRow.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F4A1A5375300060AA0E /* CalendarRow.png */; };
+		AB499F5A1A5375300060AA0E /* CalendarRow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F4B1A5375300060AA0E /* CalendarRow@2x.png */; };
+		AB499F5B1A5375300060AA0E /* CalendarRow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F4C1A5375300060AA0E /* CalendarRow@3x.png */; };
+		AB499F5C1A5375300060AA0E /* CalendarRowBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F4D1A5375300060AA0E /* CalendarRowBottom.png */; };
+		AB499F5D1A5375300060AA0E /* CalendarRowBottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F4E1A5375300060AA0E /* CalendarRowBottom@2x.png */; };
+		AB499F5E1A5375300060AA0E /* CalendarRowBottom@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F4F1A5375300060AA0E /* CalendarRowBottom@3x.png */; };
+		AB499F5F1A5375300060AA0E /* CalendarSelectedDate.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F501A5375300060AA0E /* CalendarSelectedDate.png */; };
+		AB499F601A5375300060AA0E /* CalendarSelectedDate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F511A5375300060AA0E /* CalendarSelectedDate@2x.png */; };
+		AB499F611A5375300060AA0E /* CalendarSelectedDate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F521A5375300060AA0E /* CalendarSelectedDate@3x.png */; };
+		AB499F621A5375300060AA0E /* CalendarTodaysDate.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F531A5375300060AA0E /* CalendarTodaysDate.png */; };
+		AB499F631A5375300060AA0E /* CalendarTodaysDate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F541A5375300060AA0E /* CalendarTodaysDate@2x.png */; };
+		AB499F641A5375300060AA0E /* CalendarTodaysDate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F551A5375300060AA0E /* CalendarTodaysDate@3x.png */; };
+		AB499FA51A53C00D0060AA0E /* Alert@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F9D1A53C00D0060AA0E /* Alert@3x.png */; };
+		AB499FA61A53C00D0060AA0E /* DosecastAlertBackground@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F9E1A53C00D0060AA0E /* DosecastAlertBackground@3x.png */; };
+		AB499FA71A53C00D0060AA0E /* Log@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499F9F1A53C00D0060AA0E /* Log@3x.png */; };
+		AB499FA81A53C00D0060AA0E /* Mail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499FA01A53C00D0060AA0E /* Mail@3x.png */; };
+		AB499FA91A53C00D0060AA0E /* ManagedDiscontinuedIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499FA11A53C00D0060AA0E /* ManagedDiscontinuedIcon@3x.png */; };
+		AB499FAA1A53C00D0060AA0E /* ManagedUnreadIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499FA21A53C00D0060AA0E /* ManagedUnreadIcon@3x.png */; };
+		AB499FAB1A53C00D0060AA0E /* Notes@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499FA31A53C00D0060AA0E /* Notes@3x.png */; };
+		AB499FAC1A53C00D0060AA0E /* Refill@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499FA41A53C00D0060AA0E /* Refill@3x.png */; };
+		AB499FAE1A53C1260060AA0E /* Trash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB499FAD1A53C1260060AA0E /* Trash@3x.png */; };
+		AB4DC36115DF02B700B22BB7 /* DosecastMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4DC36015DF02B700B22BB7 /* DosecastMainViewController.xib */; };
+		AB4DC36315DF02D700B22BB7 /* DosecastMainViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4DC36215DF02D700B22BB7 /* DosecastMainViewController-iPad.xib */; };
+		AB575E5E17DEAA9200D5AAA3 /* Notes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB575E5C17DEAA9200D5AAA3 /* Notes@2x.png */; };
+		AB575E5F17DEAA9200D5AAA3 /* Notes.png in Resources */ = {isa = PBXBuildFile; fileRef = AB575E5D17DEAA9200D5AAA3 /* Notes.png */; };
+		AB63B908140E1E520083ED91 /* Dosecast.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB63B904140E1E520083ED91 /* Dosecast.strings */; };
+		AB796C7417D14212002C2FA7 /* ManagedDiscontinuedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AB796C7017D14211002C2FA7 /* ManagedDiscontinuedIcon.png */; };
+		AB796C7517D14212002C2FA7 /* ManagedDiscontinuedIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB796C7117D14211002C2FA7 /* ManagedDiscontinuedIcon@2x.png */; };
+		AB796C7617D14212002C2FA7 /* ManagedUnreadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = AB796C7217D14211002C2FA7 /* ManagedUnreadIcon.png */; };
+		AB796C7717D14212002C2FA7 /* ManagedUnreadIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB796C7317D14211002C2FA7 /* ManagedUnreadIcon@2x.png */; };
+		AB82781513CD13B3006BDB4C /* TimePeriodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB82781413CD13B3006BDB4C /* TimePeriodTableViewCell.xib */; };
+		AB82783113CDCAB6006BDB4C /* LateDoseSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB82783013CDCAB6006BDB4C /* LateDoseSettingsViewController.xib */; };
+		AB82783313CDCAD4006BDB4C /* LateDoseSettingsViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB82783213CDCAD4006BDB4C /* LateDoseSettingsViewController-iPad.xib */; };
+		AB85194415F6CCD60050D4A5 /* DrugNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB85194315F6CCD60050D4A5 /* DrugNameViewController.xib */; };
+		AB85194715F6CCED0050D4A5 /* DrugNameViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB85194615F6CCED0050D4A5 /* DrugNameViewController-iPad.xib */; };
+		AB8A956C192A2E72002DCBE7 /* JoinGroupEnterGroupNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8A956B192A2E72002DCBE7 /* JoinGroupEnterGroupNameViewController.xib */; };
+		AB8D785F124E8B5E00023B5C /* Log.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7823124E8B5E00023B5C /* Log.png */; };
+		AB8D7860124E8B5E00023B5C /* Log@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7824124E8B5E00023B5C /* Log@2x.png */; };
+		AB8D7861124E8B5E00023B5C /* Mail.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7825124E8B5E00023B5C /* Mail.png */; };
+		AB8D7862124E8B5E00023B5C /* Mail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7826124E8B5E00023B5C /* Mail@2x.png */; };
+		AB8D78A0124E8B8B00023B5C /* BedtimePeriodTableViewCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D788C124E8B8B00023B5C /* BedtimePeriodTableViewCells.xib */; };
+		AB8D78A1124E8B8B00023B5C /* DrugHistoryTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D788D124E8B8B00023B5C /* DrugHistoryTimeTableViewCell.xib */; };
+		AB8D78A2124E8B8B00023B5C /* IntervalPeriodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D788E124E8B8B00023B5C /* IntervalPeriodTableViewCell.xib */; };
+		AB8D78A4124E8B8B00023B5C /* NumericPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7890124E8B8B00023B5C /* NumericPickerTableViewCell.xib */; };
+		AB8D78A5124E8B8B00023B5C /* PicklistViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7891124E8B8B00023B5C /* PicklistViewCell.xib */; };
+		AB8D78A6124E8B8B00023B5C /* PillAlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7892124E8B8B00023B5C /* PillAlertTableViewCell.xib */; };
+		AB8D78A8124E8B8B00023B5C /* PostponePillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7894124E8B8B00023B5C /* PostponePillTableViewCell.xib */; };
+		AB8D78A9124E8B8B00023B5C /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7895124E8B8B00023B5C /* ProductTableViewCell.xib */; };
+		AB8D78AB124E8B8B00023B5C /* ScheduleTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7897124E8B8B00023B5C /* ScheduleTimeTableViewCell.xib */; };
+		AB8D78AC124E8B8B00023B5C /* SkipPillsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7898124E8B8B00023B5C /* SkipPillsTableViewCell.xib */; };
+		AB8D78AD124E8B8B00023B5C /* TakeMultiPillTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7899124E8B8B00023B5C /* TakeMultiPillTimeTableViewCell.xib */; };
+		AB8D78AE124E8B8B00023B5C /* TakePillsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D789A124E8B8B00023B5C /* TakePillsTableViewCell.xib */; };
+		AB8D78AF124E8B8B00023B5C /* TakePillTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D789B124E8B8B00023B5C /* TakePillTimeTableViewCell.xib */; };
+		AB8D78B0124E8B8B00023B5C /* TextEntryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D789C124E8B8B00023B5C /* TextEntryTableViewCell.xib */; };
+		AB8D78B1124E8B8B00023B5C /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D789D124E8B8B00023B5C /* TimeTableViewCell.xib */; };
+		AB8D7CDC124E974400023B5C /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CCA124E974400023B5C /* AccountViewController.xib */; };
+		AB8D7CDD124E974400023B5C /* BedtimeSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CCB124E974400023B5C /* BedtimeSettingsViewController.xib */; };
+		AB8D7CDF124E974400023B5C /* DrugHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CCD124E974400023B5C /* DrugHistoryViewController.xib */; };
+		AB8D7CE1124E974400023B5C /* DrugViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CCF124E974400023B5C /* DrugViewController.xib */; };
+		AB8D7CE2124E974400023B5C /* PicklistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CD0124E974400023B5C /* PicklistViewController.xib */; };
+		AB8D7CE5124E974400023B5C /* ReminderAddEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CD3124E974400023B5C /* ReminderAddEditViewController.xib */; };
+		AB8D7CE6124E974400023B5C /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CD4124E974400023B5C /* SettingsViewController.xib */; };
+		AB8D7CE7124E974400023B5C /* SkipPillsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CD5124E974400023B5C /* SkipPillsViewController.xib */; };
+		AB8D7CE8124E974400023B5C /* SpinnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CD6124E974400023B5C /* SpinnerViewController.xib */; };
+		AB8D7CE9124E974400023B5C /* TakePillsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CD7124E974400023B5C /* TakePillsViewController.xib */; };
+		AB8D7CEB124E974400023B5C /* TextEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB8D7CD9124E974400023B5C /* TextEntryViewController.xib */; };
+		AB952F3C124EA76C000524FF /* DoseHistory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB952F23124EA76C000524FF /* DoseHistory.xcdatamodeld */; };
+		AB952F6A124EA790000524FF /* AccountViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F56124EA790000524FF /* AccountViewController-iPad.xib */; };
+		AB952F6B124EA790000524FF /* BedtimeSettingsViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F57124EA790000524FF /* BedtimeSettingsViewController-iPad.xib */; };
+		AB952F6D124EA790000524FF /* DrugHistoryViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F59124EA790000524FF /* DrugHistoryViewController-iPad.xib */; };
+		AB952F6F124EA790000524FF /* DrugViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F5B124EA790000524FF /* DrugViewController-iPad.xib */; };
+		AB952F71124EA790000524FF /* PicklistViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F5D124EA790000524FF /* PicklistViewController-iPad.xib */; };
+		AB952F74124EA790000524FF /* ReminderAddEditViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F60124EA790000524FF /* ReminderAddEditViewController-iPad.xib */; };
+		AB952F76124EA790000524FF /* SettingsViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F62124EA790000524FF /* SettingsViewController-iPad.xib */; };
+		AB952F77124EA790000524FF /* SkipPillsViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F63124EA790000524FF /* SkipPillsViewController-iPad.xib */; };
+		AB952F78124EA790000524FF /* SpinnerViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F64124EA790000524FF /* SpinnerViewController-iPad.xib */; };
+		AB952F79124EA790000524FF /* TakePillsViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F65124EA790000524FF /* TakePillsViewController-iPad.xib */; };
+		AB952F7B124EA790000524FF /* TextEntryViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB952F67124EA790000524FF /* TextEntryViewController-iPad.xib */; };
+		AB9B0D92130B94D500C1A42D /* Trash.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9B0D90130B94D500C1A42D /* Trash.png */; };
+		AB9B0D93130B94D500C1A42D /* Trash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9B0D91130B94D500C1A42D /* Trash@2x.png */; };
+		AB9D16F412AC91540099966D /* DrugAddEditViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9D16F312AC91540099966D /* DrugAddEditViewController-iPad.xib */; };
+		AB9D16F712AC91670099966D /* DrugAddEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9D16F612AC91670099966D /* DrugAddEditViewController.xib */; };
+		ABA886CA131AF57E004E4D89 /* HistoryAddEditEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA886C9131AF57E004E4D89 /* HistoryAddEditEventViewController.xib */; };
+		ABA886CC131AF598004E4D89 /* HistoryAddEditEventViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA886CB131AF598004E4D89 /* HistoryAddEditEventViewController-iPad.xib */; };
+		ABAA16AB12C0E00C006F3740 /* Refill.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAA16A912C0E00C006F3740 /* Refill.png */; };
+		ABAA16AC12C0E00C006F3740 /* Refill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABAA16AA12C0E00C006F3740 /* Refill@2x.png */; };
+		ABAD4B28192CF6A600AA7EE0 /* JoinGroupEnterPasswordViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAD4B27192CF6A600AA7EE0 /* JoinGroupEnterPasswordViewController-iPad.xib */; };
+		ABAD4B2A192CF6BD00AA7EE0 /* JoinGroupEnterPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABAD4B29192CF6BD00AA7EE0 /* JoinGroupEnterPasswordViewController.xib */; };
+		ABB14CE315CE1438000AF6C4 /* ChecklistViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB14CE115CE1438000AF6C4 /* ChecklistViewCell.xib */; };
+		ABB14CE415CE1438000AF6C4 /* ChecklistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB14CE215CE1438000AF6C4 /* ChecklistViewController.xib */; };
+		ABB14CE715CE144E000AF6C4 /* ChecklistViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABB14CE615CE144E000AF6C4 /* ChecklistViewController-iPad.xib */; };
+		ABB25CC81A56E493007216EB /* Schedule_Button_Next_Day_Arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB25CC51A56E493007216EB /* Schedule_Button_Next_Day_Arrow@3x.png */; };
+		ABB25CC91A56E493007216EB /* Schedule_Button_Prev_Day_Arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB25CC61A56E493007216EB /* Schedule_Button_Prev_Day_Arrow@3x.png */; };
+		ABB25CCA1A56E493007216EB /* ScheduleToolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB25CC71A56E493007216EB /* ScheduleToolbar@3x.png */; };
+		ABBE335C1314CC6B00882193 /* HistoryEventTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABBE335B1314CC6B00882193 /* HistoryEventTimeTableViewCell.xib */; };
+		ABD2A4AE12BA016900A96694 /* DrugAddEditDoseInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD2A4AD12BA016900A96694 /* DrugAddEditDoseInputTableViewCell.xib */; };
+		ABD4F7D815E1A06A00324C09 /* MainViewPillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F7D715E1A06A00324C09 /* MainViewPillTableViewCell.xib */; };
+		ABD4F80815E1A1F100324C09 /* ScheduleViewPillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F80715E1A1F100324C09 /* ScheduleViewPillTableViewCell.xib */; };
+		ABD4F80B15E1A25900324C09 /* DosecastScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F80A15E1A25900324C09 /* DosecastScheduleViewController.xib */; };
+		ABD4F80D15E1A27200324C09 /* DosecastScheduleViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F80C15E1A27200324C09 /* DosecastScheduleViewController-iPad.xib */; };
+		ABD4F8CB15E1B15600324C09 /* ScheduleToolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F8C915E1B15600324C09 /* ScheduleToolbar.png */; };
+		ABD4F8CC15E1B15600324C09 /* ScheduleToolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F8CA15E1B15600324C09 /* ScheduleToolbar@2x.png */; };
+		ABD4F8D215E1B19300324C09 /* Schedule_Button_Next_Day_Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F8CE15E1B19300324C09 /* Schedule_Button_Next_Day_Arrow.png */; };
+		ABD4F8D315E1B19300324C09 /* Schedule_Button_Next_Day_Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F8CF15E1B19300324C09 /* Schedule_Button_Next_Day_Arrow@2x.png */; };
+		ABD4F8D415E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F8D015E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow.png */; };
+		ABD4F8D515E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABD4F8D115E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow@2x.png */; };
+		ABDC3BA719215E21007520BE /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABDC3BA619215E21007520BE /* GroupTableViewCell.xib */; };
+		ABDD6EA312C81CC700C49E09 /* Alert.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDD6EA112C81CC700C49E09 /* Alert.png */; };
+		ABDD6EA412C81CC700C49E09 /* Alert@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDD6EA212C81CC700C49E09 /* Alert@2x.png */; };
+		ABDE3B0C12747F8F00BB33D2 /* MessagePanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABDE3B0B12747F8F00BB33D2 /* MessagePanelViewController.xib */; };
+		ABDE3B0E12747FA500BB33D2 /* MessagePanelViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABDE3B0D12747FA500BB33D2 /* MessagePanelViewController-iPad.xib */; };
+		ABE1988D15DC8AA70000B579 /* MedicationDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = ABE1988A15DC8AA70000B579 /* MedicationDB.sqlite */; };
+		ABE1989215DC8C570000B579 /* MedicationDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABE1989015DC8C570000B579 /* MedicationDB.xcdatamodeld */; };
+		ABE6322E16276C6000B965F8 /* DosecastDrugsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE6322D16276C6000B965F8 /* DosecastDrugsViewController.xib */; };
+		ABE6323116276C7600B965F8 /* DrugsViewPillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE6323016276C7600B965F8 /* DrugsViewPillTableViewCell.xib */; };
+		ABE6323316276C9400B965F8 /* DosecastDrugsViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABE6323216276C9400B965F8 /* DosecastDrugsViewController-iPad.xib */; };
+		ABECA3ED14D58BC60015B679 /* BooleanViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABECA3EB14D58BC60015B679 /* BooleanViewCell.xib */; };
+		ABECA3EE14D58BC60015B679 /* BooleanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABECA3EC14D58BC60015B679 /* BooleanViewController.xib */; };
+		ABECA3F114D58BE70015B679 /* BooleanViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABECA3F014D58BE70015B679 /* BooleanViewController-iPad.xib */; };
+		ABF077D21A011F8200C9B3C9 /* SyncAddDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF077D11A011F8200C9B3C9 /* SyncAddDeviceViewController.xib */; };
+		ABF077D41A011F9700C9B3C9 /* SyncAddDeviceViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF077D31A011F9700C9B3C9 /* SyncAddDeviceViewController-iPad.xib */; };
+		ABF077DC1A0147C500C9B3C9 /* SyncMoveDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF077DB1A0147C500C9B3C9 /* SyncMoveDeviceViewController.xib */; };
+		ABF077E01A01482500C9B3C9 /* SyncMoveDeviceViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF077DF1A01482500C9B3C9 /* SyncMoveDeviceViewController-iPad.xib */; };
+		ABF077ED1A01751900C9B3C9 /* SyncDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF077EB1A01751900C9B3C9 /* SyncDeviceTableViewCell.xib */; };
+		ABF077EE1A01751900C9B3C9 /* SyncViewDevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF077EC1A01751900C9B3C9 /* SyncViewDevicesViewController.xib */; };
+		ABF077F01A01753400C9B3C9 /* SyncViewDevicesViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF077EF1A01753400C9B3C9 /* SyncViewDevicesViewController-iPad.xib */; };
+		ABF504BC178C6FED0034E76C /* DosecastAlertBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF504BA178C6FED0034E76C /* DosecastAlertBackground.png */; };
+		ABF504BD178C6FED0034E76C /* DosecastAlertBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF504BB178C6FED0034E76C /* DosecastAlertBackground@2x.png */; };
+		ABF504C5178C87F40034E76C /* PillAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF504C4178C87F40034E76C /* PillAlertViewController.xib */; };
+		ABF504C7178C88100034E76C /* PillAlertViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF504C6178C88100034E76C /* PillAlertViewController-iPad.xib */; };
+		ABF864E9192A7C4900BEF736 /* JoinGroupEnterGroupNameViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF864E8192A7C4900BEF736 /* JoinGroupEnterGroupNameViewController-iPad.xib */; };
+		ABF864EB192A7D6A00BEF736 /* ViewDeleteGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF864EA192A7D6A00BEF736 /* ViewDeleteGroupViewController.xib */; };
+		ABF864ED192A7D7A00BEF736 /* ViewDeleteGroupViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF864EC192A7D7A00BEF736 /* ViewDeleteGroupViewController-iPad.xib */; };
+		B65FAD7E16110AC20013316C /* DrugPermutationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65FAD7D16110AC20013316C /* DrugPermutationsViewController.xib */; };
+		B65FAD8016110ACC0013316C /* DrugChooseImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65FAD7F16110ACC0013316C /* DrugChooseImageViewController.xib */; };
+		B65FAD8216110ADF0013316C /* DrugChooseImageViewController-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B65FAD8116110ADF0013316C /* DrugChooseImageViewController-iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		295B214D15EFFB1D008E4657 /* Logging.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Logging.xcdatamodel; sourceTree = "<group>"; };
+		295E41EE16240E7D00D10A85 /* DrugImages 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DrugImages 2.xcdatamodel"; sourceTree = "<group>"; };
+		295E41EF16240E7D00D10A85 /* DrugImages 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DrugImages 3.xcdatamodel"; sourceTree = "<group>"; };
+		295E41F016240E7D00D10A85 /* DrugImages.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DrugImages.xcdatamodel; sourceTree = "<group>"; };
+		2978DA5B160C21AA0095438B /* DrugPermutationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrugPermutationCell.xib; path = "Resources-iPhoneiPod/DrugPermutationCell.xib"; sourceTree = "<group>"; };
+		2978DA60160C21E40095438B /* DrugPermutationsViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DrugPermutationsViewController-iPad.xib"; sourceTree = "<group>"; };
+		8D576316048677EA00EA77CD /* Dosecast-resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dosecast-resources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB011B911400100B00AC6F9D /* DoseLimitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DoseLimitViewController.xib; path = "Resources-iPhoneiPod/DoseLimitViewController.xib"; sourceTree = "<group>"; };
+		AB011B931400106700AC6F9D /* DoseLimitViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DoseLimitViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB0F677813199F59008C0677 /* DoseHistory 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DoseHistory 5.xcdatamodel"; sourceTree = "<group>"; };
+		AB10B55815EB19E200280917 /* DrugDatabaseSearchController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrugDatabaseSearchController.xib; path = "Resources-iPhoneiPod/DrugDatabaseSearchController.xib"; sourceTree = "<group>"; };
+		AB10B55B15EB1A0000280917 /* DrugDatabaseSearchController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DrugDatabaseSearchController-iPad.xib"; sourceTree = "<group>"; };
+		AB10B56415EB1B1100280917 /* DrugDatabaseSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrugDatabaseSearchCell.xib; path = "Resources-iPhoneiPod/DrugDatabaseSearchCell.xib"; sourceTree = "<group>"; };
+		AB118FDD13F165A1006FB083 /* DoseHistory 7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DoseHistory 7.xcdatamodel"; sourceTree = "<group>"; };
+		AB13CE0614E4B66200C08597 /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = Dosecast.strings; sourceTree = "<group>"; };
+		AB1DF9B5127E6BF60055C1D8 /* ProgressViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "ProgressViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB1DF9B8127E6C120055C1D8 /* ProgressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProgressViewController.xib; path = "Resources-iPhoneiPod/ProgressViewController.xib"; sourceTree = "<group>"; };
+		AB20388D13E27859002154C2 /* DrugAddEditDoseInputTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrugAddEditDoseInputTextTableViewCell.xib; path = "Resources-iPhoneiPod/DrugAddEditDoseInputTextTableViewCell.xib"; sourceTree = "<group>"; };
+		AB27ED6615DD210800585F84 /* ToolbarButtons.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToolbarButtons.xib; path = "Resources-iPhoneiPod/ToolbarButtons.xib"; sourceTree = "<group>"; };
+		AB2C989E13E5B47F00BEF51F /* TextEntryMultilineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextEntryMultilineTableViewCell.xib; path = "Resources-iPhoneiPod/TextEntryMultilineTableViewCell.xib"; sourceTree = "<group>"; };
+		AB335C0517A156A5006F891B /* NumericPickerViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "NumericPickerViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB335C0717A156B6006F891B /* NumericPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NumericPickerViewController.xib; path = "Resources-iPhoneiPod/NumericPickerViewController.xib"; sourceTree = "<group>"; };
+		AB335C3317A21047006F891B /* IntervalPeriodViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "IntervalPeriodViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB335C3517A21059006F891B /* IntervalPeriodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IntervalPeriodViewController.xib; path = "Resources-iPhoneiPod/IntervalPeriodViewController.xib"; sourceTree = "<group>"; };
+		AB335C3B17A212B7006F891B /* TimePeriodViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "TimePeriodViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB335C3D17A212CF006F891B /* TimePeriodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimePeriodViewController.xib; path = "Resources-iPhoneiPod/TimePeriodViewController.xib"; sourceTree = "<group>"; };
+		AB335C4517A214AC006F891B /* ScheduleRepeatPeriodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleRepeatPeriodViewController.xib; path = "Resources-iPhoneiPod/ScheduleRepeatPeriodViewController.xib"; sourceTree = "<group>"; };
+		AB335C4717A214BB006F891B /* ScheduleRepeatPeriodViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ScheduleRepeatPeriodViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB335C4D17A21737006F891B /* PostponePillsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PostponePillsViewController.xib; path = "Resources-iPhoneiPod/PostponePillsViewController.xib"; sourceTree = "<group>"; };
+		AB335C4F17A2174A006F891B /* PostponePillsViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PostponePillsViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB335C5917A21BD2006F891B /* BedtimePeriodViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BedtimePeriodViewController.xib; path = "Resources-iPhoneiPod/BedtimePeriodViewController.xib"; sourceTree = "<group>"; };
+		AB335C5B17A21BE1006F891B /* BedtimePeriodViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "BedtimePeriodViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB335C6517A21EAD006F891B /* DateTimePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DateTimePickerViewController.xib; path = "Resources-iPhoneiPod/DateTimePickerViewController.xib"; sourceTree = "<group>"; };
+		AB335C6717A21EBB006F891B /* DateTimePickerViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DateTimePickerViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB33E41E142691F2006DBE06 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = de; path = Dosecast.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		AB3C6549198185F400479C28 /* DrugImages 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DrugImages 4.xcdatamodel"; sourceTree = "<group>"; };
+		AB495E0313EA32330016E008 /* ScheduleRepeatPeriodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleRepeatPeriodTableViewCell.xib; path = "Resources-iPhoneiPod/ScheduleRepeatPeriodTableViewCell.xib"; sourceTree = "<group>"; };
+		AB499F471A5375300060AA0E /* CalendarPreviousMonth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalendarPreviousMonth.png; sourceTree = "<group>"; };
+		AB499F481A5375300060AA0E /* CalendarPreviousMonth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarPreviousMonth@2x.png"; sourceTree = "<group>"; };
+		AB499F491A5375300060AA0E /* CalendarPreviousMonth@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarPreviousMonth@3x.png"; sourceTree = "<group>"; };
+		AB499F4A1A5375300060AA0E /* CalendarRow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalendarRow.png; sourceTree = "<group>"; };
+		AB499F4B1A5375300060AA0E /* CalendarRow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarRow@2x.png"; sourceTree = "<group>"; };
+		AB499F4C1A5375300060AA0E /* CalendarRow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarRow@3x.png"; sourceTree = "<group>"; };
+		AB499F4D1A5375300060AA0E /* CalendarRowBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalendarRowBottom.png; sourceTree = "<group>"; };
+		AB499F4E1A5375300060AA0E /* CalendarRowBottom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarRowBottom@2x.png"; sourceTree = "<group>"; };
+		AB499F4F1A5375300060AA0E /* CalendarRowBottom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarRowBottom@3x.png"; sourceTree = "<group>"; };
+		AB499F501A5375300060AA0E /* CalendarSelectedDate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalendarSelectedDate.png; sourceTree = "<group>"; };
+		AB499F511A5375300060AA0E /* CalendarSelectedDate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarSelectedDate@2x.png"; sourceTree = "<group>"; };
+		AB499F521A5375300060AA0E /* CalendarSelectedDate@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarSelectedDate@3x.png"; sourceTree = "<group>"; };
+		AB499F531A5375300060AA0E /* CalendarTodaysDate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalendarTodaysDate.png; sourceTree = "<group>"; };
+		AB499F541A5375300060AA0E /* CalendarTodaysDate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarTodaysDate@2x.png"; sourceTree = "<group>"; };
+		AB499F551A5375300060AA0E /* CalendarTodaysDate@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CalendarTodaysDate@3x.png"; sourceTree = "<group>"; };
+		AB499F9D1A53C00D0060AA0E /* Alert@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Alert@3x.png"; path = "Resources-Common/Alert@3x.png"; sourceTree = "<group>"; };
+		AB499F9E1A53C00D0060AA0E /* DosecastAlertBackground@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DosecastAlertBackground@3x.png"; path = "Resources-Common/DosecastAlertBackground@3x.png"; sourceTree = "<group>"; };
+		AB499F9F1A53C00D0060AA0E /* Log@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Log@3x.png"; path = "Resources-Common/Log@3x.png"; sourceTree = "<group>"; };
+		AB499FA01A53C00D0060AA0E /* Mail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mail@3x.png"; path = "Resources-Common/Mail@3x.png"; sourceTree = "<group>"; };
+		AB499FA11A53C00D0060AA0E /* ManagedDiscontinuedIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ManagedDiscontinuedIcon@3x.png"; path = "Resources-Common/ManagedDiscontinuedIcon@3x.png"; sourceTree = "<group>"; };
+		AB499FA21A53C00D0060AA0E /* ManagedUnreadIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ManagedUnreadIcon@3x.png"; path = "Resources-Common/ManagedUnreadIcon@3x.png"; sourceTree = "<group>"; };
+		AB499FA31A53C00D0060AA0E /* Notes@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Notes@3x.png"; path = "Resources-Common/Notes@3x.png"; sourceTree = "<group>"; };
+		AB499FA41A53C00D0060AA0E /* Refill@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Refill@3x.png"; path = "Resources-Common/Refill@3x.png"; sourceTree = "<group>"; };
+		AB499FAD1A53C1260060AA0E /* Trash@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Trash@3x.png"; path = "Resources-Common/Trash@3x.png"; sourceTree = "<group>"; };
+		AB4DC36015DF02B700B22BB7 /* DosecastMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DosecastMainViewController.xib; path = "Resources-iPhoneiPod/DosecastMainViewController.xib"; sourceTree = "<group>"; };
+		AB4DC36215DF02D700B22BB7 /* DosecastMainViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DosecastMainViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB517EC0199ACEA3005F6821 /* DoseHistory 10.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DoseHistory 10.xcdatamodel"; sourceTree = "<group>"; };
+		AB575E5C17DEAA9200D5AAA3 /* Notes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Notes@2x.png"; path = "Resources-Common/Notes@2x.png"; sourceTree = "<group>"; };
+		AB575E5D17DEAA9200D5AAA3 /* Notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Notes.png; path = "Resources-Common/Notes.png"; sourceTree = "<group>"; };
+		AB63B905140E1E520083ED91 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = Dosecast.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
+		AB6695F112CCCDD0009CC83D /* DoseHistory 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DoseHistory 4.xcdatamodel"; sourceTree = "<group>"; };
+		AB745A4D139A460500277EE0 /* DoseHistory 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DoseHistory 6.xcdatamodel"; sourceTree = "<group>"; };
+		AB796C7017D14211002C2FA7 /* ManagedDiscontinuedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ManagedDiscontinuedIcon.png; path = "Resources-Common/ManagedDiscontinuedIcon.png"; sourceTree = "<group>"; };
+		AB796C7117D14211002C2FA7 /* ManagedDiscontinuedIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ManagedDiscontinuedIcon@2x.png"; path = "Resources-Common/ManagedDiscontinuedIcon@2x.png"; sourceTree = "<group>"; };
+		AB796C7217D14211002C2FA7 /* ManagedUnreadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ManagedUnreadIcon.png; path = "Resources-Common/ManagedUnreadIcon.png"; sourceTree = "<group>"; };
+		AB796C7317D14211002C2FA7 /* ManagedUnreadIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ManagedUnreadIcon@2x.png"; path = "Resources-Common/ManagedUnreadIcon@2x.png"; sourceTree = "<group>"; };
+		AB82781413CD13B3006BDB4C /* TimePeriodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimePeriodTableViewCell.xib; path = "Resources-iPhoneiPod/TimePeriodTableViewCell.xib"; sourceTree = "<group>"; };
+		AB82783013CDCAB6006BDB4C /* LateDoseSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LateDoseSettingsViewController.xib; path = "Resources-iPhoneiPod/LateDoseSettingsViewController.xib"; sourceTree = "<group>"; };
+		AB82783213CDCAD4006BDB4C /* LateDoseSettingsViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "LateDoseSettingsViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB85194315F6CCD60050D4A5 /* DrugNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrugNameViewController.xib; path = "Resources-iPhoneiPod/DrugNameViewController.xib"; sourceTree = "<group>"; };
+		AB85194615F6CCED0050D4A5 /* DrugNameViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DrugNameViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB8A956B192A2E72002DCBE7 /* JoinGroupEnterGroupNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JoinGroupEnterGroupNameViewController.xib; path = "Resources-iPhoneiPod/JoinGroupEnterGroupNameViewController.xib"; sourceTree = "<group>"; };
+		AB8D7823124E8B5E00023B5C /* Log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Log.png; path = "Resources-Common/Log.png"; sourceTree = "<group>"; };
+		AB8D7824124E8B5E00023B5C /* Log@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Log@2x.png"; path = "Resources-Common/Log@2x.png"; sourceTree = "<group>"; };
+		AB8D7825124E8B5E00023B5C /* Mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Mail.png; path = "Resources-Common/Mail.png"; sourceTree = "<group>"; };
+		AB8D7826124E8B5E00023B5C /* Mail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mail@2x.png"; path = "Resources-Common/Mail@2x.png"; sourceTree = "<group>"; };
+		AB8D788C124E8B8B00023B5C /* BedtimePeriodTableViewCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BedtimePeriodTableViewCells.xib; path = "Resources-iPhoneiPod/BedtimePeriodTableViewCells.xib"; sourceTree = "<group>"; };
+		AB8D788D124E8B8B00023B5C /* DrugHistoryTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DrugHistoryTimeTableViewCell.xib; path = "Resources-iPhoneiPod/DrugHistoryTimeTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D788E124E8B8B00023B5C /* IntervalPeriodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = IntervalPeriodTableViewCell.xib; path = "Resources-iPhoneiPod/IntervalPeriodTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D7890124E8B8B00023B5C /* NumericPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NumericPickerTableViewCell.xib; path = "Resources-iPhoneiPod/NumericPickerTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D7891124E8B8B00023B5C /* PicklistViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PicklistViewCell.xib; path = "Resources-iPhoneiPod/PicklistViewCell.xib"; sourceTree = "<group>"; };
+		AB8D7892124E8B8B00023B5C /* PillAlertTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PillAlertTableViewCell.xib; path = "Resources-iPhoneiPod/PillAlertTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D7894124E8B8B00023B5C /* PostponePillTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PostponePillTableViewCell.xib; path = "Resources-iPhoneiPod/PostponePillTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D7895124E8B8B00023B5C /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProductTableViewCell.xib; path = "Resources-iPhoneiPod/ProductTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D7897124E8B8B00023B5C /* ScheduleTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ScheduleTimeTableViewCell.xib; path = "Resources-iPhoneiPod/ScheduleTimeTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D7898124E8B8B00023B5C /* SkipPillsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SkipPillsTableViewCell.xib; path = "Resources-iPhoneiPod/SkipPillsTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D7899124E8B8B00023B5C /* TakeMultiPillTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TakeMultiPillTimeTableViewCell.xib; path = "Resources-iPhoneiPod/TakeMultiPillTimeTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D789A124E8B8B00023B5C /* TakePillsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TakePillsTableViewCell.xib; path = "Resources-iPhoneiPod/TakePillsTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D789B124E8B8B00023B5C /* TakePillTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TakePillTimeTableViewCell.xib; path = "Resources-iPhoneiPod/TakePillTimeTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D789C124E8B8B00023B5C /* TextEntryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TextEntryTableViewCell.xib; path = "Resources-iPhoneiPod/TextEntryTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D789D124E8B8B00023B5C /* TimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TimeTableViewCell.xib; path = "Resources-iPhoneiPod/TimeTableViewCell.xib"; sourceTree = "<group>"; };
+		AB8D7CCA124E974400023B5C /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AccountViewController.xib; path = "Resources-iPhoneiPod/AccountViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CCB124E974400023B5C /* BedtimeSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BedtimeSettingsViewController.xib; path = "Resources-iPhoneiPod/BedtimeSettingsViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CCD124E974400023B5C /* DrugHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DrugHistoryViewController.xib; path = "Resources-iPhoneiPod/DrugHistoryViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CCF124E974400023B5C /* DrugViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DrugViewController.xib; path = "Resources-iPhoneiPod/DrugViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CD0124E974400023B5C /* PicklistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PicklistViewController.xib; path = "Resources-iPhoneiPod/PicklistViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CD3124E974400023B5C /* ReminderAddEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ReminderAddEditViewController.xib; path = "Resources-iPhoneiPod/ReminderAddEditViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CD4124E974400023B5C /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = "Resources-iPhoneiPod/SettingsViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CD5124E974400023B5C /* SkipPillsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SkipPillsViewController.xib; path = "Resources-iPhoneiPod/SkipPillsViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CD6124E974400023B5C /* SpinnerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SpinnerViewController.xib; path = "Resources-iPhoneiPod/SpinnerViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CD7124E974400023B5C /* TakePillsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TakePillsViewController.xib; path = "Resources-iPhoneiPod/TakePillsViewController.xib"; sourceTree = "<group>"; };
+		AB8D7CD9124E974400023B5C /* TextEntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TextEntryViewController.xib; path = "Resources-iPhoneiPod/TextEntryViewController.xib"; sourceTree = "<group>"; };
+		AB952F24124EA76C000524FF /* DoseHistory 2.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = "DoseHistory 2.xcdatamodel"; sourceTree = "<group>"; };
+		AB952F25124EA76C000524FF /* DoseHistory.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = DoseHistory.xcdatamodel; sourceTree = "<group>"; };
+		AB952F56124EA790000524FF /* AccountViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "AccountViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F57124EA790000524FF /* BedtimeSettingsViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "BedtimeSettingsViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F59124EA790000524FF /* DrugHistoryViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "DrugHistoryViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F5B124EA790000524FF /* DrugViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "DrugViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F5D124EA790000524FF /* PicklistViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "PicklistViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F60124EA790000524FF /* ReminderAddEditViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "ReminderAddEditViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F62124EA790000524FF /* SettingsViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "SettingsViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F63124EA790000524FF /* SkipPillsViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "SkipPillsViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F64124EA790000524FF /* SpinnerViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "SpinnerViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F65124EA790000524FF /* TakePillsViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "TakePillsViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB952F67124EA790000524FF /* TextEntryViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "TextEntryViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB9B0D90130B94D500C1A42D /* Trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Trash.png; path = "Resources-Common/Trash.png"; sourceTree = "<group>"; };
+		AB9B0D91130B94D500C1A42D /* Trash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Trash@2x.png"; path = "Resources-Common/Trash@2x.png"; sourceTree = "<group>"; };
+		AB9D16F312AC91540099966D /* DrugAddEditViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "DrugAddEditViewController-iPad.xib"; sourceTree = "<group>"; };
+		AB9D16F612AC91670099966D /* DrugAddEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DrugAddEditViewController.xib; path = "Resources-iPhoneiPod/DrugAddEditViewController.xib"; sourceTree = "<group>"; };
+		ABA886C9131AF57E004E4D89 /* HistoryAddEditEventViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HistoryAddEditEventViewController.xib; path = "Resources-iPhoneiPod/HistoryAddEditEventViewController.xib"; sourceTree = "<group>"; };
+		ABA886CB131AF598004E4D89 /* HistoryAddEditEventViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "HistoryAddEditEventViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABAA16A912C0E00C006F3740 /* Refill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Refill.png; path = "Resources-Common/Refill.png"; sourceTree = "<group>"; };
+		ABAA16AA12C0E00C006F3740 /* Refill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Refill@2x.png"; path = "Resources-Common/Refill@2x.png"; sourceTree = "<group>"; };
+		ABAD4B27192CF6A600AA7EE0 /* JoinGroupEnterPasswordViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "JoinGroupEnterPasswordViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABAD4B29192CF6BD00AA7EE0 /* JoinGroupEnterPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JoinGroupEnterPasswordViewController.xib; path = "Resources-iPhoneiPod/JoinGroupEnterPasswordViewController.xib"; sourceTree = "<group>"; };
+		ABB14CE115CE1438000AF6C4 /* ChecklistViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChecklistViewCell.xib; path = "Resources-iPhoneiPod/ChecklistViewCell.xib"; sourceTree = "<group>"; };
+		ABB14CE215CE1438000AF6C4 /* ChecklistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChecklistViewController.xib; path = "Resources-iPhoneiPod/ChecklistViewController.xib"; sourceTree = "<group>"; };
+		ABB14CE615CE144E000AF6C4 /* ChecklistViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ChecklistViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABB25CC51A56E493007216EB /* Schedule_Button_Next_Day_Arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Schedule_Button_Next_Day_Arrow@3x.png"; path = "Resources-Common/Schedule_Button_Next_Day_Arrow@3x.png"; sourceTree = "<group>"; };
+		ABB25CC61A56E493007216EB /* Schedule_Button_Prev_Day_Arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Schedule_Button_Prev_Day_Arrow@3x.png"; path = "Resources-Common/Schedule_Button_Prev_Day_Arrow@3x.png"; sourceTree = "<group>"; };
+		ABB25CC71A56E493007216EB /* ScheduleToolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ScheduleToolbar@3x.png"; path = "Resources-Common/ScheduleToolbar@3x.png"; sourceTree = "<group>"; };
+		ABBAB181181F553E0002F482 /* DoseHistory 9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DoseHistory 9.xcdatamodel"; sourceTree = "<group>"; };
+		ABBE335B1314CC6B00882193 /* HistoryEventTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HistoryEventTimeTableViewCell.xib; path = "Resources-iPhoneiPod/HistoryEventTimeTableViewCell.xib"; sourceTree = "<group>"; };
+		ABD2A4AD12BA016900A96694 /* DrugAddEditDoseInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DrugAddEditDoseInputTableViewCell.xib; path = "Resources-iPhoneiPod/DrugAddEditDoseInputTableViewCell.xib"; sourceTree = "<group>"; };
+		ABD33C9512873126002EE576 /* DoseHistory 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DoseHistory 3.xcdatamodel"; sourceTree = "<group>"; };
+		ABD4F7D715E1A06A00324C09 /* MainViewPillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewPillTableViewCell.xib; path = "Resources-iPhoneiPod/MainViewPillTableViewCell.xib"; sourceTree = "<group>"; };
+		ABD4F80715E1A1F100324C09 /* ScheduleViewPillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleViewPillTableViewCell.xib; path = "Resources-iPhoneiPod/ScheduleViewPillTableViewCell.xib"; sourceTree = "<group>"; };
+		ABD4F80A15E1A25900324C09 /* DosecastScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DosecastScheduleViewController.xib; path = "Resources-iPhoneiPod/DosecastScheduleViewController.xib"; sourceTree = "<group>"; };
+		ABD4F80C15E1A27200324C09 /* DosecastScheduleViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DosecastScheduleViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABD4F8C915E1B15600324C09 /* ScheduleToolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ScheduleToolbar.png; path = "Resources-Common/ScheduleToolbar.png"; sourceTree = "<group>"; };
+		ABD4F8CA15E1B15600324C09 /* ScheduleToolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ScheduleToolbar@2x.png"; path = "Resources-Common/ScheduleToolbar@2x.png"; sourceTree = "<group>"; };
+		ABD4F8CE15E1B19300324C09 /* Schedule_Button_Next_Day_Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Schedule_Button_Next_Day_Arrow.png; path = "Resources-Common/Schedule_Button_Next_Day_Arrow.png"; sourceTree = "<group>"; };
+		ABD4F8CF15E1B19300324C09 /* Schedule_Button_Next_Day_Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Schedule_Button_Next_Day_Arrow@2x.png"; path = "Resources-Common/Schedule_Button_Next_Day_Arrow@2x.png"; sourceTree = "<group>"; };
+		ABD4F8D015E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Schedule_Button_Prev_Day_Arrow.png; path = "Resources-Common/Schedule_Button_Prev_Day_Arrow.png"; sourceTree = "<group>"; };
+		ABD4F8D115E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Schedule_Button_Prev_Day_Arrow@2x.png"; path = "Resources-Common/Schedule_Button_Prev_Day_Arrow@2x.png"; sourceTree = "<group>"; };
+		ABDC3BA619215E21007520BE /* GroupTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GroupTableViewCell.xib; path = "Resources-iPhoneiPod/GroupTableViewCell.xib"; sourceTree = "<group>"; };
+		ABDD6EA112C81CC700C49E09 /* Alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Alert.png; path = "Resources-Common/Alert.png"; sourceTree = "<group>"; };
+		ABDD6EA212C81CC700C49E09 /* Alert@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Alert@2x.png"; path = "Resources-Common/Alert@2x.png"; sourceTree = "<group>"; };
+		ABDE3B0B12747F8F00BB33D2 /* MessagePanelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MessagePanelViewController.xib; path = "Resources-iPhoneiPod/MessagePanelViewController.xib"; sourceTree = "<group>"; };
+		ABDE3B0D12747FA500BB33D2 /* MessagePanelViewController-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MessagePanelViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABE1988A15DC8AA70000B579 /* MedicationDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = MedicationDB.sqlite; path = "Resources-Common/MedicationDB.sqlite"; sourceTree = "<group>"; };
+		ABE1989115DC8C570000B579 /* MedicationDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MedicationDB.xcdatamodel; sourceTree = "<group>"; };
+		ABE6322D16276C6000B965F8 /* DosecastDrugsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DosecastDrugsViewController.xib; path = "Resources-iPhoneiPod/DosecastDrugsViewController.xib"; sourceTree = "<group>"; };
+		ABE6323016276C7600B965F8 /* DrugsViewPillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrugsViewPillTableViewCell.xib; path = "Resources-iPhoneiPod/DrugsViewPillTableViewCell.xib"; sourceTree = "<group>"; };
+		ABE6323216276C9400B965F8 /* DosecastDrugsViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DosecastDrugsViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABECA3EB14D58BC60015B679 /* BooleanViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BooleanViewCell.xib; path = "Resources-iPhoneiPod/BooleanViewCell.xib"; sourceTree = "<group>"; };
+		ABECA3EC14D58BC60015B679 /* BooleanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BooleanViewController.xib; path = "Resources-iPhoneiPod/BooleanViewController.xib"; sourceTree = "<group>"; };
+		ABECA3F014D58BE70015B679 /* BooleanViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "BooleanViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABF077D11A011F8200C9B3C9 /* SyncAddDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SyncAddDeviceViewController.xib; path = "Resources-iPhoneiPod/SyncAddDeviceViewController.xib"; sourceTree = "<group>"; };
+		ABF077D31A011F9700C9B3C9 /* SyncAddDeviceViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SyncAddDeviceViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABF077DB1A0147C500C9B3C9 /* SyncMoveDeviceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SyncMoveDeviceViewController.xib; path = "Resources-iPhoneiPod/SyncMoveDeviceViewController.xib"; sourceTree = "<group>"; };
+		ABF077DF1A01482500C9B3C9 /* SyncMoveDeviceViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SyncMoveDeviceViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABF077EB1A01751900C9B3C9 /* SyncDeviceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SyncDeviceTableViewCell.xib; path = "Resources-iPhoneiPod/SyncDeviceTableViewCell.xib"; sourceTree = "<group>"; };
+		ABF077EC1A01751900C9B3C9 /* SyncViewDevicesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SyncViewDevicesViewController.xib; path = "Resources-iPhoneiPod/SyncViewDevicesViewController.xib"; sourceTree = "<group>"; };
+		ABF077EF1A01753400C9B3C9 /* SyncViewDevicesViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "SyncViewDevicesViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABF504AB17884E710034E76C /* DoseHistory 8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DoseHistory 8.xcdatamodel"; sourceTree = "<group>"; };
+		ABF504BA178C6FED0034E76C /* DosecastAlertBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DosecastAlertBackground.png; path = "Resources-Common/DosecastAlertBackground.png"; sourceTree = "<group>"; };
+		ABF504BB178C6FED0034E76C /* DosecastAlertBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DosecastAlertBackground@2x.png"; path = "Resources-Common/DosecastAlertBackground@2x.png"; sourceTree = "<group>"; };
+		ABF504C4178C87F40034E76C /* PillAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PillAlertViewController.xib; path = "Resources-iPhoneiPod/PillAlertViewController.xib"; sourceTree = "<group>"; };
+		ABF504C6178C88100034E76C /* PillAlertViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "PillAlertViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABF864E8192A7C4900BEF736 /* JoinGroupEnterGroupNameViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "JoinGroupEnterGroupNameViewController-iPad.xib"; sourceTree = "<group>"; };
+		ABF864EA192A7D6A00BEF736 /* ViewDeleteGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewDeleteGroupViewController.xib; path = "Resources-iPhoneiPod/ViewDeleteGroupViewController.xib"; sourceTree = "<group>"; };
+		ABF864EC192A7D7A00BEF736 /* ViewDeleteGroupViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "ViewDeleteGroupViewController-iPad.xib"; sourceTree = "<group>"; };
+		B65FAD7D16110AC20013316C /* DrugPermutationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrugPermutationsViewController.xib; path = "Resources-iPhoneiPod/DrugPermutationsViewController.xib"; sourceTree = "<group>"; };
+		B65FAD7F16110ACC0013316C /* DrugChooseImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DrugChooseImageViewController.xib; path = "Resources-iPhoneiPod/DrugChooseImageViewController.xib"; sourceTree = "<group>"; };
+		B65FAD8116110ADF0013316C /* DrugChooseImageViewController-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DrugChooseImageViewController-iPad.xib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D576313048677EA00EA77CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Dosecast-Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = "Dosecast-Resources";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB33E41C142691F2006DBE06 /* de.lproj */,
+				AB63B903140E1E520083ED91 /* en.lproj */,
+				AB13CE0414E4B66200C08597 /* fr.lproj */,
+				AB8D77FE124E895200023B5C /* Resources-Common */,
+				AB8D77FC124E892800023B5C /* Resources-iPhoneiPod */,
+				AB952F54124EA790000524FF /* Resources-iPad */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D576316048677EA00EA77CD /* Dosecast-resources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB13CE0414E4B66200C08597 /* fr.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AB13CE0514E4B66200C08597 /* Dosecast.strings */,
+			);
+			path = fr.lproj;
+			sourceTree = "<group>";
+		};
+		AB33E41C142691F2006DBE06 /* de.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AB33E41D142691F2006DBE06 /* Dosecast.strings */,
+			);
+			path = de.lproj;
+			sourceTree = "<group>";
+		};
+		AB499F461A5375300060AA0E /* TimesSquare */ = {
+			isa = PBXGroup;
+			children = (
+				AB499F471A5375300060AA0E /* CalendarPreviousMonth.png */,
+				AB499F481A5375300060AA0E /* CalendarPreviousMonth@2x.png */,
+				AB499F491A5375300060AA0E /* CalendarPreviousMonth@3x.png */,
+				AB499F4A1A5375300060AA0E /* CalendarRow.png */,
+				AB499F4B1A5375300060AA0E /* CalendarRow@2x.png */,
+				AB499F4C1A5375300060AA0E /* CalendarRow@3x.png */,
+				AB499F4D1A5375300060AA0E /* CalendarRowBottom.png */,
+				AB499F4E1A5375300060AA0E /* CalendarRowBottom@2x.png */,
+				AB499F4F1A5375300060AA0E /* CalendarRowBottom@3x.png */,
+				AB499F501A5375300060AA0E /* CalendarSelectedDate.png */,
+				AB499F511A5375300060AA0E /* CalendarSelectedDate@2x.png */,
+				AB499F521A5375300060AA0E /* CalendarSelectedDate@3x.png */,
+				AB499F531A5375300060AA0E /* CalendarTodaysDate.png */,
+				AB499F541A5375300060AA0E /* CalendarTodaysDate@2x.png */,
+				AB499F551A5375300060AA0E /* CalendarTodaysDate@3x.png */,
+			);
+			name = TimesSquare;
+			path = "Resources-Common/TimesSquare";
+			sourceTree = "<group>";
+		};
+		AB63B903140E1E520083ED91 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				AB63B904140E1E520083ED91 /* Dosecast.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		AB8D77FC124E892800023B5C /* Resources-iPhoneiPod */ = {
+			isa = PBXGroup;
+			children = (
+				AB8D7CCA124E974400023B5C /* AccountViewController.xib */,
+				AB8D788C124E8B8B00023B5C /* BedtimePeriodTableViewCells.xib */,
+				AB335C5917A21BD2006F891B /* BedtimePeriodViewController.xib */,
+				AB8D7CCB124E974400023B5C /* BedtimeSettingsViewController.xib */,
+				ABECA3EB14D58BC60015B679 /* BooleanViewCell.xib */,
+				ABECA3EC14D58BC60015B679 /* BooleanViewController.xib */,
+				ABB14CE115CE1438000AF6C4 /* ChecklistViewCell.xib */,
+				ABB14CE215CE1438000AF6C4 /* ChecklistViewController.xib */,
+				AB335C6517A21EAD006F891B /* DateTimePickerViewController.xib */,
+				ABE6322D16276C6000B965F8 /* DosecastDrugsViewController.xib */,
+				AB4DC36015DF02B700B22BB7 /* DosecastMainViewController.xib */,
+				ABD4F80A15E1A25900324C09 /* DosecastScheduleViewController.xib */,
+				AB011B911400100B00AC6F9D /* DoseLimitViewController.xib */,
+				AB9D16F612AC91670099966D /* DrugAddEditViewController.xib */,
+				ABD2A4AD12BA016900A96694 /* DrugAddEditDoseInputTableViewCell.xib */,
+				AB20388D13E27859002154C2 /* DrugAddEditDoseInputTextTableViewCell.xib */,
+				B65FAD7F16110ACC0013316C /* DrugChooseImageViewController.xib */,
+				AB10B56415EB1B1100280917 /* DrugDatabaseSearchCell.xib */,
+				AB10B55815EB19E200280917 /* DrugDatabaseSearchController.xib */,
+				AB8D788D124E8B8B00023B5C /* DrugHistoryTimeTableViewCell.xib */,
+				AB8D7CCD124E974400023B5C /* DrugHistoryViewController.xib */,
+				AB85194315F6CCD60050D4A5 /* DrugNameViewController.xib */,
+				2978DA5B160C21AA0095438B /* DrugPermutationCell.xib */,
+				B65FAD7D16110AC20013316C /* DrugPermutationsViewController.xib */,
+				ABE6323016276C7600B965F8 /* DrugsViewPillTableViewCell.xib */,
+				AB8D7CCF124E974400023B5C /* DrugViewController.xib */,
+				ABDC3BA619215E21007520BE /* GroupTableViewCell.xib */,
+				AB8D788E124E8B8B00023B5C /* IntervalPeriodTableViewCell.xib */,
+				AB335C3517A21059006F891B /* IntervalPeriodViewController.xib */,
+				AB8A956B192A2E72002DCBE7 /* JoinGroupEnterGroupNameViewController.xib */,
+				ABAD4B29192CF6BD00AA7EE0 /* JoinGroupEnterPasswordViewController.xib */,
+				ABA886C9131AF57E004E4D89 /* HistoryAddEditEventViewController.xib */,
+				ABBE335B1314CC6B00882193 /* HistoryEventTimeTableViewCell.xib */,
+				AB82783013CDCAB6006BDB4C /* LateDoseSettingsViewController.xib */,
+				ABD4F7D715E1A06A00324C09 /* MainViewPillTableViewCell.xib */,
+				ABDE3B0B12747F8F00BB33D2 /* MessagePanelViewController.xib */,
+				AB8D7890124E8B8B00023B5C /* NumericPickerTableViewCell.xib */,
+				AB335C0717A156B6006F891B /* NumericPickerViewController.xib */,
+				AB8D7891124E8B8B00023B5C /* PicklistViewCell.xib */,
+				AB8D7CD0124E974400023B5C /* PicklistViewController.xib */,
+				ABF504C4178C87F40034E76C /* PillAlertViewController.xib */,
+				AB8D7892124E8B8B00023B5C /* PillAlertTableViewCell.xib */,
+				AB8D7894124E8B8B00023B5C /* PostponePillTableViewCell.xib */,
+				AB335C4D17A21737006F891B /* PostponePillsViewController.xib */,
+				AB8D7895124E8B8B00023B5C /* ProductTableViewCell.xib */,
+				AB1DF9B8127E6C120055C1D8 /* ProgressViewController.xib */,
+				AB8D7CD3124E974400023B5C /* ReminderAddEditViewController.xib */,
+				AB495E0313EA32330016E008 /* ScheduleRepeatPeriodTableViewCell.xib */,
+				AB335C4517A214AC006F891B /* ScheduleRepeatPeriodViewController.xib */,
+				AB8D7897124E8B8B00023B5C /* ScheduleTimeTableViewCell.xib */,
+				ABD4F80715E1A1F100324C09 /* ScheduleViewPillTableViewCell.xib */,
+				AB8D7CD4124E974400023B5C /* SettingsViewController.xib */,
+				AB8D7898124E8B8B00023B5C /* SkipPillsTableViewCell.xib */,
+				AB8D7CD5124E974400023B5C /* SkipPillsViewController.xib */,
+				AB8D7CD6124E974400023B5C /* SpinnerViewController.xib */,
+				ABF077D11A011F8200C9B3C9 /* SyncAddDeviceViewController.xib */,
+				ABF077EB1A01751900C9B3C9 /* SyncDeviceTableViewCell.xib */,
+				ABF077DB1A0147C500C9B3C9 /* SyncMoveDeviceViewController.xib */,
+				ABF077EC1A01751900C9B3C9 /* SyncViewDevicesViewController.xib */,
+				AB8D7899124E8B8B00023B5C /* TakeMultiPillTimeTableViewCell.xib */,
+				AB8D789A124E8B8B00023B5C /* TakePillsTableViewCell.xib */,
+				AB8D7CD7124E974400023B5C /* TakePillsViewController.xib */,
+				AB8D789B124E8B8B00023B5C /* TakePillTimeTableViewCell.xib */,
+				AB2C989E13E5B47F00BEF51F /* TextEntryMultilineTableViewCell.xib */,
+				AB8D789C124E8B8B00023B5C /* TextEntryTableViewCell.xib */,
+				AB8D7CD9124E974400023B5C /* TextEntryViewController.xib */,
+				AB82781413CD13B3006BDB4C /* TimePeriodTableViewCell.xib */,
+				AB335C3D17A212CF006F891B /* TimePeriodViewController.xib */,
+				AB8D789D124E8B8B00023B5C /* TimeTableViewCell.xib */,
+				AB27ED6615DD210800585F84 /* ToolbarButtons.xib */,
+				ABF864EA192A7D6A00BEF736 /* ViewDeleteGroupViewController.xib */,
+			);
+			name = "Resources-iPhoneiPod";
+			sourceTree = "<group>";
+		};
+		AB8D77FE124E895200023B5C /* Resources-Common */ = {
+			isa = PBXGroup;
+			children = (
+				ABB25CC51A56E493007216EB /* Schedule_Button_Next_Day_Arrow@3x.png */,
+				ABB25CC61A56E493007216EB /* Schedule_Button_Prev_Day_Arrow@3x.png */,
+				ABB25CC71A56E493007216EB /* ScheduleToolbar@3x.png */,
+				AB499FAD1A53C1260060AA0E /* Trash@3x.png */,
+				AB499F9D1A53C00D0060AA0E /* Alert@3x.png */,
+				AB499F9E1A53C00D0060AA0E /* DosecastAlertBackground@3x.png */,
+				AB499F9F1A53C00D0060AA0E /* Log@3x.png */,
+				AB499FA01A53C00D0060AA0E /* Mail@3x.png */,
+				AB499FA11A53C00D0060AA0E /* ManagedDiscontinuedIcon@3x.png */,
+				AB499FA21A53C00D0060AA0E /* ManagedUnreadIcon@3x.png */,
+				AB499FA31A53C00D0060AA0E /* Notes@3x.png */,
+				AB499FA41A53C00D0060AA0E /* Refill@3x.png */,
+				AB499F461A5375300060AA0E /* TimesSquare */,
+				AB575E5C17DEAA9200D5AAA3 /* Notes@2x.png */,
+				AB575E5D17DEAA9200D5AAA3 /* Notes.png */,
+				295E41ED16240E7D00D10A85 /* DrugImages.xcdatamodeld */,
+				295B214C15EFFB1D008E4657 /* Logging.xcdatamodeld */,
+				ABDD6EA112C81CC700C49E09 /* Alert.png */,
+				ABDD6EA212C81CC700C49E09 /* Alert@2x.png */,
+				ABF504BA178C6FED0034E76C /* DosecastAlertBackground.png */,
+				ABF504BB178C6FED0034E76C /* DosecastAlertBackground@2x.png */,
+				AB952F23124EA76C000524FF /* DoseHistory.xcdatamodeld */,
+				AB8D7823124E8B5E00023B5C /* Log.png */,
+				AB8D7824124E8B5E00023B5C /* Log@2x.png */,
+				AB8D7825124E8B5E00023B5C /* Mail.png */,
+				AB8D7826124E8B5E00023B5C /* Mail@2x.png */,
+				AB796C7017D14211002C2FA7 /* ManagedDiscontinuedIcon.png */,
+				AB796C7117D14211002C2FA7 /* ManagedDiscontinuedIcon@2x.png */,
+				AB796C7217D14211002C2FA7 /* ManagedUnreadIcon.png */,
+				AB796C7317D14211002C2FA7 /* ManagedUnreadIcon@2x.png */,
+				ABE1988A15DC8AA70000B579 /* MedicationDB.sqlite */,
+				ABE1989015DC8C570000B579 /* MedicationDB.xcdatamodeld */,
+				ABAA16A912C0E00C006F3740 /* Refill.png */,
+				ABAA16AA12C0E00C006F3740 /* Refill@2x.png */,
+				ABD4F8C915E1B15600324C09 /* ScheduleToolbar.png */,
+				ABD4F8CA15E1B15600324C09 /* ScheduleToolbar@2x.png */,
+				ABD4F8CE15E1B19300324C09 /* Schedule_Button_Next_Day_Arrow.png */,
+				ABD4F8CF15E1B19300324C09 /* Schedule_Button_Next_Day_Arrow@2x.png */,
+				ABD4F8D015E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow.png */,
+				ABD4F8D115E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow@2x.png */,
+				AB9B0D90130B94D500C1A42D /* Trash.png */,
+				AB9B0D91130B94D500C1A42D /* Trash@2x.png */,
+			);
+			name = "Resources-Common";
+			sourceTree = "<group>";
+		};
+		AB952F54124EA790000524FF /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				AB952F56124EA790000524FF /* AccountViewController-iPad.xib */,
+				AB335C5B17A21BE1006F891B /* BedtimePeriodViewController-iPad.xib */,
+				AB952F57124EA790000524FF /* BedtimeSettingsViewController-iPad.xib */,
+				ABECA3F014D58BE70015B679 /* BooleanViewController-iPad.xib */,
+				ABB14CE615CE144E000AF6C4 /* ChecklistViewController-iPad.xib */,
+				AB335C6717A21EBB006F891B /* DateTimePickerViewController-iPad.xib */,
+				ABE6323216276C9400B965F8 /* DosecastDrugsViewController-iPad.xib */,
+				AB4DC36215DF02D700B22BB7 /* DosecastMainViewController-iPad.xib */,
+				ABD4F80C15E1A27200324C09 /* DosecastScheduleViewController-iPad.xib */,
+				AB011B931400106700AC6F9D /* DoseLimitViewController-iPad.xib */,
+				AB9D16F312AC91540099966D /* DrugAddEditViewController-iPad.xib */,
+				B65FAD8116110ADF0013316C /* DrugChooseImageViewController-iPad.xib */,
+				AB10B55B15EB1A0000280917 /* DrugDatabaseSearchController-iPad.xib */,
+				AB952F59124EA790000524FF /* DrugHistoryViewController-iPad.xib */,
+				AB85194615F6CCED0050D4A5 /* DrugNameViewController-iPad.xib */,
+				2978DA60160C21E40095438B /* DrugPermutationsViewController-iPad.xib */,
+				AB952F5B124EA790000524FF /* DrugViewController-iPad.xib */,
+				ABA886CB131AF598004E4D89 /* HistoryAddEditEventViewController-iPad.xib */,
+				AB335C3317A21047006F891B /* IntervalPeriodViewController-iPad.xib */,
+				ABF864E8192A7C4900BEF736 /* JoinGroupEnterGroupNameViewController-iPad.xib */,
+				ABAD4B27192CF6A600AA7EE0 /* JoinGroupEnterPasswordViewController-iPad.xib */,
+				AB82783213CDCAD4006BDB4C /* LateDoseSettingsViewController-iPad.xib */,
+				ABDE3B0D12747FA500BB33D2 /* MessagePanelViewController-iPad.xib */,
+				AB335C0517A156A5006F891B /* NumericPickerViewController-iPad.xib */,
+				AB952F5D124EA790000524FF /* PicklistViewController-iPad.xib */,
+				ABF504C6178C88100034E76C /* PillAlertViewController-iPad.xib */,
+				AB335C4F17A2174A006F891B /* PostponePillsViewController-iPad.xib */,
+				AB1DF9B5127E6BF60055C1D8 /* ProgressViewController-iPad.xib */,
+				AB952F60124EA790000524FF /* ReminderAddEditViewController-iPad.xib */,
+				AB952F62124EA790000524FF /* SettingsViewController-iPad.xib */,
+				AB335C4717A214BB006F891B /* ScheduleRepeatPeriodViewController-iPad.xib */,
+				AB952F63124EA790000524FF /* SkipPillsViewController-iPad.xib */,
+				AB952F64124EA790000524FF /* SpinnerViewController-iPad.xib */,
+				ABF077D31A011F9700C9B3C9 /* SyncAddDeviceViewController-iPad.xib */,
+				ABF077DF1A01482500C9B3C9 /* SyncMoveDeviceViewController-iPad.xib */,
+				ABF077EF1A01753400C9B3C9 /* SyncViewDevicesViewController-iPad.xib */,
+				AB952F65124EA790000524FF /* TakePillsViewController-iPad.xib */,
+				AB952F67124EA790000524FF /* TextEntryViewController-iPad.xib */,
+				AB335C3B17A212B7006F891B /* TimePeriodViewController-iPad.xib */,
+				ABF864EC192A7D7A00BEF736 /* ViewDeleteGroupViewController-iPad.xib */,
+			);
+			path = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D57630D048677EA00EA77CD /* Dosecast-resources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "Dosecast-resources" */;
+			buildPhases = (
+				8D57630F048677EA00EA77CD /* Resources */,
+				8D576311048677EA00EA77CD /* Sources */,
+				8D576313048677EA00EA77CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dosecast-resources";
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = "Dosecast-Resources";
+			productReference = 8D576316048677EA00EA77CD /* Dosecast-resources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Montuno Software, LLC";
+			};
+			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "Dosecast-resources" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				de,
+				fr,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Dosecast-Resources */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D57630D048677EA00EA77CD /* Dosecast-resources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D57630F048677EA00EA77CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8D785F124E8B5E00023B5C /* Log.png in Resources */,
+				AB335C5C17A21BE1006F891B /* BedtimePeriodViewController-iPad.xib in Resources */,
+				AB8D7860124E8B5E00023B5C /* Log@2x.png in Resources */,
+				AB335C3C17A212B7006F891B /* TimePeriodViewController-iPad.xib in Resources */,
+				AB8D7861124E8B5E00023B5C /* Mail.png in Resources */,
+				AB499FA91A53C00D0060AA0E /* ManagedDiscontinuedIcon@3x.png in Resources */,
+				AB8D7862124E8B5E00023B5C /* Mail@2x.png in Resources */,
+				AB8D78A0124E8B8B00023B5C /* BedtimePeriodTableViewCells.xib in Resources */,
+				AB8D78A1124E8B8B00023B5C /* DrugHistoryTimeTableViewCell.xib in Resources */,
+				AB8D78A2124E8B8B00023B5C /* IntervalPeriodTableViewCell.xib in Resources */,
+				AB8D78A4124E8B8B00023B5C /* NumericPickerTableViewCell.xib in Resources */,
+				AB499FA51A53C00D0060AA0E /* Alert@3x.png in Resources */,
+				AB335C3E17A212CF006F891B /* TimePeriodViewController.xib in Resources */,
+				AB8D78A5124E8B8B00023B5C /* PicklistViewCell.xib in Resources */,
+				AB335C6817A21EBB006F891B /* DateTimePickerViewController-iPad.xib in Resources */,
+				AB8D78A6124E8B8B00023B5C /* PillAlertTableViewCell.xib in Resources */,
+				AB8D78A8124E8B8B00023B5C /* PostponePillTableViewCell.xib in Resources */,
+				AB499F581A5375300060AA0E /* CalendarPreviousMonth@3x.png in Resources */,
+				AB499F621A5375300060AA0E /* CalendarTodaysDate.png in Resources */,
+				AB8D78A9124E8B8B00023B5C /* ProductTableViewCell.xib in Resources */,
+				AB8D78AB124E8B8B00023B5C /* ScheduleTimeTableViewCell.xib in Resources */,
+				AB8D78AC124E8B8B00023B5C /* SkipPillsTableViewCell.xib in Resources */,
+				AB499F5F1A5375300060AA0E /* CalendarSelectedDate.png in Resources */,
+				AB499FAC1A53C00D0060AA0E /* Refill@3x.png in Resources */,
+				AB8D78AD124E8B8B00023B5C /* TakeMultiPillTimeTableViewCell.xib in Resources */,
+				AB8D78AE124E8B8B00023B5C /* TakePillsTableViewCell.xib in Resources */,
+				AB8D78AF124E8B8B00023B5C /* TakePillTimeTableViewCell.xib in Resources */,
+				AB8D78B0124E8B8B00023B5C /* TextEntryTableViewCell.xib in Resources */,
+				AB8D78B1124E8B8B00023B5C /* TimeTableViewCell.xib in Resources */,
+				AB499FAB1A53C00D0060AA0E /* Notes@3x.png in Resources */,
+				AB499F5A1A5375300060AA0E /* CalendarRow@2x.png in Resources */,
+				ABB25CC91A56E493007216EB /* Schedule_Button_Prev_Day_Arrow@3x.png in Resources */,
+				AB796C7517D14212002C2FA7 /* ManagedDiscontinuedIcon@2x.png in Resources */,
+				AB335C0817A156B6006F891B /* NumericPickerViewController.xib in Resources */,
+				AB8D7CDC124E974400023B5C /* AccountViewController.xib in Resources */,
+				AB8D7CDD124E974400023B5C /* BedtimeSettingsViewController.xib in Resources */,
+				AB8D7CDF124E974400023B5C /* DrugHistoryViewController.xib in Resources */,
+				AB8D7CE1124E974400023B5C /* DrugViewController.xib in Resources */,
+				AB8D7CE2124E974400023B5C /* PicklistViewController.xib in Resources */,
+				AB8D7CE5124E974400023B5C /* ReminderAddEditViewController.xib in Resources */,
+				AB8D7CE6124E974400023B5C /* SettingsViewController.xib in Resources */,
+				AB8D7CE7124E974400023B5C /* SkipPillsViewController.xib in Resources */,
+				AB8D7CE8124E974400023B5C /* SpinnerViewController.xib in Resources */,
+				AB8D7CE9124E974400023B5C /* TakePillsViewController.xib in Resources */,
+				AB499F571A5375300060AA0E /* CalendarPreviousMonth@2x.png in Resources */,
+				ABF077F01A01753400C9B3C9 /* SyncViewDevicesViewController-iPad.xib in Resources */,
+				ABF077D21A011F8200C9B3C9 /* SyncAddDeviceViewController.xib in Resources */,
+				AB8D7CEB124E974400023B5C /* TextEntryViewController.xib in Resources */,
+				AB952F6A124EA790000524FF /* AccountViewController-iPad.xib in Resources */,
+				AB952F6B124EA790000524FF /* BedtimeSettingsViewController-iPad.xib in Resources */,
+				AB952F6D124EA790000524FF /* DrugHistoryViewController-iPad.xib in Resources */,
+				AB952F6F124EA790000524FF /* DrugViewController-iPad.xib in Resources */,
+				AB952F71124EA790000524FF /* PicklistViewController-iPad.xib in Resources */,
+				AB499FA71A53C00D0060AA0E /* Log@3x.png in Resources */,
+				AB952F74124EA790000524FF /* ReminderAddEditViewController-iPad.xib in Resources */,
+				AB952F76124EA790000524FF /* SettingsViewController-iPad.xib in Resources */,
+				AB952F77124EA790000524FF /* SkipPillsViewController-iPad.xib in Resources */,
+				AB952F78124EA790000524FF /* SpinnerViewController-iPad.xib in Resources */,
+				AB952F79124EA790000524FF /* TakePillsViewController-iPad.xib in Resources */,
+				AB952F7B124EA790000524FF /* TextEntryViewController-iPad.xib in Resources */,
+				AB499F601A5375300060AA0E /* CalendarSelectedDate@2x.png in Resources */,
+				ABDE3B0C12747F8F00BB33D2 /* MessagePanelViewController.xib in Resources */,
+				ABDE3B0E12747FA500BB33D2 /* MessagePanelViewController-iPad.xib in Resources */,
+				AB1DF9B6127E6BF60055C1D8 /* ProgressViewController-iPad.xib in Resources */,
+				AB1DF9B9127E6C120055C1D8 /* ProgressViewController.xib in Resources */,
+				AB9D16F412AC91540099966D /* DrugAddEditViewController-iPad.xib in Resources */,
+				AB9D16F712AC91670099966D /* DrugAddEditViewController.xib in Resources */,
+				ABD2A4AE12BA016900A96694 /* DrugAddEditDoseInputTableViewCell.xib in Resources */,
+				ABAA16AB12C0E00C006F3740 /* Refill.png in Resources */,
+				ABAA16AC12C0E00C006F3740 /* Refill@2x.png in Resources */,
+				AB335C5017A2174A006F891B /* PostponePillsViewController-iPad.xib in Resources */,
+				ABDD6EA312C81CC700C49E09 /* Alert.png in Resources */,
+				ABDD6EA412C81CC700C49E09 /* Alert@2x.png in Resources */,
+				AB499F641A5375300060AA0E /* CalendarTodaysDate@3x.png in Resources */,
+				AB796C7417D14212002C2FA7 /* ManagedDiscontinuedIcon.png in Resources */,
+				AB335C0617A156A5006F891B /* NumericPickerViewController-iPad.xib in Resources */,
+				AB9B0D92130B94D500C1A42D /* Trash.png in Resources */,
+				AB499F5B1A5375300060AA0E /* CalendarRow@3x.png in Resources */,
+				AB9B0D93130B94D500C1A42D /* Trash@2x.png in Resources */,
+				ABBE335C1314CC6B00882193 /* HistoryEventTimeTableViewCell.xib in Resources */,
+				ABF077EE1A01751900C9B3C9 /* SyncViewDevicesViewController.xib in Resources */,
+				ABA886CA131AF57E004E4D89 /* HistoryAddEditEventViewController.xib in Resources */,
+				ABA886CC131AF598004E4D89 /* HistoryAddEditEventViewController-iPad.xib in Resources */,
+				AB796C7717D14212002C2FA7 /* ManagedUnreadIcon@2x.png in Resources */,
+				AB82781513CD13B3006BDB4C /* TimePeriodTableViewCell.xib in Resources */,
+				AB82783113CDCAB6006BDB4C /* LateDoseSettingsViewController.xib in Resources */,
+				AB82783313CDCAD4006BDB4C /* LateDoseSettingsViewController-iPad.xib in Resources */,
+				AB20388E13E27859002154C2 /* DrugAddEditDoseInputTextTableViewCell.xib in Resources */,
+				ABF077D41A011F9700C9B3C9 /* SyncAddDeviceViewController-iPad.xib in Resources */,
+				AB335C4817A214BB006F891B /* ScheduleRepeatPeriodViewController-iPad.xib in Resources */,
+				AB499F631A5375300060AA0E /* CalendarTodaysDate@2x.png in Resources */,
+				AB2C989F13E5B47F00BEF51F /* TextEntryMultilineTableViewCell.xib in Resources */,
+				AB499F561A5375300060AA0E /* CalendarPreviousMonth.png in Resources */,
+				ABB25CC81A56E493007216EB /* Schedule_Button_Next_Day_Arrow@3x.png in Resources */,
+				AB495E0413EA32330016E008 /* ScheduleRepeatPeriodTableViewCell.xib in Resources */,
+				AB011B921400100B00AC6F9D /* DoseLimitViewController.xib in Resources */,
+				ABF077E01A01482500C9B3C9 /* SyncMoveDeviceViewController-iPad.xib in Resources */,
+				AB011B941400106700AC6F9D /* DoseLimitViewController-iPad.xib in Resources */,
+				AB63B908140E1E520083ED91 /* Dosecast.strings in Resources */,
+				AB33E421142691F2006DBE06 /* Dosecast.strings in Resources */,
+				ABF864EB192A7D6A00BEF736 /* ViewDeleteGroupViewController.xib in Resources */,
+				ABECA3ED14D58BC60015B679 /* BooleanViewCell.xib in Resources */,
+				ABECA3EE14D58BC60015B679 /* BooleanViewController.xib in Resources */,
+				AB335C5A17A21BD2006F891B /* BedtimePeriodViewController.xib in Resources */,
+				ABECA3F114D58BE70015B679 /* BooleanViewController-iPad.xib in Resources */,
+				AB13CE0914E4B66200C08597 /* Dosecast.strings in Resources */,
+				ABAD4B28192CF6A600AA7EE0 /* JoinGroupEnterPasswordViewController-iPad.xib in Resources */,
+				ABF864E9192A7C4900BEF736 /* JoinGroupEnterGroupNameViewController-iPad.xib in Resources */,
+				ABB14CE315CE1438000AF6C4 /* ChecklistViewCell.xib in Resources */,
+				AB335C6617A21EAD006F891B /* DateTimePickerViewController.xib in Resources */,
+				ABB14CE415CE1438000AF6C4 /* ChecklistViewController.xib in Resources */,
+				AB499FAA1A53C00D0060AA0E /* ManagedUnreadIcon@3x.png in Resources */,
+				ABB14CE715CE144E000AF6C4 /* ChecklistViewController-iPad.xib in Resources */,
+				ABE1988D15DC8AA70000B579 /* MedicationDB.sqlite in Resources */,
+				ABAD4B2A192CF6BD00AA7EE0 /* JoinGroupEnterPasswordViewController.xib in Resources */,
+				AB27ED6715DD210800585F84 /* ToolbarButtons.xib in Resources */,
+				AB4DC36115DF02B700B22BB7 /* DosecastMainViewController.xib in Resources */,
+				AB4DC36315DF02D700B22BB7 /* DosecastMainViewController-iPad.xib in Resources */,
+				ABD4F7D815E1A06A00324C09 /* MainViewPillTableViewCell.xib in Resources */,
+				ABD4F80815E1A1F100324C09 /* ScheduleViewPillTableViewCell.xib in Resources */,
+				AB499FA81A53C00D0060AA0E /* Mail@3x.png in Resources */,
+				AB575E5E17DEAA9200D5AAA3 /* Notes@2x.png in Resources */,
+				AB499FA61A53C00D0060AA0E /* DosecastAlertBackground@3x.png in Resources */,
+				AB335C4E17A21737006F891B /* PostponePillsViewController.xib in Resources */,
+				ABB25CCA1A56E493007216EB /* ScheduleToolbar@3x.png in Resources */,
+				AB499F591A5375300060AA0E /* CalendarRow.png in Resources */,
+				ABD4F80B15E1A25900324C09 /* DosecastScheduleViewController.xib in Resources */,
+				ABD4F80D15E1A27200324C09 /* DosecastScheduleViewController-iPad.xib in Resources */,
+				AB335C4617A214AC006F891B /* ScheduleRepeatPeriodViewController.xib in Resources */,
+				AB8A956C192A2E72002DCBE7 /* JoinGroupEnterGroupNameViewController.xib in Resources */,
+				ABD4F8CB15E1B15600324C09 /* ScheduleToolbar.png in Resources */,
+				ABD4F8CC15E1B15600324C09 /* ScheduleToolbar@2x.png in Resources */,
+				ABD4F8D215E1B19300324C09 /* Schedule_Button_Next_Day_Arrow.png in Resources */,
+				AB796C7617D14212002C2FA7 /* ManagedUnreadIcon.png in Resources */,
+				ABDC3BA719215E21007520BE /* GroupTableViewCell.xib in Resources */,
+				ABD4F8D315E1B19300324C09 /* Schedule_Button_Next_Day_Arrow@2x.png in Resources */,
+				AB499F5E1A5375300060AA0E /* CalendarRowBottom@3x.png in Resources */,
+				ABD4F8D415E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow.png in Resources */,
+				ABD4F8D515E1B19300324C09 /* Schedule_Button_Prev_Day_Arrow@2x.png in Resources */,
+				AB10B55915EB19E200280917 /* DrugDatabaseSearchController.xib in Resources */,
+				ABF077DC1A0147C500C9B3C9 /* SyncMoveDeviceViewController.xib in Resources */,
+				AB10B55C15EB1A0000280917 /* DrugDatabaseSearchController-iPad.xib in Resources */,
+				AB10B56515EB1B1100280917 /* DrugDatabaseSearchCell.xib in Resources */,
+				AB85194415F6CCD60050D4A5 /* DrugNameViewController.xib in Resources */,
+				AB499F5D1A5375300060AA0E /* CalendarRowBottom@2x.png in Resources */,
+				ABF864ED192A7D7A00BEF736 /* ViewDeleteGroupViewController-iPad.xib in Resources */,
+				AB335C3617A21059006F891B /* IntervalPeriodViewController.xib in Resources */,
+				AB85194715F6CCED0050D4A5 /* DrugNameViewController-iPad.xib in Resources */,
+				AB335C3417A21047006F891B /* IntervalPeriodViewController-iPad.xib in Resources */,
+				B65FAD7E16110AC20013316C /* DrugPermutationsViewController.xib in Resources */,
+				B65FAD8016110ACC0013316C /* DrugChooseImageViewController.xib in Resources */,
+				AB499F611A5375300060AA0E /* CalendarSelectedDate@3x.png in Resources */,
+				B65FAD8216110ADF0013316C /* DrugChooseImageViewController-iPad.xib in Resources */,
+				AB575E5F17DEAA9200D5AAA3 /* Notes.png in Resources */,
+				2978DA5D160C21AA0095438B /* DrugPermutationCell.xib in Resources */,
+				2978DA61160C21E40095438B /* DrugPermutationsViewController-iPad.xib in Resources */,
+				AB499FAE1A53C1260060AA0E /* Trash@3x.png in Resources */,
+				ABE6322E16276C6000B965F8 /* DosecastDrugsViewController.xib in Resources */,
+				ABE6323116276C7600B965F8 /* DrugsViewPillTableViewCell.xib in Resources */,
+				ABE6323316276C9400B965F8 /* DosecastDrugsViewController-iPad.xib in Resources */,
+				ABF504BC178C6FED0034E76C /* DosecastAlertBackground.png in Resources */,
+				ABF504BD178C6FED0034E76C /* DosecastAlertBackground@2x.png in Resources */,
+				ABF504C5178C87F40034E76C /* PillAlertViewController.xib in Resources */,
+				ABF077ED1A01751900C9B3C9 /* SyncDeviceTableViewCell.xib in Resources */,
+				ABF504C7178C88100034E76C /* PillAlertViewController-iPad.xib in Resources */,
+				AB499F5C1A5375300060AA0E /* CalendarRowBottom.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D576311048677EA00EA77CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB952F3C124EA76C000524FF /* DoseHistory.xcdatamodeld in Sources */,
+				ABE1989215DC8C570000B579 /* MedicationDB.xcdatamodeld in Sources */,
+				295B214E15EFFB1D008E4657 /* Logging.xcdatamodeld in Sources */,
+				295E41F116240E7D00D10A85 /* DrugImages.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB13CE0514E4B66200C08597 /* Dosecast.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB13CE0614E4B66200C08597 /* fr */,
+			);
+			name = Dosecast.strings;
+			sourceTree = "<group>";
+		};
+		AB33E41D142691F2006DBE06 /* Dosecast.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB33E41E142691F2006DBE06 /* de */,
+			);
+			name = Dosecast.strings;
+			sourceTree = "<group>";
+		};
+		AB63B904140E1E520083ED91 /* Dosecast.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB63B905140E1E520083ED91 /* en */,
+			);
+			name = Dosecast.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB911C08733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_THUMB_SUPPORT = NO;
+				IBC_FLATTEN_NIBS = YES;
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "Dosecast-resources";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB912008733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Montuno Software, LLC (YFGDYWZCK8)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBC_FLATTEN_NIBS = YES;
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PLIST_FILE_OUTPUT_FORMAT = xml;
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "Dosecast-resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911C08733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "Dosecast-resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB912008733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		295B214C15EFFB1D008E4657 /* Logging.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				295B214D15EFFB1D008E4657 /* Logging.xcdatamodel */,
+			);
+			currentVersion = 295B214D15EFFB1D008E4657 /* Logging.xcdatamodel */;
+			name = Logging.xcdatamodeld;
+			path = "Resources-Common/Logging.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		295E41ED16240E7D00D10A85 /* DrugImages.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB3C6549198185F400479C28 /* DrugImages 4.xcdatamodel */,
+				295E41EE16240E7D00D10A85 /* DrugImages 2.xcdatamodel */,
+				295E41EF16240E7D00D10A85 /* DrugImages 3.xcdatamodel */,
+				295E41F016240E7D00D10A85 /* DrugImages.xcdatamodel */,
+			);
+			currentVersion = AB3C6549198185F400479C28 /* DrugImages 4.xcdatamodel */;
+			name = DrugImages.xcdatamodeld;
+			path = "Resources-Common/DrugImages.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		AB952F23124EA76C000524FF /* DoseHistory.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB517EC0199ACEA3005F6821 /* DoseHistory 10.xcdatamodel */,
+				ABBAB181181F553E0002F482 /* DoseHistory 9.xcdatamodel */,
+				ABF504AB17884E710034E76C /* DoseHistory 8.xcdatamodel */,
+				ABD33C9512873126002EE576 /* DoseHistory 3.xcdatamodel */,
+				AB952F24124EA76C000524FF /* DoseHistory 2.xcdatamodel */,
+				AB952F25124EA76C000524FF /* DoseHistory.xcdatamodel */,
+				AB6695F112CCCDD0009CC83D /* DoseHistory 4.xcdatamodel */,
+				AB0F677813199F59008C0677 /* DoseHistory 5.xcdatamodel */,
+				AB745A4D139A460500277EE0 /* DoseHistory 6.xcdatamodel */,
+				AB118FDD13F165A1006FB083 /* DoseHistory 7.xcdatamodel */,
+			);
+			currentVersion = AB517EC0199ACEA3005F6821 /* DoseHistory 10.xcdatamodel */;
+			name = DoseHistory.xcdatamodeld;
+			path = "Resources-Common/DoseHistory.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		ABE1989015DC8C570000B579 /* MedicationDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ABE1989115DC8C570000B579 /* MedicationDB.xcdatamodel */,
+			);
+			currentVersion = ABE1989115DC8C570000B579 /* MedicationDB.xcdatamodel */;
+			name = MedicationDB.xcdatamodeld;
+			path = "Resources-Common/MedicationDB.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

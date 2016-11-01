@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="12B19" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="EventLogEntry" representedClassName="EventLogEntry" syncable="YES">
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="entry" attributeType="Binary" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUploadAttempt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastUploadResponse" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EventLogEntry" positionX="0" positionY="0" width="128" height="120"/>
+    </elements>
+</model>

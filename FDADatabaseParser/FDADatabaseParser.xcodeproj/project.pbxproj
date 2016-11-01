@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0E6BA31634DDEA0079C266 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0E6BA21634DDEA0079C266 /* CoreData.framework */; };
+		AB0E6BA51634DDEA0079C266 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB0E6BA41634DDEA0079C266 /* Foundation.framework */; };
+		AB0E6BA81634DDEA0079C266 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0E6BA71634DDEA0079C266 /* main.m */; };
+		AB0E6BAD1634DDEA0079C266 /* FDADatabaseParser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB0E6BAB1634DDEA0079C266 /* FDADatabaseParser.xcdatamodeld */; };
+		AB0E6BAF1634DDEA0079C266 /* FDADatabaseParser.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB0E6BAE1634DDEA0079C266 /* FDADatabaseParser.1 */; };
+		AB0E6BC71634DE9C0079C266 /* MedApplyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0E6BBA1634DE9C0079C266 /* MedApplyLocation.m */; };
+		AB0E6BC81634DE9C0079C266 /* MedDoseUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0E6BBC1634DE9C0079C266 /* MedDoseUnit.m */; };
+		AB0E6BC91634DE9C0079C266 /* MedFormType.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0E6BBE1634DE9C0079C266 /* MedFormType.m */; };
+		AB0E6BCA1634DE9C0079C266 /* Medication.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0E6BC01634DE9C0079C266 /* Medication.m */; };
+		AB0E6BCB1634DE9C0079C266 /* MedicationRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0E6BC21634DE9C0079C266 /* MedicationRoute.m */; };
+		AB0E6BCC1634DE9C0079C266 /* MedicationUpdateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0E6BC41634DE9C0079C266 /* MedicationUpdateDate.m */; };
+		AB0E6BCD1634DE9C0079C266 /* MedStrengthUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0E6BC61634DE9C0079C266 /* MedStrengthUnit.m */; };
+		AB796CE317A2B57F00238284 /* product.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB796CE217A2B57500238284 /* product.txt */; };
+		AB817CB91A15CC740050903F /* legacyproduct.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = AB817CB81A15C4C70050903F /* legacyproduct.txt */; };
+		ABA5977E1634EEE600BBE955 /* Mapping.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABA5977D1634EED600BBE955 /* Mapping.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB0E6B9C1634DDEA0079C266 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				AB0E6BAF1634DDEA0079C266 /* FDADatabaseParser.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		ABA5977B1634ED9D00BBE955 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				AB817CB91A15CC740050903F /* legacyproduct.txt in CopyFiles */,
+				AB796CE317A2B57F00238284 /* product.txt in CopyFiles */,
+				ABA5977E1634EEE600BBE955 /* Mapping.txt in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB0E6B9E1634DDEA0079C266 /* FDADatabaseParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FDADatabaseParser; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0E6BA21634DDEA0079C266 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB0E6BA41634DDEA0079C266 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB0E6BA71634DDEA0079C266 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB0E6BAA1634DDEA0079C266 /* FDADatabaseParser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FDADatabaseParser-Prefix.pch"; sourceTree = "<group>"; };
+		AB0E6BAC1634DDEA0079C266 /* FDADatabaseParser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FDADatabaseParser.xcdatamodel; sourceTree = "<group>"; };
+		AB0E6BAE1634DDEA0079C266 /* FDADatabaseParser.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FDADatabaseParser.1; sourceTree = "<group>"; };
+		AB0E6BB91634DE9C0079C266 /* MedApplyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedApplyLocation.h; sourceTree = "<group>"; };
+		AB0E6BBA1634DE9C0079C266 /* MedApplyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedApplyLocation.m; sourceTree = "<group>"; };
+		AB0E6BBB1634DE9C0079C266 /* MedDoseUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedDoseUnit.h; sourceTree = "<group>"; };
+		AB0E6BBC1634DE9C0079C266 /* MedDoseUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedDoseUnit.m; sourceTree = "<group>"; };
+		AB0E6BBD1634DE9C0079C266 /* MedFormType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedFormType.h; sourceTree = "<group>"; };
+		AB0E6BBE1634DE9C0079C266 /* MedFormType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedFormType.m; sourceTree = "<group>"; };
+		AB0E6BBF1634DE9C0079C266 /* Medication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medication.h; sourceTree = "<group>"; };
+		AB0E6BC01634DE9C0079C266 /* Medication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medication.m; sourceTree = "<group>"; };
+		AB0E6BC11634DE9C0079C266 /* MedicationRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationRoute.h; sourceTree = "<group>"; };
+		AB0E6BC21634DE9C0079C266 /* MedicationRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationRoute.m; sourceTree = "<group>"; };
+		AB0E6BC31634DE9C0079C266 /* MedicationUpdateDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedicationUpdateDate.h; sourceTree = "<group>"; };
+		AB0E6BC41634DE9C0079C266 /* MedicationUpdateDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedicationUpdateDate.m; sourceTree = "<group>"; };
+		AB0E6BC51634DE9C0079C266 /* MedStrengthUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedStrengthUnit.h; sourceTree = "<group>"; };
+		AB0E6BC61634DE9C0079C266 /* MedStrengthUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedStrengthUnit.m; sourceTree = "<group>"; };
+		AB796CE217A2B57500238284 /* product.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = product.txt; sourceTree = "<group>"; };
+		AB817CB81A15C4C70050903F /* legacyproduct.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = legacyproduct.txt; sourceTree = "<group>"; };
+		ABA5977D1634EED600BBE955 /* Mapping.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mapping.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB0E6B9B1634DDEA0079C266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0E6BA31634DDEA0079C266 /* CoreData.framework in Frameworks */,
+				AB0E6BA51634DDEA0079C266 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB0E6B931634DDEA0079C266 = {
+			isa = PBXGroup;
+			children = (
+				AB0E6BA61634DDEA0079C266 /* FDADatabaseParser */,
+				AB0E6BA11634DDEA0079C266 /* Frameworks */,
+				AB0E6B9F1634DDEA0079C266 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB0E6B9F1634DDEA0079C266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB0E6B9E1634DDEA0079C266 /* FDADatabaseParser */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB0E6BA11634DDEA0079C266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB0E6BA21634DDEA0079C266 /* CoreData.framework */,
+				AB0E6BA41634DDEA0079C266 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB0E6BA61634DDEA0079C266 /* FDADatabaseParser */ = {
+			isa = PBXGroup;
+			children = (
+				AB817CB81A15C4C70050903F /* legacyproduct.txt */,
+				AB796CE217A2B57500238284 /* product.txt */,
+				ABA5977D1634EED600BBE955 /* Mapping.txt */,
+				AB0E6BB91634DE9C0079C266 /* MedApplyLocation.h */,
+				AB0E6BBA1634DE9C0079C266 /* MedApplyLocation.m */,
+				AB0E6BBB1634DE9C0079C266 /* MedDoseUnit.h */,
+				AB0E6BBC1634DE9C0079C266 /* MedDoseUnit.m */,
+				AB0E6BBD1634DE9C0079C266 /* MedFormType.h */,
+				AB0E6BBE1634DE9C0079C266 /* MedFormType.m */,
+				AB0E6BBF1634DE9C0079C266 /* Medication.h */,
+				AB0E6BC01634DE9C0079C266 /* Medication.m */,
+				AB0E6BC11634DE9C0079C266 /* MedicationRoute.h */,
+				AB0E6BC21634DE9C0079C266 /* MedicationRoute.m */,
+				AB0E6BC31634DE9C0079C266 /* MedicationUpdateDate.h */,
+				AB0E6BC41634DE9C0079C266 /* MedicationUpdateDate.m */,
+				AB0E6BC51634DE9C0079C266 /* MedStrengthUnit.h */,
+				AB0E6BC61634DE9C0079C266 /* MedStrengthUnit.m */,
+				AB0E6BA71634DDEA0079C266 /* main.m */,
+				AB0E6BAE1634DDEA0079C266 /* FDADatabaseParser.1 */,
+				AB0E6BAB1634DDEA0079C266 /* FDADatabaseParser.xcdatamodeld */,
+				AB0E6BA91634DDEA0079C266 /* Supporting Files */,
+			);
+			path = FDADatabaseParser;
+			sourceTree = "<group>";
+		};
+		AB0E6BA91634DDEA0079C266 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB0E6BAA1634DDEA0079C266 /* FDADatabaseParser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB0E6B9D1634DDEA0079C266 /* FDADatabaseParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0E6BB21634DDEA0079C266 /* Build configuration list for PBXNativeTarget "FDADatabaseParser" */;
+			buildPhases = (
+				AB0E6B9A1634DDEA0079C266 /* Sources */,
+				AB0E6B9B1634DDEA0079C266 /* Frameworks */,
+				AB0E6B9C1634DDEA0079C266 /* CopyFiles */,
+				ABA5977B1634ED9D00BBE955 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FDADatabaseParser;
+			productName = FDADatabaseParser;
+			productReference = AB0E6B9E1634DDEA0079C266 /* FDADatabaseParser */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB0E6B951634DDEA0079C266 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jonathan Levene";
+			};
+			buildConfigurationList = AB0E6B981634DDEA0079C266 /* Build configuration list for PBXProject "FDADatabaseParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB0E6B931634DDEA0079C266;
+			productRefGroup = AB0E6B9F1634DDEA0079C266 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB0E6B9D1634DDEA0079C266 /* FDADatabaseParser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB0E6B9A1634DDEA0079C266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0E6BA81634DDEA0079C266 /* main.m in Sources */,
+				AB0E6BAD1634DDEA0079C266 /* FDADatabaseParser.xcdatamodeld in Sources */,
+				AB0E6BC71634DE9C0079C266 /* MedApplyLocation.m in Sources */,
+				AB0E6BC81634DE9C0079C266 /* MedDoseUnit.m in Sources */,
+				AB0E6BC91634DE9C0079C266 /* MedFormType.m in Sources */,
+				AB0E6BCA1634DE9C0079C266 /* Medication.m in Sources */,
+				AB0E6BCB1634DE9C0079C266 /* MedicationRoute.m in Sources */,
+				AB0E6BCC1634DE9C0079C266 /* MedicationUpdateDate.m in Sources */,
+				AB0E6BCD1634DE9C0079C266 /* MedStrengthUnit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB0E6BB01634DDEA0079C266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AB0E6BB11634DDEA0079C266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB0E6BB31634DDEA0079C266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FDADatabaseParser/FDADatabaseParser-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB0E6BB41634DDEA0079C266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FDADatabaseParser/FDADatabaseParser-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB0E6B981634DDEA0079C266 /* Build configuration list for PBXProject "FDADatabaseParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0E6BB01634DDEA0079C266 /* Debug */,
+				AB0E6BB11634DDEA0079C266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0E6BB21634DDEA0079C266 /* Build configuration list for PBXNativeTarget "FDADatabaseParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0E6BB31634DDEA0079C266 /* Debug */,
+				AB0E6BB41634DDEA0079C266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB0E6BAB1634DDEA0079C266 /* FDADatabaseParser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB0E6BAC1634DDEA0079C266 /* FDADatabaseParser.xcdatamodel */,
+			);
+			currentVersion = AB0E6BAC1634DDEA0079C266 /* FDADatabaseParser.xcdatamodel */;
+			path = FDADatabaseParser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AB0E6B951634DDEA0079C266 /* Project object */;
+}

@@ -1,0 +1,1 @@
+genstrings -o ../Dosecast-resources/en.lproj/ *.m

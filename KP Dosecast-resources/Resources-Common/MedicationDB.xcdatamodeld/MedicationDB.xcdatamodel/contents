@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MedApplyLocation" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="locationDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medFormType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MedDoseUnit" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="medFormType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unitDesc" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MedFormType" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="medFormType" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Medication" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="brandName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genericName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medForm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medFormType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="medType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ndc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="route" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strength" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MedicationRoute" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="route" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MedicationUpdateDate" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="lastUpdateDatetime" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MedStrengthUnit" representedClassName="NSManagedObject" syncable="YES">
+        <attribute name="medFormType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unitDesc" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MedApplyLocation" positionX="-3087" positionY="-102" width="128" height="75"/>
+        <element name="MedDoseUnit" positionX="-3258" positionY="-135" width="128" height="75"/>
+        <element name="MedFormType" positionX="-3087" positionY="-297" width="128" height="60"/>
+        <element name="Medication" positionX="-3258" positionY="-441" width="128" height="165"/>
+        <element name="MedicationRoute" positionX="-3087" positionY="-459" width="128" height="60"/>
+        <element name="MedicationUpdateDate" positionX="-3087" positionY="-378" width="128" height="60"/>
+        <element name="MedStrengthUnit" positionX="-3258" positionY="-243" width="128" height="75"/>
+    </elements>
+</model>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DrugImage" representedClassName="DrugImage" syncable="YES">
+        <attribute name="imageGUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="needsDelete" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="needsDownload" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="needsUpload" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DrugImage" positionX="160" positionY="192" width="128" height="120"/>
+    </elements>
+</model>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4488.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WhatsNewViewController">
+            <connections>
+                <outlet property="textView" destination="5" id="7"/>
+                <outlet property="view" destination="4" id="6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" id="5">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <string key="text">--- Version 2.6 ---
+· Fixed bug with customizable reminder sounds
+· Fixed bug with launching the app in landscape orientation on iPads
+
+--- Version 2.5 ---
+· Added support for weekly and monthly scheduled reminders.
+· Added support for nasal spray drug types.
+· Added support for drugs taken 'as needed'.
+· Added switch for turning notifications on or off for each drug.
+· Added a treatment start date for each drug.
+· Added button to the dose history page for clearing the history.
+· Added links to the Dosecast Facebook &amp; Twitter pages on the About page.
+
+--- Version 2.0 ---
+· Added support for injection, drop, patch, liquid, inhaler, and ointment drug types.
+· For drugs taken at intervals, increased the maximum interval from 7 to 30 days.
+· Avoided pausing any iPod audio tune which is playing when Dosecast is launched.
+· Added swipe-to-delete functionality to the drug list on the main page.
+
+--- Version 1.8 ---
+· Added automatic detection of a time zone change as a result of travel or daylight savings changes. Added the option to shift the dose schedules of all drugs, if desired, by the time difference.
+· For drugs taken at intervals, added ability to specify an interval in minutes, in addition to hours and days.
+· Added support for pill strengths in fractional increments of 0.01.
+· Added logging of postponed doses over the last 30 days
+· Added customizable reminder sounds to the Settings page.
+· Fixed bug resulting in a server error on startup when a license purchase is in progress and Dosecast is closed and re-opened.
+· Fixed bug resulting in incorrect scheduling of next dose after editing an existing drug on devices using local notifications.
+· Avoided refreshing the drug list when not viewing the main page.
+
+--- Version 1.7 ---
+· Added logging of doses taken or skipped over the last 30 days, as well as the ability to view and email the dose history.
+ 
+--- Version 1.5 ---
+· Added support for local notifications on WiFi-only devices (iPod Touch and some iPads).
+· Added ability to email current drug list.
+· When a dose reminder appears, forced the alert sound to play through the device speakers even if headphones are plugged in.
+· Changed the order in which drugs are listed on the main page so that those with dose-ready interval reminders appear first.
+· Corrected the location of the dose reminder alert when the device orientation changes.
+· Fixed various UI bugs on the iPad.
+· Updated terms of service and privacy policy.
+
+--- Version 1.04 ---
+· Replaced date picker with monthly calendar when setting the treatment end date.
+
+--- Version 1.0 ---
+· Added ability to skip a dose either in advance or after its scheduled time has passed.
+· Doubled the maximum number of scheduled reminder times from 4 to 8.
+· For interval reminders, increased the maximum interval period from 1 to 8 days.
+· Added support for pill strengths in fractional increments of 0.05.
+· Added reminder alerts prior to the trial expiring.
+· By popular request, changed the order in which drugs are listed on the main page. They now appear in chronological order, based on the time of the next dose.
+· Added the What's New page within the About page for displaying the list of enhancements by version.
+· Added links to Write a Review and Tell a Friend from within the About page.
+
+--- Version 0.96 ---
+· Launched!</string>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+</document>

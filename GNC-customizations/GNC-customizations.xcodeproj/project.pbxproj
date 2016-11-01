@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA747D9F0F9514B9006C5449 /* GNC_customizations_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* GNC_customizations_Prefix.pch */; };
+		AB259A351597B68E00ED9B0D /* DosecastUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AB259A341597B68E00ED9B0D /* DosecastUtil.h */; };
+		AB3B6E951678AC3A00215098 /* DosecastAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3B6E941678AC3A00215098 /* DosecastAPI.h */; };
+		AB3B6E981678AC4E00215098 /* DosecastAPIFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3B6E971678AC4E00215098 /* DosecastAPIFlags.h */; };
+		AB3B6E9A1678AC6300215098 /* DosecastAPIDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3B6E991678AC6300215098 /* DosecastAPIDelegate.h */; };
+		AB3B6E9C1678AC7C00215098 /* DosecastCoreTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3B6E9B1678AC7C00215098 /* DosecastCoreTypes.h */; };
+		AB3B6E9E1678ACB500215098 /* DrugDosageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3B6E9D1678ACB500215098 /* DrugDosageManager.h */; };
+		AB3B6EA11678ACDD00215098 /* ProgressViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3B6E9F1678ACDD00215098 /* ProgressViewController.h */; };
+		AB3B6EA21678ACDD00215098 /* SpinnerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3B6EA01678ACDD00215098 /* SpinnerViewController.h */; };
+		AB3B6EA71678AE0D00215098 /* GNCDosecastAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3B6EA61678AE0D00215098 /* GNCDosecastAPI.h */; };
+		AB3B6EA91678AE1400215098 /* GNCDosecastAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3B6EA81678AE1400215098 /* GNCDosecastAPI.m */; };
+		AB5578B115C1BC6A003B37D1 /* DrugDosageUnitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5578B015C1BC6A003B37D1 /* DrugDosageUnitManager.h */; };
+		AB91900F128107BF00B8F6BB /* SupplementPakDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB91900D128107BF00B8F6BB /* SupplementPakDrugDosage.h */; };
+		AB919010128107BF00B8F6BB /* SupplementPakDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB91900E128107BF00B8F6BB /* SupplementPakDrugDosage.m */; };
+		AB9190F9128115AA00B8F6BB /* SupplementDrinkDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9190F7128115AA00B8F6BB /* SupplementDrinkDrugDosage.h */; };
+		AB9190FA128115AA00B8F6BB /* SupplementDrinkDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9190F8128115AA00B8F6BB /* SupplementDrinkDrugDosage.m */; };
+		AB9191A3128189EC00B8F6BB /* SupplementShotDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9191A1128189EC00B8F6BB /* SupplementShotDrugDosage.h */; };
+		AB9191A4128189EC00B8F6BB /* SupplementShotDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9191A2128189EC00B8F6BB /* SupplementShotDrugDosage.m */; };
+		AB9191E512824EAB00B8F6BB /* SupplementChewDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9191E312824EAB00B8F6BB /* SupplementChewDrugDosage.h */; };
+		AB9191E812824ECE00B8F6BB /* SupplementChewDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9191E712824ECE00B8F6BB /* SupplementChewDrugDosage.m */; };
+		AB9192151282535F00B8F6BB /* SupplementGelDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9192131282535F00B8F6BB /* SupplementGelDrugDosage.h */; };
+		AB9192161282535F00B8F6BB /* SupplementGelDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9192141282535F00B8F6BB /* SupplementGelDrugDosage.m */; };
+		ABA216971596D9C90015BC07 /* DrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA216961596D9C90015BC07 /* DrugDosage.h */; };
+		ABA216991596DB120015BC07 /* DrugDosageQuantity.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA216981596DB120015BC07 /* DrugDosageQuantity.h */; };
+		ABAB61281282D83800F9A7A5 /* SupplementScoopDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAB61261282D83800F9A7A5 /* SupplementScoopDrugDosage.h */; };
+		ABAB61291282D83800F9A7A5 /* SupplementScoopDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAB61271282D83800F9A7A5 /* SupplementScoopDrugDosage.m */; };
+		ABC6F76E19FAC1720030D914 /* Preferences.h in Headers */ = {isa = PBXBuildFile; fileRef = ABC6F76D19FAC1720030D914 /* Preferences.h */; };
+		ABCB8C9812841E1B00664838 /* SupplementBarDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCB8C9612841E1B00664838 /* SupplementBarDrugDosage.h */; };
+		ABCB8C9912841E1B00664838 /* SupplementBarDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCB8C9712841E1B00664838 /* SupplementBarDrugDosage.m */; };
+		ABCB8CC61284228C00664838 /* SupplementServingDrugDosage.h in Headers */ = {isa = PBXBuildFile; fileRef = ABCB8CC41284228C00664838 /* SupplementServingDrugDosage.h */; };
+		ABCB8CC71284228C00664838 /* SupplementServingDrugDosage.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCB8CC51284228C00664838 /* SupplementServingDrugDosage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* GNC_customizations_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNC_customizations_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB259A341597B68E00ED9B0D /* DosecastUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DosecastUtil.h; path = "../Dosecast-API/DosecastUtil.h"; sourceTree = "<group>"; };
+		AB3B6E941678AC3A00215098 /* DosecastAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DosecastAPI.h; path = "../Dosecast-API/DosecastAPI.h"; sourceTree = "<group>"; };
+		AB3B6E971678AC4E00215098 /* DosecastAPIFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DosecastAPIFlags.h; path = "../Dosecast-API/DosecastAPIFlags.h"; sourceTree = "<group>"; };
+		AB3B6E991678AC6300215098 /* DosecastAPIDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DosecastAPIDelegate.h; path = "../Dosecast-API/DosecastAPIDelegate.h"; sourceTree = "<group>"; };
+		AB3B6E9B1678AC7C00215098 /* DosecastCoreTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DosecastCoreTypes.h; path = "../Dosecast-API/DosecastCoreTypes.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB3B6E9D1678ACB500215098 /* DrugDosageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrugDosageManager.h; path = "../Dosecast-API/DrugDosageManager.h"; sourceTree = "<group>"; };
+		AB3B6E9F1678ACDD00215098 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressViewController.h; path = "../Dosecast-API/ProgressViewController.h"; sourceTree = "<group>"; };
+		AB3B6EA01678ACDD00215098 /* SpinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpinnerViewController.h; path = "../Dosecast-API/SpinnerViewController.h"; sourceTree = "<group>"; };
+		AB3B6EA61678AE0D00215098 /* GNCDosecastAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNCDosecastAPI.h; sourceTree = "<group>"; };
+		AB3B6EA81678AE1400215098 /* GNCDosecastAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNCDosecastAPI.m; sourceTree = "<group>"; };
+		AB5578B015C1BC6A003B37D1 /* DrugDosageUnitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrugDosageUnitManager.h; path = "../Dosecast-API/DrugDosageUnitManager.h"; sourceTree = "<group>"; };
+		AB73AB52125052E000026004 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AB91900D128107BF00B8F6BB /* SupplementPakDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SupplementPakDrugDosage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB91900E128107BF00B8F6BB /* SupplementPakDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SupplementPakDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB9190F7128115AA00B8F6BB /* SupplementDrinkDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SupplementDrinkDrugDosage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB9190F8128115AA00B8F6BB /* SupplementDrinkDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SupplementDrinkDrugDosage.m; sourceTree = "<group>"; };
+		AB9191A1128189EC00B8F6BB /* SupplementShotDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SupplementShotDrugDosage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB9191A2128189EC00B8F6BB /* SupplementShotDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SupplementShotDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB9191E312824EAB00B8F6BB /* SupplementChewDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SupplementChewDrugDosage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB9191E712824ECE00B8F6BB /* SupplementChewDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SupplementChewDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		AB9192131282535F00B8F6BB /* SupplementGelDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SupplementGelDrugDosage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		AB9192141282535F00B8F6BB /* SupplementGelDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SupplementGelDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABA216961596D9C90015BC07 /* DrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrugDosage.h; path = "../Dosecast-API/DrugDosage.h"; sourceTree = "<group>"; };
+		ABA216981596DB120015BC07 /* DrugDosageQuantity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrugDosageQuantity.h; path = "../Dosecast-API/DrugDosageQuantity.h"; sourceTree = "<group>"; };
+		ABAB61261282D83800F9A7A5 /* SupplementScoopDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SupplementScoopDrugDosage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		ABAB61271282D83800F9A7A5 /* SupplementScoopDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SupplementScoopDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABC6F76D19FAC1720030D914 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Preferences.h; path = "../Dosecast-API/Preferences.h"; sourceTree = "<group>"; };
+		ABCB8C9612841E1B00664838 /* SupplementBarDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SupplementBarDrugDosage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		ABCB8C9712841E1B00664838 /* SupplementBarDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SupplementBarDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		ABCB8CC41284228C00664838 /* SupplementServingDrugDosage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = SupplementServingDrugDosage.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		ABCB8CC51284228C00664838 /* SupplementServingDrugDosage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SupplementServingDrugDosage.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D2AAC07E0554694100DB518D /* libGNC_customizations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGNC_customizations.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libGNC_customizations.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* GNC-customizations */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = "GNC-customizations";
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB73AB52125052E000026004 /* UIKit.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB3B6EA31678AD0400215098 /* API Interface */,
+				ABA216931596D9890015BC07 /* Customizations Interface */,
+				ABA216951596D9990015BC07 /* Customizations Implementation */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* GNC_customizations_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		AB3B6EA31678AD0400215098 /* API Interface */ = {
+			isa = PBXGroup;
+			children = (
+				ABC6F76D19FAC1720030D914 /* Preferences.h */,
+				AB3B6E9F1678ACDD00215098 /* ProgressViewController.h */,
+				AB3B6EA01678ACDD00215098 /* SpinnerViewController.h */,
+				AB3B6E9D1678ACB500215098 /* DrugDosageManager.h */,
+				AB3B6E9B1678AC7C00215098 /* DosecastCoreTypes.h */,
+				AB3B6E991678AC6300215098 /* DosecastAPIDelegate.h */,
+				AB3B6E971678AC4E00215098 /* DosecastAPIFlags.h */,
+				AB3B6E941678AC3A00215098 /* DosecastAPI.h */,
+				AB259A341597B68E00ED9B0D /* DosecastUtil.h */,
+				ABA216961596D9C90015BC07 /* DrugDosage.h */,
+				ABA216981596DB120015BC07 /* DrugDosageQuantity.h */,
+				AB5578B015C1BC6A003B37D1 /* DrugDosageUnitManager.h */,
+			);
+			name = "API Interface";
+			sourceTree = "<group>";
+		};
+		ABA216931596D9890015BC07 /* Customizations Interface */ = {
+			isa = PBXGroup;
+			children = (
+				AB3B6EA61678AE0D00215098 /* GNCDosecastAPI.h */,
+				ABCB8C9612841E1B00664838 /* SupplementBarDrugDosage.h */,
+				AB9191E312824EAB00B8F6BB /* SupplementChewDrugDosage.h */,
+				AB9190F7128115AA00B8F6BB /* SupplementDrinkDrugDosage.h */,
+				AB9192131282535F00B8F6BB /* SupplementGelDrugDosage.h */,
+				AB91900D128107BF00B8F6BB /* SupplementPakDrugDosage.h */,
+				ABAB61261282D83800F9A7A5 /* SupplementScoopDrugDosage.h */,
+				ABCB8CC41284228C00664838 /* SupplementServingDrugDosage.h */,
+				AB9191A1128189EC00B8F6BB /* SupplementShotDrugDosage.h */,
+			);
+			name = "Customizations Interface";
+			sourceTree = "<group>";
+		};
+		ABA216951596D9990015BC07 /* Customizations Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				AB3B6EA81678AE1400215098 /* GNCDosecastAPI.m */,
+				AB9191E712824ECE00B8F6BB /* SupplementChewDrugDosage.m */,
+				AB9190F8128115AA00B8F6BB /* SupplementDrinkDrugDosage.m */,
+				AB9192141282535F00B8F6BB /* SupplementGelDrugDosage.m */,
+				AB91900E128107BF00B8F6BB /* SupplementPakDrugDosage.m */,
+				ABAB61271282D83800F9A7A5 /* SupplementScoopDrugDosage.m */,
+				ABCB8CC51284228C00664838 /* SupplementServingDrugDosage.m */,
+				AB9191A2128189EC00B8F6BB /* SupplementShotDrugDosage.m */,
+				ABCB8C9712841E1B00664838 /* SupplementBarDrugDosage.m */,
+			);
+			name = "Customizations Implementation";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* GNC_customizations_Prefix.pch in Headers */,
+				AB91900F128107BF00B8F6BB /* SupplementPakDrugDosage.h in Headers */,
+				AB9190F9128115AA00B8F6BB /* SupplementDrinkDrugDosage.h in Headers */,
+				AB9191A3128189EC00B8F6BB /* SupplementShotDrugDosage.h in Headers */,
+				AB9191E512824EAB00B8F6BB /* SupplementChewDrugDosage.h in Headers */,
+				AB9192151282535F00B8F6BB /* SupplementGelDrugDosage.h in Headers */,
+				ABAB61281282D83800F9A7A5 /* SupplementScoopDrugDosage.h in Headers */,
+				ABCB8C9812841E1B00664838 /* SupplementBarDrugDosage.h in Headers */,
+				ABCB8CC61284228C00664838 /* SupplementServingDrugDosage.h in Headers */,
+				ABC6F76E19FAC1720030D914 /* Preferences.h in Headers */,
+				ABA216971596D9C90015BC07 /* DrugDosage.h in Headers */,
+				ABA216991596DB120015BC07 /* DrugDosageQuantity.h in Headers */,
+				AB259A351597B68E00ED9B0D /* DosecastUtil.h in Headers */,
+				AB5578B115C1BC6A003B37D1 /* DrugDosageUnitManager.h in Headers */,
+				AB3B6E951678AC3A00215098 /* DosecastAPI.h in Headers */,
+				AB3B6E981678AC4E00215098 /* DosecastAPIFlags.h in Headers */,
+				AB3B6E9A1678AC6300215098 /* DosecastAPIDelegate.h in Headers */,
+				AB3B6E9C1678AC7C00215098 /* DosecastCoreTypes.h in Headers */,
+				AB3B6E9E1678ACB500215098 /* DrugDosageManager.h in Headers */,
+				AB3B6EA11678ACDD00215098 /* ProgressViewController.h in Headers */,
+				AB3B6EA21678ACDD00215098 /* SpinnerViewController.h in Headers */,
+				AB3B6EA71678AE0D00215098 /* GNCDosecastAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* GNC-customizations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "GNC-customizations" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GNC-customizations";
+			productName = "GNC-customizations";
+			productReference = D2AAC07E0554694100DB518D /* libGNC_customizations.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Montuno Software, LLC";
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "GNC-customizations" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* GNC-customizations */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* GNC-customizations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB919010128107BF00B8F6BB /* SupplementPakDrugDosage.m in Sources */,
+				AB9190FA128115AA00B8F6BB /* SupplementDrinkDrugDosage.m in Sources */,
+				AB9191A4128189EC00B8F6BB /* SupplementShotDrugDosage.m in Sources */,
+				AB9191E812824ECE00B8F6BB /* SupplementChewDrugDosage.m in Sources */,
+				AB9192161282535F00B8F6BB /* SupplementGelDrugDosage.m in Sources */,
+				ABAB61291282D83800F9A7A5 /* SupplementScoopDrugDosage.m in Sources */,
+				ABCB8C9912841E1B00664838 /* SupplementBarDrugDosage.m in Sources */,
+				ABCB8CC71284228C00664838 /* SupplementServingDrugDosage.m in Sources */,
+				AB3B6EA91678AE1400215098 /* GNCDosecastAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/GNC_customizations.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GNC_customizations_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_THUMB_SUPPORT = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GNC_customizations;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		AB73AFCE1250687D00026004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB73AFCF1250687D00026004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/GNC_customizations.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GNC_customizations_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = GNC_customizations;
+				SEPARATE_STRIP = NO;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "GNC-customizations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				AB73AFCF1250687D00026004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "GNC-customizations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				AB73AFCE1250687D00026004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

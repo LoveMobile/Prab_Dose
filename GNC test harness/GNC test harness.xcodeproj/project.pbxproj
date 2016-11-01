@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2840D7CE1179279E00D7F93C /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2840D7CD1179279E00D7F93C /* HomeView.xib */; };
+		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
+		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
+		AB2E615314A2DC8C0041FA07 /* Ascending.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E613F14A2DC8C0041FA07 /* Ascending.caf */; };
+		AB2E615414A2DC8C0041FA07 /* Bark.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614014A2DC8C0041FA07 /* Bark.caf */; };
+		AB2E615514A2DC8C0041FA07 /* Bell Tower.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614114A2DC8C0041FA07 /* Bell Tower.caf */; };
+		AB2E615614A2DC8C0041FA07 /* Blues.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614214A2DC8C0041FA07 /* Blues.caf */; };
+		AB2E615714A2DC8C0041FA07 /* Boing.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614314A2DC8C0041FA07 /* Boing.caf */; };
+		AB2E615814A2DC8C0041FA07 /* Crickets.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614414A2DC8C0041FA07 /* Crickets.caf */; };
+		AB2E615914A2DC8C0041FA07 /* Default.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614514A2DC8C0041FA07 /* Default.caf */; };
+		AB2E615A14A2DC8C0041FA07 /* Doorbell.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614614A2DC8C0041FA07 /* Doorbell.caf */; };
+		AB2E615B14A2DC8C0041FA07 /* Duck.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614714A2DC8C0041FA07 /* Duck.caf */; };
+		AB2E615C14A2DC8C0041FA07 /* Harp.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614814A2DC8C0041FA07 /* Harp.caf */; };
+		AB2E615D14A2DC8C0041FA07 /* Marimba.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614914A2DC8C0041FA07 /* Marimba.caf */; };
+		AB2E615E14A2DC8C0041FA07 /* Motorcycle.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614A14A2DC8C0041FA07 /* Motorcycle.caf */; };
+		AB2E615F14A2DC8C0041FA07 /* Old Car Horn.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614B14A2DC8C0041FA07 /* Old Car Horn.caf */; };
+		AB2E616014A2DC8C0041FA07 /* Piano Riff.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614C14A2DC8C0041FA07 /* Piano Riff.caf */; };
+		AB2E616114A2DC8C0041FA07 /* Sonar.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614D14A2DC8C0041FA07 /* Sonar.caf */; };
+		AB2E616214A2DC8C0041FA07 /* Strum.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614E14A2DC8C0041FA07 /* Strum.caf */; };
+		AB2E616314A2DC8C0041FA07 /* Timba.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E614F14A2DC8C0041FA07 /* Timba.caf */; };
+		AB2E616414A2DC8C0041FA07 /* Time Passing.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E615014A2DC8C0041FA07 /* Time Passing.caf */; };
+		AB2E616514A2DC8C0041FA07 /* Trill.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E615114A2DC8C0041FA07 /* Trill.caf */; };
+		AB2E616614A2DC8C0041FA07 /* Xylophone.caf in Resources */ = {isa = PBXBuildFile; fileRef = AB2E615214A2DC8C0041FA07 /* Xylophone.caf */; };
+		AB2E616814A2DC9C0041FA07 /* Dosecast-resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB2E616714A2DC9C0041FA07 /* Dosecast-resources.bundle */; };
+		AB935266140AB82B00858B2C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB935264140AB82B00858B2C /* AddressBook.framework */; };
+		AB935267140AB82B00858B2C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB935265140AB82B00858B2C /* AddressBookUI.framework */; };
+		AB97ACC612FF08F500441980 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97ACC512FF08F500441980 /* CoreData.framework */; };
+		AB97ACCA12FF091A00441980 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97ACC912FF091A00441980 /* StoreKit.framework */; };
+		AB97ACCE12FF092500441980 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97ACCD12FF092500441980 /* AudioToolbox.framework */; };
+		AB97ACD212FF092E00441980 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97ACD112FF092E00441980 /* MessageUI.framework */; };
+		AB97ACD612FF093600441980 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97ACD512FF093600441980 /* SystemConfiguration.framework */; };
+		AB97AE4112FF21E500441980 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97AE4012FF21E500441980 /* CoreVideo.framework */; };
+		ABCB3E321679170C000482E7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCB3E311679170C000482E7 /* AdSupport.framework */; };
+		ABCB3E341679171E000482E7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABCB3E331679171E000482E7 /* Security.framework */; };
+		ABD926D317965E6F00C0665A /* libGNC_customizations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD926C217965E0400C0665A /* libGNC_customizations.a */; };
+		ABD926DC17965E9500C0665A /* libDosecast_API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD926D917965E8000C0665A /* libDosecast_API.a */; };
+		ABDEB5B61721E7510080383E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDEB5B31721E7510080383E /* Default-568h@2x.png */; };
+		ABDEB5B71721E7510080383E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDEB5B41721E7510080383E /* Default.png */; };
+		ABDEB5B81721E7510080383E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDEB5B51721E7510080383E /* Default@2x.png */; };
+		B416E83611DE145000E0B71C /* WebAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B416E83411DE145000E0B71C /* WebAppViewController.m */; };
+		B416E83711DE145000E0B71C /* WebAppView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B416E83511DE145000E0B71C /* WebAppView.xib */; };
+		B416E91411E22A8200E0B71C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B416E91311E22A8200E0B71C /* QuartzCore.framework */; };
+		B477F82D12513CBF0007ACAB /* GNCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B477F82C12513CBF0007ACAB /* GNCAppDelegate.m */; };
+		B477F83012513CC70007ACAB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B477F82F12513CC70007ACAB /* HomeViewController.m */; };
+		B477F89B12514DFA0007ACAB /* tab-home.png in Resources */ = {isa = PBXBuildFile; fileRef = B477F89912514DFA0007ACAB /* tab-home.png */; };
+		B477F89C12514DFA0007ACAB /* tab-home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B477F89A12514DFA0007ACAB /* tab-home@2x.png */; };
+		B4E8E19B11FE7E4C0025CA28 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E8E19A11FE7E4C0025CA28 /* libiconv.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABD926C117965E0400C0665A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABD926BD17965E0400C0665A /* GNC-customizations.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "GNC-customizations";
+		};
+		ABD926D017965E6500C0665A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABD926BD17965E0400C0665A /* GNC-customizations.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "GNC-customizations";
+		};
+		ABD926D817965E8000C0665A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABD926D417965E8000C0665A /* Dosecast-API.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "Dosecast-API";
+		};
+		ABD926DA17965E8E00C0665A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABD926D417965E8000C0665A /* Dosecast-API.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "Dosecast-API";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* GNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2840D7CD1179279E00D7F93C /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD73870D9D96C1002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB26BBDF14A61037000FF579 /* HomeViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewControllerDelegate.h; sourceTree = "<group>"; };
+		AB2E613B14A2DC780041FA07 /* DosecastAPIDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastAPIDelegate.h; sourceTree = "<group>"; };
+		AB2E613C14A2DC780041FA07 /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		AB2E613D14A2DC780041FA07 /* SpinnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerViewController.h; sourceTree = "<group>"; };
+		AB2E613F14A2DC8C0041FA07 /* Ascending.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ascending.caf; sourceTree = "<group>"; };
+		AB2E614014A2DC8C0041FA07 /* Bark.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bark.caf; sourceTree = "<group>"; };
+		AB2E614114A2DC8C0041FA07 /* Bell Tower.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bell Tower.caf"; sourceTree = "<group>"; };
+		AB2E614214A2DC8C0041FA07 /* Blues.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blues.caf; sourceTree = "<group>"; };
+		AB2E614314A2DC8C0041FA07 /* Boing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Boing.caf; sourceTree = "<group>"; };
+		AB2E614414A2DC8C0041FA07 /* Crickets.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Crickets.caf; sourceTree = "<group>"; };
+		AB2E614514A2DC8C0041FA07 /* Default.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Default.caf; sourceTree = "<group>"; };
+		AB2E614614A2DC8C0041FA07 /* Doorbell.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Doorbell.caf; sourceTree = "<group>"; };
+		AB2E614714A2DC8C0041FA07 /* Duck.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Duck.caf; sourceTree = "<group>"; };
+		AB2E614814A2DC8C0041FA07 /* Harp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Harp.caf; sourceTree = "<group>"; };
+		AB2E614914A2DC8C0041FA07 /* Marimba.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marimba.caf; sourceTree = "<group>"; };
+		AB2E614A14A2DC8C0041FA07 /* Motorcycle.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Motorcycle.caf; sourceTree = "<group>"; };
+		AB2E614B14A2DC8C0041FA07 /* Old Car Horn.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Old Car Horn.caf"; sourceTree = "<group>"; };
+		AB2E614C14A2DC8C0041FA07 /* Piano Riff.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Piano Riff.caf"; sourceTree = "<group>"; };
+		AB2E614D14A2DC8C0041FA07 /* Sonar.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sonar.caf; sourceTree = "<group>"; };
+		AB2E614E14A2DC8C0041FA07 /* Strum.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Strum.caf; sourceTree = "<group>"; };
+		AB2E614F14A2DC8C0041FA07 /* Timba.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timba.caf; sourceTree = "<group>"; };
+		AB2E615014A2DC8C0041FA07 /* Time Passing.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Time Passing.caf"; sourceTree = "<group>"; };
+		AB2E615114A2DC8C0041FA07 /* Trill.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Trill.caf; sourceTree = "<group>"; };
+		AB2E615214A2DC8C0041FA07 /* Xylophone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Xylophone.caf; sourceTree = "<group>"; };
+		AB2E616714A2DC9C0041FA07 /* Dosecast-resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "Dosecast-resources.bundle"; path = "../GNC Dosecast-API/Dosecast-resources.bundle"; sourceTree = "<group>"; };
+		AB38B32C1597F90E00DAB833 /* DosecastUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DosecastUtil.h; sourceTree = "<group>"; };
+		AB935264140AB82B00858B2C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		AB935265140AB82B00858B2C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		AB97ACC512FF08F500441980 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB97ACC912FF091A00441980 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AB97ACCD12FF092500441980 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AB97ACD112FF092E00441980 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AB97ACD512FF093600441980 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AB97AE4012FF21E500441980 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		ABCB3E2A167914D6000482E7 /* GNCDosecastAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNCDosecastAPI.h; sourceTree = "<group>"; };
+		ABCB3E311679170C000482E7 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		ABCB3E331679171E000482E7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ABD926BD17965E0400C0665A /* GNC-customizations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "GNC-customizations.xcodeproj"; path = "../GNC-customizations/GNC-customizations.xcodeproj"; sourceTree = "<group>"; };
+		ABD926D417965E8000C0665A /* Dosecast-API.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Dosecast-API.xcodeproj"; path = "../Dosecast-API/Dosecast-API.xcodeproj"; sourceTree = "<group>"; };
+		ABDEB5B31721E7510080383E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "images/Default-568h@2x.png"; sourceTree = "<group>"; };
+		ABDEB5B41721E7510080383E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = images/Default.png; sourceTree = "<group>"; };
+		ABDEB5B51721E7510080383E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "images/Default@2x.png"; sourceTree = "<group>"; };
+		B416E83311DE145000E0B71C /* WebAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAppViewController.h; sourceTree = "<group>"; };
+		B416E83411DE145000E0B71C /* WebAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebAppViewController.m; sourceTree = "<group>"; };
+		B416E83511DE145000E0B71C /* WebAppView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebAppView.xib; sourceTree = "<group>"; };
+		B416E91311E22A8200E0B71C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B477F82712501D5F0007ACAB /* GNC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GNC-Info.plist"; sourceTree = "<group>"; };
+		B477F82B12513CBF0007ACAB /* GNCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNCAppDelegate.h; sourceTree = "<group>"; };
+		B477F82C12513CBF0007ACAB /* GNCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNCAppDelegate.m; sourceTree = "<group>"; };
+		B477F82E12513CC70007ACAB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B477F82F12513CC70007ACAB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B477F89912514DFA0007ACAB /* tab-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-home.png"; path = "images/tab-home.png"; sourceTree = "<group>"; };
+		B477F89A12514DFA0007ACAB /* tab-home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab-home@2x.png"; path = "images/tab-home@2x.png"; sourceTree = "<group>"; };
+		B4E8E19A11FE7E4C0025CA28 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD926DC17965E9500C0665A /* libDosecast_API.a in Frameworks */,
+				ABD926D317965E6F00C0665A /* libGNC_customizations.a in Frameworks */,
+				ABCB3E341679171E000482E7 /* Security.framework in Frameworks */,
+				ABCB3E321679170C000482E7 /* AdSupport.framework in Frameworks */,
+				AB935266140AB82B00858B2C /* AddressBook.framework in Frameworks */,
+				AB935267140AB82B00858B2C /* AddressBookUI.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				B416E91411E22A8200E0B71C /* QuartzCore.framework in Frameworks */,
+				B4E8E19B11FE7E4C0025CA28 /* libiconv.dylib in Frameworks */,
+				AB97ACC612FF08F500441980 /* CoreData.framework in Frameworks */,
+				AB97ACCA12FF091A00441980 /* StoreKit.framework in Frameworks */,
+				AB97ACCE12FF092500441980 /* AudioToolbox.framework in Frameworks */,
+				AB97ACD212FF092E00441980 /* MessageUI.framework in Frameworks */,
+				AB97ACD612FF093600441980 /* SystemConfiguration.framework in Frameworks */,
+				AB97AE4112FF21E500441980 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E613914A2DC780041FA07 /* Dosecast include */,
+				B477F82B12513CBF0007ACAB /* GNCAppDelegate.h */,
+				B477F82C12513CBF0007ACAB /* GNCAppDelegate.m */,
+				B477F82E12513CC70007ACAB /* HomeViewController.h */,
+				B477F82F12513CC70007ACAB /* HomeViewController.m */,
+				AB26BBDF14A61037000FF579 /* HomeViewControllerDelegate.h */,
+				B416E83311DE145000E0B71C /* WebAppViewController.h */,
+				B416E83411DE145000E0B71C /* WebAppViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* GNC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Sephora */ = {
+			isa = PBXGroup;
+			children = (
+				ABD926BD17965E0400C0665A /* GNC-customizations.xcodeproj */,
+				ABD926D417965E8000C0665A /* Dosecast-API.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Sephora;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E616714A2DC9C0041FA07 /* Dosecast-resources.bundle */,
+				AB2E613E14A2DC8C0041FA07 /* ReminderSounds */,
+				2840D7CD1179279E00D7F93C /* HomeView.xib */,
+				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
+				B416E83511DE145000E0B71C /* WebAppView.xib */,
+				B477F82712501D5F0007ACAB /* GNC-Info.plist */,
+				B41D697E11E79EB9006E9CAA /* images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABCB3E331679171E000482E7 /* Security.framework */,
+				ABCB3E311679170C000482E7 /* AdSupport.framework */,
+				AB935264140AB82B00858B2C /* AddressBook.framework */,
+				AB935265140AB82B00858B2C /* AddressBookUI.framework */,
+				AB97AE4012FF21E500441980 /* CoreVideo.framework */,
+				AB97ACC512FF08F500441980 /* CoreData.framework */,
+				AB97ACC912FF091A00441980 /* StoreKit.framework */,
+				AB97ACCD12FF092500441980 /* AudioToolbox.framework */,
+				AB97ACD112FF092E00441980 /* MessageUI.framework */,
+				AB97ACD512FF093600441980 /* SystemConfiguration.framework */,
+				B4E8E19A11FE7E4C0025CA28 /* libiconv.dylib */,
+				B416E91311E22A8200E0B71C /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765070DF74369002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB2E613914A2DC780041FA07 /* Dosecast include */ = {
+			isa = PBXGroup;
+			children = (
+				ABCB3E2A167914D6000482E7 /* GNCDosecastAPI.h */,
+				AB38B32C1597F90E00DAB833 /* DosecastUtil.h */,
+				AB2E613B14A2DC780041FA07 /* DosecastAPIDelegate.h */,
+				AB2E613C14A2DC780041FA07 /* ProgressViewController.h */,
+				AB2E613D14A2DC780041FA07 /* SpinnerViewController.h */,
+			);
+			name = "Dosecast include";
+			path = "../../GNC Dosecast-API/include";
+			sourceTree = "<group>";
+		};
+		AB2E613E14A2DC8C0041FA07 /* ReminderSounds */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E613F14A2DC8C0041FA07 /* Ascending.caf */,
+				AB2E614014A2DC8C0041FA07 /* Bark.caf */,
+				AB2E614114A2DC8C0041FA07 /* Bell Tower.caf */,
+				AB2E614214A2DC8C0041FA07 /* Blues.caf */,
+				AB2E614314A2DC8C0041FA07 /* Boing.caf */,
+				AB2E614414A2DC8C0041FA07 /* Crickets.caf */,
+				AB2E614514A2DC8C0041FA07 /* Default.caf */,
+				AB2E614614A2DC8C0041FA07 /* Doorbell.caf */,
+				AB2E614714A2DC8C0041FA07 /* Duck.caf */,
+				AB2E614814A2DC8C0041FA07 /* Harp.caf */,
+				AB2E614914A2DC8C0041FA07 /* Marimba.caf */,
+				AB2E614A14A2DC8C0041FA07 /* Motorcycle.caf */,
+				AB2E614B14A2DC8C0041FA07 /* Old Car Horn.caf */,
+				AB2E614C14A2DC8C0041FA07 /* Piano Riff.caf */,
+				AB2E614D14A2DC8C0041FA07 /* Sonar.caf */,
+				AB2E614E14A2DC8C0041FA07 /* Strum.caf */,
+				AB2E614F14A2DC8C0041FA07 /* Timba.caf */,
+				AB2E615014A2DC8C0041FA07 /* Time Passing.caf */,
+				AB2E615114A2DC8C0041FA07 /* Trill.caf */,
+				AB2E615214A2DC8C0041FA07 /* Xylophone.caf */,
+			);
+			name = ReminderSounds;
+			path = "../GNC Dosecast-API/ReminderSounds";
+			sourceTree = "<group>";
+		};
+		ABD926BE17965E0400C0665A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD926C217965E0400C0665A /* libGNC_customizations.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABD926D517965E8000C0665A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD926D917965E8000C0665A /* libDosecast_API.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B41D697E11E79EB9006E9CAA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ABDEB5B31721E7510080383E /* Default-568h@2x.png */,
+				ABDEB5B41721E7510080383E /* Default.png */,
+				ABDEB5B51721E7510080383E /* Default@2x.png */,
+				B477F89912514DFA0007ACAB /* tab-home.png */,
+				B477F89A12514DFA0007ACAB /* tab-home@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* GNC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GNC" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABD926DB17965E8E00C0665A /* PBXTargetDependency */,
+				ABD926D117965E6500C0665A /* PBXTargetDependency */,
+			);
+			name = GNC;
+			productName = Sephora;
+			productReference = 1D6058910D05DD3D006BFB54 /* GNC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Branding Brand, LLC";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GNC test harness" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Sephora */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ABD926D517965E8000C0665A /* Products */;
+					ProjectRef = ABD926D417965E8000C0665A /* Dosecast-API.xcodeproj */;
+				},
+				{
+					ProductGroup = ABD926BE17965E0400C0665A /* Products */;
+					ProjectRef = ABD926BD17965E0400C0665A /* GNC-customizations.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* GNC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ABD926C217965E0400C0665A /* libGNC_customizations.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGNC_customizations.a;
+			remoteRef = ABD926C117965E0400C0665A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ABD926D917965E8000C0665A /* libDosecast_API.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDosecast_API.a;
+			remoteRef = ABD926D817965E8000C0665A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
+				2840D7CE1179279E00D7F93C /* HomeView.xib in Resources */,
+				B416E83711DE145000E0B71C /* WebAppView.xib in Resources */,
+				B477F89B12514DFA0007ACAB /* tab-home.png in Resources */,
+				B477F89C12514DFA0007ACAB /* tab-home@2x.png in Resources */,
+				AB2E615314A2DC8C0041FA07 /* Ascending.caf in Resources */,
+				AB2E615414A2DC8C0041FA07 /* Bark.caf in Resources */,
+				AB2E615514A2DC8C0041FA07 /* Bell Tower.caf in Resources */,
+				AB2E615614A2DC8C0041FA07 /* Blues.caf in Resources */,
+				AB2E615714A2DC8C0041FA07 /* Boing.caf in Resources */,
+				AB2E615814A2DC8C0041FA07 /* Crickets.caf in Resources */,
+				AB2E615914A2DC8C0041FA07 /* Default.caf in Resources */,
+				AB2E615A14A2DC8C0041FA07 /* Doorbell.caf in Resources */,
+				AB2E615B14A2DC8C0041FA07 /* Duck.caf in Resources */,
+				AB2E615C14A2DC8C0041FA07 /* Harp.caf in Resources */,
+				AB2E615D14A2DC8C0041FA07 /* Marimba.caf in Resources */,
+				AB2E615E14A2DC8C0041FA07 /* Motorcycle.caf in Resources */,
+				AB2E615F14A2DC8C0041FA07 /* Old Car Horn.caf in Resources */,
+				AB2E616014A2DC8C0041FA07 /* Piano Riff.caf in Resources */,
+				AB2E616114A2DC8C0041FA07 /* Sonar.caf in Resources */,
+				AB2E616214A2DC8C0041FA07 /* Strum.caf in Resources */,
+				AB2E616314A2DC8C0041FA07 /* Timba.caf in Resources */,
+				AB2E616414A2DC8C0041FA07 /* Time Passing.caf in Resources */,
+				AB2E616514A2DC8C0041FA07 /* Trill.caf in Resources */,
+				AB2E616614A2DC8C0041FA07 /* Xylophone.caf in Resources */,
+				AB2E616814A2DC9C0041FA07 /* Dosecast-resources.bundle in Resources */,
+				ABDEB5B61721E7510080383E /* Default-568h@2x.png in Resources */,
+				ABDEB5B71721E7510080383E /* Default.png in Resources */,
+				ABDEB5B81721E7510080383E /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				B416E83611DE145000E0B71C /* WebAppViewController.m in Sources */,
+				B477F82D12513CBF0007ACAB /* GNCAppDelegate.m in Sources */,
+				B477F83012513CC70007ACAB /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABD926D117965E6500C0665A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GNC-customizations";
+			targetProxy = ABD926D017965E6500C0665A /* PBXContainerItemProxy */;
+		};
+		ABD926DB17965E8E00C0665A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Dosecast-API";
+			targetProxy = ABD926DA17965E8E00C0665A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* GNC Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GNC_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"'${PROJECT_DIR}/../Dosecast-API'",
+					zbar/include,
+				);
+				INFOPLIST_FILE = "GNC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../GNC Dosecast-API/lib/Simulator/Debug\"",
+				);
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = GNC;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+			};
+			name = "GNC Debug";
+		};
+		C01FCF4F08A954540054247B /* GNC Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					UIKit,
+					"-ObjC",
+					"-all_load",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = "GNC Debug";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GNC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* GNC Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "GNC Debug";
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GNC test harness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* GNC Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "GNC Debug";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
